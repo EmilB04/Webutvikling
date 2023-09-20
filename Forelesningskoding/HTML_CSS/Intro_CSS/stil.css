@@ -1,6 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: calc(1em + 1vw);
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #efefef;
 }
 
 /*CSS for header og nav*/
@@ -25,7 +33,7 @@ header nav span a{
 nav a{
     text-decoration: none;
     color: black;
-    padding: 1rem;
+    padding: 0.5rem;
     display: inline-block
 }
 
@@ -37,12 +45,65 @@ main section h2{
 }
 
 article{
-    max-width: 500px;
+    max-width: 1300px;
     min-width: 250px;
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto;
+    background-color: white;
 }
 
 main section article img{
     width: 100%;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+p{
+    font-size: 1rem;
+    margin: 15px;
+}
+.read-more-btn{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px 5px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 0.7rem 0;
+}
+#about-section{
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem 0 ;
+    max-width: 1300px;
+    min-width: 250px;
+    width: 100%;
+}
+#about-section p{
+    text-align: justify; 
+}
+
+#pynt{
+    background-image: url(img/shellfish-8080937_1280.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    padding: 1rem;
+    box-sizing: border-box;
+}  
+
+#subcribe{
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+#subcribe form label{
+    display: block;
 }
