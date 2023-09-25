@@ -107,3 +107,32 @@ p{
 #subcribe form label{
     display: block;
 }
+
+footer nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer nav ul li a{
+    padding: 0.5rem;
+}
+
+#social-icons{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+#social-icons li{
+    list-style: none;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 30px;
+    padding: 5px 5px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
