@@ -1,5 +1,80 @@
-html{
-    body{
-        
+@import "variabler.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.float_left-50{
+    float: left;
+    width: 50%;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1rem;
+    margin: 0;
+
+    header{
+        @extend .float_left-50;
+        padding: 1rem;
+
+        nav{
+            ul{
+                padding: 0;
+                margin: 0;
+
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    padding: 0 0.5rem 0 0;
+                }
+                a{
+                    text-decoration: none;
+                    color: blue;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+        }
+
+        span{
+            font-family: $font_logo;
+            font-size: 5rem;
+        }
+
+        #contact{
+            background-color: $box_grey;
+            padding: 1rem;
+            float: right;
+            margin: 0rem 1rem 0 0;
+        }
+
+
+        a{
+            text-decoration: none;
+        }
     }
+    main{
+        @extend .float_left-50;
+        padding: 1rem;
+    }
+    figure{
+        float: right;
+        width: 50%;
+        height: auto;
+        margin: 0;
+
+        img{
+            width: 100%;
+        }
+    }
+    footer{
+        clear: both;
+        padding: 1rem;
+    }
+
 }
