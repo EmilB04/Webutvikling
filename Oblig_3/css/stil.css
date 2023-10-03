@@ -1,36 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-* {
+
+*{
   box-sizing: border-box;
 }
 
-/*---------------------------------------*/
-body {
-  font-family: "Roboto", sans-serif;
+body{
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  padding: 0;
   margin: 0;
 }
-body header {
+header{
   width: 100%;
-  background-color: #333;
-  color: white;
+  background-color: white;
 }
-body header nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-}
-body header nav ul {
+header>nav>ul{
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-body header nav ul li a {
+header>nav>ul>li{
+  padding: 1rem;
+}
+header>nav>ul>li>a{
   text-decoration: none;
-  color: white;
-  padding: 0;
-  transition: background-color 0.3s;
+  color: black;
 }
-body header nav ul li a:hover {
-  background-color: #555;
+header>nav>ul>li>img{
+  width: 35px;
+  height: 35px;
+}
+#LOGO{
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0.5rem 0 0 0 ;
+  margin: 0;
+}
+#menu_icon{
+  margin: 3px 0 0 0
+}
+
+#search_icon{
+  margin: 2px 0 0 -30px 
+}
+#shopping_cart_icon{
+  width: 40;
+  height: 40px;
+  margin: -2px -30px -20px 0
+}
+#profile_icon{
+  margin: 2.5px 0 0 0
+}
+hr{
+  padding: 0;
+  margin: 0;
+  height: 0.2rem;
+  background-color: black;
 }
