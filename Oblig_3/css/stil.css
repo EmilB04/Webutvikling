@@ -1,62 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
+/*@media only screen and (max-width: 700px) and (min-width: 300px) {*/
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: calc(1em + 1vw);
+        padding: 0;
+        margin: 0;
+    }
+    /*----------HEADER CONTENT----------*/
+    header {
+        background-color: white;
+        width: 96%;
+        margin-left: 2%;
+    }
+    header>nav>ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header>nav>ul>li {
+        padding: 0;
+        margin: 0;
+    }
+    header>nav>ul>li>a {
+        text-decoration: none;
+        color: black;
+    }
+    header>nav>ul>li>img {
+        max-width: 35px;
+        max-height: 35px;
+        min-width: 25px;
+        min-height: 25px;
+    }
+    #LOGO {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    hr {
+        padding: 0;
+        height: 0.2rem;
+        width: 100%;
+        background-color: black;
+        border-radius: 20px;
+    }
+    
+    /*----------MAIN CONTENT----------*/
+    main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    main>section {
+        position: relative;
+        margin: 2% 2%;
+    }
 
-body{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-}
-header{
-  width: 100%;
-  background-color: white;
-}
-header>nav>ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-header>nav>ul>li{
-  padding: 1rem;
-}
-header>nav>ul>li>a{
-  text-decoration: none;
-  color: black;
-}
-header>nav>ul>li>img{
-  width: 35px;
-  height: 35px;
-}
-#LOGO{
-  font-size: 3rem;
-  font-weight: 600;
-  padding: 0.5rem 0 0 0 ;
-  margin: 0;
-}
-#menu_icon{
-  margin: 3px 0 0 0
-}
+    main>section>picture {
+        position: relative;
+        display: block;
+    }
 
-#search_icon{
-  margin: 2px 0 0 -30px 
-}
-#shopping_cart_icon{
-  width: 40;
-  height: 40px;
-  margin: -2px -30px -20px 0
-}
-#profile_icon{
-  margin: 2.5px 0 0 0
-}
-hr{
-  padding: 0;
-  margin: 0;
-  height: 0.2rem;
-  background-color: black;
-}
+    main>section>picture>img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+    }
+
+    main>section>picture>h1 {
+        font-size: 1.5rem;
+        text-align: right;
+        width: 60%;
+        position: absolute;
+        margin: 1%;
+        top: 0px;
+        right: 0px; 
+        background-color: rgba(39, 39, 39, 0.7);
+        color: #fff; 
+        padding: 10px;
+        z-index: 1;
+        border-radius: 20px;
+    }
+
+
+/*}*/
