@@ -24,60 +24,51 @@
 
     <main>
         <section>
+            <h2>Trendy skotøy for ungdom!</h2>
             <picture>
-                <h1>Trendy skotøy for ungdom!</h1>
-                <img src="img/main/main_shoe.jpg" alt="Bilde av en Nike Air Force sko.">
-                <!--https://wallpaperaccess.com/cool-nike-shoe-->
-                <button>
-                    <a href="#">Handle nå!</a>
-                </button>
+                <img src="img/main/main_shoe.jpg" alt="Bilde av en Nike Air Force sko."><!--https://wallpaperaccess.com/cool-nike-shoe-->
             </picture>
+                <a href="#">Handle nå!</a>
         </section>
     </main>
 
     <aside class="horisontale_utstillinger">
         <h2>Velg blant ukens favoritter!</h2>
-        <section>
-            <picture class="bildeRamme">
+        <div class="flexbox">
+            <section class="bildeRamme">
                 <img src="img/aside/rekke1/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko"> <!--https://no.pinterest.com/pin/447263806745041352/-->
-                <p class="skoMerke" >Nike</p>
-                <p class="skoType">Air Force</p>
-            </picture>
-            <picture class="bildeRamme">
+                <h4 class="skoMerke" >Nike</h4>
+                <h5 class="skoType">Air Force</h5>
+            </section>
+            <section class="bildeRamme">
                 <img src="img/aside/rekke1/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko"> <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
-                <p class="skoMerke">Adidas</p>
-                <p class="skoType">VL Court 2</p>
-            </picture>
-            <picture class="bildeRamme">
+                <h4 class="skoMerke">Adidas</h4>
+                <h5 class="skoType">VL Court 2.0</h5>
+            </section>
+            <section class="bildeRamme">
                 <img src="img/aside/rekke1/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko"> <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
-                <p class="skoMerke">Reebok</p>
-                <p class="skoType">Nano X3</p>
-            </picture>
-        </section>
+                <h4 class="skoMerke">Reebok</h4>
+                <h5 class="skoType">Nano X3</h5>
+            </section>
+        </div>
     </aside>
 
     <section id="velg_avdeling">
         <h2>Velg avdeling</h2>
-        <span>
-            <picture class="avdeling_boks">
-                <img src="img/avdeling/herre_avdeling.jpg" alt=""> <!--https://no.pinterest.com/pin/196962183693564047/-->
-                <button>
-                    <a href="#">Gå til Herre</a>
-                </button>
-            </picture>
-            <picture class="avdeling_boks">
-                <img src="img/avdeling/dame_avdeling.jpg" alt=""> <!--https://no.pinterest.com/pin/163818505184600494/-->
-                <button>
-                    <a href="">Gå til Dame</a>
-                </button>
-            </picture>
-            <picture class="avdeling_boks">
-                <img src="img/avdeling/barne_avdeling.jpg" alt=""> <!--https://no.pinterest.com/pin/163818505184600494/-->
-                <button>
-                    <a href="">Gå til Dame</a>
-                </button>
-            </picture>
-        </span>
+        <div class="flexbox">
+            <figure class="avdeling_boks">
+                <img src="img/avdeling/herre_avdeling.jpg" alt="Herreavdeling">
+                <figcaption><button>Gå til Herre</button></figcaption>
+            </figure>
+            <figure class="avdeling_boks">
+                <img src="img/avdeling/dame_avdeling.jpg" alt="Dameavdeling">
+                <figcaption><button>Gå til Dame</button></figcaption>
+            </figure>
+            <figure class="avdeling_boks">
+                <img src="img/avdeling/barne_avdeling.jpg" alt="Barneavdeling">
+                <figcaption><button>Gå til Barn</button></figcaption>
+            </figure>
+        </div>
     </section>
 </body>
 
