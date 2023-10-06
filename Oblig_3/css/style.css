@@ -82,9 +82,9 @@ main>section>picture>img {
     border-radius: 20px;
 }
 main>section>picture>h1 {
-    font-size: 1.5rem;
+    font-size: 6vw;
     text-align: right;
-    width: 13.5rem;
+    width: 55%;
     position: absolute;
     margin: 1%;
     top: 0px;
@@ -95,34 +95,99 @@ main>section>picture>h1 {
     z-index: 1;
     border-radius: 20px;
 }
+main>section>picture>button{
+    position: absolute;
+    padding: 1vw 3vw 1vw 3vw;
+    margin-top: 3%;
+    background-color: black;
+    border-radius: 15px;
+    border-color: transparent;
+    z-index: 1;
+    top: 20vw;
+    right: 10vw;
+}
+main>section>picture>button>a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+}
 /*----------Aside CONTENT----------*/
-aside>h2 {
+
+.horisontale_utstillinger>h2 {
     font-size: 1.5rem;
     text-align: center;
 }
-aside>section {
+.horisontale_utstillinger>section {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: relative;
     width: 100%;
 }
 .bildeRamme {
-    margin: 0 2% 0 0;
+    margin: 0 0 0 2%;
     padding: 0;
     height: 40%;
     width: 40%;
-    background-color: #D9D9D9;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
 }
+
 .bildeUtstilling {
     height: 100%;
     width: 100%;
     padding: 0%;
     margin: 0%
 }
-.bildeTekst {
+.skoMerke {
     font-size: 1rem;
+    font-weight: 600;
     padding: 0.2rem 0 0 0.2rem;
     margin: -0.4rem 0 0 0;
-    height: 3.5rem;
-    background-color: #858585;
+}
+.skoType{
+    font-size: 0.8rem;
+    margin: 0 0 10% 3% ;
+}
+
+/*----------Avdeling CONTENT----------*/
+#velg_avdeling>h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#velg_avdeling>span{
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.avdeling_boks{
+    margin: 0 0 0 2%;
+    padding: 0;
+    height: 460px auto;
+    width: 100%;
+}
+.avdeling_boks>img{
+    width: 100%;
+    height: 100%;
+}
+.avdeling_boks>button{
+    background-color: black;
+    border-color: transparent;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.avdeling_boks>button>a{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
 }
