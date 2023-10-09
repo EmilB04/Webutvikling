@@ -148,7 +148,8 @@ main>section>a{
 .skoType{
     font-size: 0.8rem;
     font-weight: normal;
-    margin: 0 0 0% 2% ;
+    margin: 0;
+    padding: 0 0 0% 2% ;
 }
 
 /*----------Avdeling CONTENT----------*/ /*FERDIG MOBIL*/
@@ -302,24 +303,35 @@ footer{
 #skoUtstilling{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-left:4% ;
+    margin: 0%;
 }
 .pris{
     font-size: 0.8rem;
     font-weight: 600;
-    margin: 0 0 10% 2% ;
-    padding-top: 1%;
+    padding: 1% 0% 4% 2%;
     margin: 0;
 }
 
 .skoRamme{
-    background-color: grey;
+    min-width: 150px;
+    max-width: 550px;
+    width: 48%;
+    height: auto;
+    margin: 1% 1%;
+    padding: 0;
 }
-
+.skoRamme article{
+    background-color: white;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
+    border-radius: 0 0 6px 6px;
+    padding: 0;
+}
 .skoRamme>img{
-    width: 40%;
+    width: 100%;
     height: auto;
     margin: 0;
-    padding: 0;;
+    padding: 0;
+    border-radius: 6px 6px 0 0;
 }
