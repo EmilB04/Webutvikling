@@ -60,33 +60,25 @@ hr {
     border-radius: 20px;
 }
 
-/*----------MAIN CONTENT----------*/
+/*----------MAIN CONTENT----------*/ /*FERDIG MOBIL*/
 main {
-    display: flex;
-    justify-content: center;
     width: 100%;
 }
 main>section {
     position: relative;
     margin: 2% 2%;
 }
-main>section {
-    position: relative;
-    display: block;
-}
 main>section>picture>img {
-    max-width: 1000px;
-    width: 100%;
-    height: auto;
-    display: block;
     border-radius: 20px;
+    width: 100%;
+    height: 100%;
 }
 main>section>h2 {
     font-size: 6vw;
     text-align: right;
-    width: 55%;
+    width: 56%;
     position: absolute;
-    margin: 1%;
+    margin: 2%;
     top: 0px;
     right: 0px; 
     background-color: rgba(39, 39, 39, 0.7);
@@ -111,42 +103,37 @@ main>section>a{
     color: white;
 }
 
-/*----------Aside CONTENT----------*/
-
-.horisontale_utstillinger>h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    overflow: hidden;
-}
+/*----------Aside CONTENT----------*/ /*FERDIG MOBIL*/
 .flexbox_standard { /*Brukes flere steder*/
     display: flex;
     flex-direction: row;
     width: 100%;
+    overflow: scroll; /*Lar brukeren scrolle gjennom flere sko*/
 }
-.flexbox_center { /*Brukes flere steder*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+.horisontale_utstillinger>h2 {
+    font-size: 1.5rem;
+    text-align: center;
 }
-.flex_test{ /*Brukes flere steder*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 135%;
-}
+
 .bildeRamme {
-    overflow: hidden;
     margin: 0 0 0 2%;
     padding: 0 0 4% 0;
     height: 45%;
-    width: 45%;
+    width: 65%;
     border-radius: 6px;
-    background: #FFF;
+    margin-bottom: 2%;
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
+}
+.bildeRamme:last-child { /*Lager litt luft mellom siste element på scrollbaren og kanten av nettsiden*/
+    margin-right: 2%;
+}
+.bildeRamme a{
+    text-decoration: none;
+    color: black;
 }
 
 .bildeUtstilling {
+    min-width: 175px;
     height: 100%;
     width: 100%;
     padding: 0%;
@@ -164,13 +151,7 @@ main>section>a{
     margin: 0 0 0% 2% ;
 }
 
-/*----------Avdeling CONTENT----------*/
-
-#velg_avdeling {
-    position: relative;
-    overflow: hidden;
-}
-
+/*----------Avdeling CONTENT----------*/ /*FERDIG MOBIL*/
 #velg_avdeling > h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -178,62 +159,64 @@ main>section>a{
 .avdeling_boks {
     margin: 0;
     padding: 0;
-    position: relative; /* Legger til relativ posisjon for å angi absolutt posisjon på knappen */
+    position: relative; 
+    width: 40%;
+    height: auto;
 }
-.avdeling_boks > img {
-    max-height: 700px;
-    max-width: 700px;
-    height: 250px;
-    width: auto;
+.avdeling_boks img {
+    min-height: 250px;
+    max-height: 1000px;
+    min-width: 200px;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
 }
-.avdeling_boks > figcaption {
+.avdeling_boks figcaption {
     position: absolute;
     bottom: 0; 
-    left: 0; 
-    right: 0; 
-    background-color: rgba(0, 0, 0, 0.7); /* Legg til en bakgrunnsfarge for knappen */
-    text-align: center;
-}
-
-.avdeling_boks > figcaption > button {
     background-color: transparent;
     border: none;
     padding: 10px;
-    margin: 5px;
     text-align: center;
     text-decoration: none;
     color: white;
     font-size: 1rem;
-    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Legg til en bakgrunnsfarge for knappen */
+}
+figcaption>a{
+    text-decoration: none;
+    color: white;
 }
 
 
-
-
-
-
-/*----------Bli medlem CONTENT----------*/
+/*----------Bli medlem CONTENT----------*/ /*FERDIG MOBIL*/
 #bliMedlem{
     width: 100%;
     margin-top: 4%;
-    margin-bottom: 4%;
-    height: 12rem;
-    padding: 0.1rem;
+    margin-bottom: 2%;
+    height: auto;
+}
+#bliMedlem>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 0;
     background-color: #858585;
 }
-#bliMedlem>h2, #bliMedlem>p{
+#bliMedlem h2, #bliMedlem p{
     text-align: center;
     color: white;
-    margin: 1rem;
+    margin: 2%;
 }
-#bliMedlem>button{
+#bliMedlem button{
     border-radius: 10px;
     padding: 1.5vw;
     border-color: transparent;
     background-color: black;
     color: white;
-    position: absolute;
-    left: 42%;
+    width: 40%;
+    margin: auto auto 2% auto;
 }
 
 /*----------Footer CONTENT----------*/
@@ -242,6 +225,12 @@ footer{
     width: 100%;
     height: auto;
     background-color: #858585;
+}
+.flexbox_center { /*Brukes flere steder*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 .undertittel_footer{
     display: flex;
@@ -272,9 +261,6 @@ footer{
     font-size: 1rem;
     margin: 1rem;
 }
-
-
-
 
 
 /*-----------------------------------------------*/
