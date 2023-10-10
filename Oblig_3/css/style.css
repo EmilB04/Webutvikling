@@ -335,3 +335,12 @@ footer{
     padding: 0;
     border-radius: 6px 6px 0 0;
 }
+
+/*media screen for screens over 600 px*/
+@media screen and (min-width: 600px) {
+    body{
+        max-width: 80%;
+        margin-left: 10%;
+    }
+}
+
