@@ -11,29 +11,32 @@ body {
     margin: 0;
 }
 /*----------HEADER CONTENT----------*/
-header {
+#mobilNav {
     background-color: white;
     width: 96%;
     margin-left: 2%;
 }
-header>nav>ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#desktopNav {
+    display: none;
+}
+#mobilNav ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-header>nav>ul>li {
+#mobilnav ul li {
     padding: 0;
     margin: 0;
 }
-header>nav>ul>li>a {
+#mobilNav ul li a {
     text-decoration: none;
     color: black;
 }
-header>nav>ul>li>img {
+#mobilNav img {
     max-width: 35px;
     max-height: 35px;
     min-width: 25px;
@@ -337,10 +340,91 @@ footer{
 }
 
 /*media screen for screens over 600 px*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 950px) {
     body{
-        max-width: 80%;
-        margin-left: 10%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
     }
-}
+    #mobilNav {
+        display: none;
+    }
+    #desktopNav{
+        display: initial;
+    }
+    #desktopNav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #toppBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 2%;
+        margin: 0;
+        width: 100%;
+        height: 5vh;
+        background-color: white;
+    }
 
+    #logo {
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #søkeFelt {
+        display: flex;
+        align-items: center;
+        gap: 1%;
+        min-width: 50%;
+        max-width: 550px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border-color: transparent;
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
+    }
+    #søkeFelt>input{
+        padding: 0 0 0 1%;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-color: transparent;
+    }
+    #søkeFelt figure{
+        height: 100%;
+        width: auto;
+        margin:0;
+    }
+    #søkeFelt figure>img{
+        width: 90%;
+        height: auto;
+        margin: 6px;    
+    }
+    #mode_cart_profile img{
+        height: 45px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #mode_cart_profile ul {
+        gap: 5%;
+    }
+    #mode_cart_profile ul:last-child {
+        margin-right: 10%;
+    }
+
+
+
+
+
+}
