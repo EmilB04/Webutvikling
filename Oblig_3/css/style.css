@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
+/*Importerer inn Roboto Font*/
 * {
     box-sizing: border-box;
 }
@@ -7,14 +7,36 @@
 /*https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
 /*Hentet fra w3schools for å endre utseende på scrollefeltet */
 ::-webkit-scrollbar {
-    width: 10px;}
+    width: 10px;
+}
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-    margin: 0 2%;}
+    margin: 0 2%;
+}
 ::-webkit-scrollbar-thumb {
-    background: #bbb;}
+    background: #bbb;
+}
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;}
+    background: #555;
+}
+
+/*---------------------------------------------------------------*/
+.flexbox_standard { /*Brukes flere steder*/
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll; /*Lar brukeren scrolle gjennom flere sko*/
+    flex-wrap: nowrap;
+    flex-grow: 2;
+}
+
+.flexbox_center { /*Brukes flere steder*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
 /*---------------------------------------------------------------*/
 
 body {
@@ -24,13 +46,12 @@ body {
     margin: 0;
 }
 /*----------HEADER CONTENT----------*/
-#mobilNav {
-    background-color: white;
-    width: 96%;
-    margin-left: 2%;
-}
 #desktopNav {
     display: none;
+}
+#mobilNav {
+    width: auto;
+    margin: 0 2%;
 }
 #mobilNav ul {
     display: flex;
@@ -50,10 +71,10 @@ body {
     color: black;
 }
 #mobilNav img {
-    max-width: 35px;
-    max-height: 35px;
     min-width: 25px;
+    max-width: 35px;
     min-height: 25px;
+    max-height: 35px;
 }
 #LOGO {
     font-size: 2rem;
@@ -62,13 +83,13 @@ body {
 #menu_icon {
     margin-top: 0.3rem;
 }
-#search_icon{
+#search_icon {
     margin-top: 0.2rem;
 }
 #profile_icon {
     margin-top: 0.1rem;
 }
-hr {
+header hr {
     padding: 0;
     height: 0.2rem;
     width: 100%;
@@ -76,19 +97,22 @@ hr {
     border-radius: 20px;
 }
 
-/*----------MAIN CONTENT----------*/ /*FERDIG MOBIL*/
+/*----------MAIN CONTENT----------*/
 main {
     width: 100%;
 }
+
 main>section {
     position: relative;
     margin: 2% 2%;
 }
+
 main>section>picture>img {
     border-radius: 20px;
     height: auto;
     width: 100%;
 }
+
 main>section>h1 {
     font-size: 6vw;
     text-align: right;
@@ -96,14 +120,15 @@ main>section>h1 {
     position: absolute;
     margin: 2%;
     top: 0px;
-    right: 0px; 
+    right: 0px;
     background-color: rgba(39, 39, 39, 0.7);
-    color: #fff; 
+    color: #fff;
     padding: 10px;
     z-index: 1;
     border-radius: 20px;
 }
-main>section>a{
+
+main>section>a {
     position: absolute;
     padding: 2vw 4vw;
     margin-top: 3%;
@@ -119,19 +144,12 @@ main>section>a{
     color: black;
 }
 
-/*----------UTSTILLINGS CONTENT----------*/ /*FERDIG MOBIL*/
-.flexbox_standard { /*Brukes flere steder*/
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    overflow: scroll; /*Lar brukeren scrolle gjennom flere sko*/
-    flex-wrap: nowrap;
-    flex-grow: 2;
-}
+/*----------UTSTILLINGS CONTENT----------*/
 .horisontale_utstillinger>h2 {
     font-size: 1.5rem;
     text-align: center;
 }
+
 .bildeRamme {
     margin: 0 0 2% 2%;
     padding: 0 0 2rem 0;
@@ -141,13 +159,16 @@ main>section>a{
     border-radius: 6px;
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
 }
+
 .bildeRamme:last-child { /*Lager litt luft mellom siste element på scrollbaren og kanten av nettsiden*/
     margin-right: 2%;
 }
-.bildeRamme a{
+
+.bildeRamme a {
     text-decoration: none;
     color: black;
 }
+
 .bildeUtstilling {
     height: 100%;
     width: 100%;
@@ -155,31 +176,36 @@ main>section>a{
     margin: 0%;
     border-radius: 6px 6px 0 0;
 }
+
 .skoMerke {
     font-size: 1rem;
     font-weight: 600;
     padding: 0.2rem 0 0 0;
     margin: -0.4rem 0 0 2%;
 }
-.skoType{
+
+.skoType {
     font-size: 0.8rem;
     font-weight: normal;
     margin: 0;
-    padding: 0 0 0% 2% ;
+    padding: 0 0 0% 2%;
 }
 
-/*----------Avdeling CONTENT----------*/ /*FERDIG MOBIL*/
-#velg_avdeling > h2 {
+/*----------Avdeling CONTENT----------*/
+/*FERDIG MOBIL*/
+#velg_avdeling>h2 {
     font-size: 1.5rem;
     text-align: center;
 }
+
 .avdeling_boks {
     margin: 0;
     padding: 0;
-    position: relative; 
+    position: relative;
     width: 40%;
     height: auto;
 }
+
 .avdeling_boks img {
     min-height: 250px;
     max-height: 1000px;
@@ -188,9 +214,10 @@ main>section>a{
     width: 100%;
     height: 100%;
 }
+
 .avdeling_boks figcaption {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     background-color: transparent;
     border: none;
     padding: 10px;
@@ -199,34 +226,39 @@ main>section>a{
     color: white;
     font-size: 1rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Legg til en bakgrunnsfarge for knappen */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Legg til en bakgrunnsfarge for knappen */
 }
-figcaption>a{
+
+figcaption>a {
     text-decoration: none;
     color: white;
 }
 
 
-/*----------Bli medlem CONTENT----------*/ /*FERDIG MOBIL*/
-#bliMedlem{
+/*----------Bli medlem CONTENT----------*/
+/*FERDIG MOBIL*/
+#bliMedlem {
     width: 100%;
     margin-top: 4%;
     margin-bottom: 2%;
     height: auto;
 }
-#bliMedlem>article{
+
+#bliMedlem>article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2% 0;
     background-color: #858585;
 }
-#bliMedlem h2, #bliMedlem p{
+
+#bliMedlem h2,#bliMedlem p {
     text-align: center;
     color: white;
     margin: 2%;
 }
-#bliMedlem button{
+#bliMedlem button {
     border-radius: 10px;
     padding: 1.5vw;
     border-color: transparent;
@@ -237,118 +269,132 @@ figcaption>a{
 }
 
 /*----------Footer CONTENT----------*/
-#mobilFooter{
+#desktopFooter {
+    display: none;
+}
+
+#mobilFooter {
     margin-top: 4%;
     width: 100%;
     height: auto;
     background-color: #858585;
 }
-.flexbox_center { /*Brukes flere steder*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-#mobilFooter .undertittel_footer{
+
+#mobilFooter .undertittel_footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     color: white;
 }
-#mobilFooter .undertittel_footer>hr{
+
+.undertittel_footer hr {
     background-color: white;
     border-color: transparent;
     margin: 36px 10px;
     height: 0px;
+    width: 50%;
 }
-#mobilFooter .linker_footer{
-    display:grid;
+
+#mobilFooter .linker_footer {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     padding: 0;
     margin: 0;
 }
-#mobilFooter .linker_footer>li{
+
+#mobilFooter .linker_footer>li {
     list-style: none;
     padding: 5% 0;
 }
-#mobilFooter .linker_footer li a{
+
+#mobilFooter .linker_footer li a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
     margin: 1rem;
 }
-
-#desktopFooter{
-    display: none;
-}
-
-
 /*-----------------------------------------------*/
 /*------------------Kategori html----------------*/
 /*-----------------------------------------------*/
 
-#brødsmuleMeny{
+#brødsmuleMeny {
     display: flex;
     flex-direction: row;
-    justify-content: left;;
-    margin: 0;
+    justify-content: left;
+    ;
+    margin: 2rem 0;
     padding: 0;
 }
-#brødsmuleHjem{
+
+#brødsmuleHjem {
     padding: 0 0 0 2% !important;
 }
-#brødsmuleMeny>p{
-    padding-left: 3px;
+
+#brødsmuleMeny p, #brødsmuleMeny a {
+    padding-left: 1.5px;
     margin: 0;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: black;
 }
 
-#filter_sorter{
+#filter_sorter {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#filter_sorter>button{
+
+#filter_sorter>button {
     padding: 0.5rem 1.5rem;
     border-color: transparent;
     background-color: black;
     color: white;
     width: 40%;
-    margin: 5%;
+    margin: 2rem 5%;
+}
+#filter_desktop{
+    display: none;       
 }
 
 /*----------MAIN CONTENT----------*/
-#skoUtstilling{
+#skoUtstilling {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0%;
 }
-.pris{
+
+#skoUtstilling>a {
+    min-width: 150px;
+    max-width: 550px;
+    width: 48%;
+    text-decoration: none;
+    color: black;
+    margin: 1% 1%;
+}
+
+.pris {
     font-size: 0.8rem;
     font-weight: 600;
     padding: 1% 0% 4% 2%;
     margin: 0;
 }
 
-.skoRamme{
-    min-width: 150px;
-    max-width: 550px;
-    width: 48%;
+.skoRamme {
+    width: 100%;
     height: auto;
-    margin: 1% 1%;
     padding: 0;
 }
-.skoRamme article{
+
+.skoRamme article {
     background-color: white;
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
     border-radius: 0 0 6px 6px;
     padding: 0;
 }
-.skoRamme>img{
+
+.skoRamme>img {
     width: 100%;
     height: auto;
     margin: 0;
@@ -359,19 +405,20 @@ figcaption>a{
 
 
 
-/*-------*/
-/*Desktop*/
-/*-------*/
+/*-----------------------*/
+/*--------Desktop--------*/
+/*-----------------------*/
 @media screen and (min-width: 950px) {
-    body{
+    body {
         max-width: 100%;
         padding: 0;
         margin: 0;
     }
+    /*------- HEADER ------*/
     #mobilNav, #mobilFooter {
         display: none;
     }
-    #desktopNav{
+    #desktopNav {
         display: initial;
     }
     #desktopNav ul {
@@ -384,7 +431,7 @@ figcaption>a{
         margin: 0;
         padding: 0;
     }
-    #toppBar{
+    #toppBar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -395,7 +442,6 @@ figcaption>a{
         height: 5vh;
         background-color: white;
     }
-
     #logo, header h2 {
         font-size: 2rem;
         font-weight: 600;
@@ -404,7 +450,6 @@ figcaption>a{
         margin: 0;
         padding: 0;
     }
-    
     #søkeFelt {
         display: flex;
         align-items: center;
@@ -417,37 +462,40 @@ figcaption>a{
         border-color: transparent;
         box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
     }
-    #søkeFelt>input{
+    #søkeFelt>input {
         padding: 0 0 0 1%;
         margin: 0;
         width: 100%;
         height: 100%;
         border-color: transparent;
     }
-    #søkeFelt figure{
+    #søkeFelt figure {
         height: 100%;
         width: auto;
-        margin:0;
+        margin: 0;
     }
-    #søkeFelt figure>img{
+    #søkeFelt figure>img {
         width: 90%;
         height: auto;
-        margin: 6px;    
+        margin: 6px;
     }
-    #mode_cart_profile img{
+
+    #mode_cart_profile img {
         height: 45px;
         width: auto;
         margin: 0;
         padding: 0;
     }
+
     #mode_cart_profile ul {
         gap: 5%;
         margin-top: 5%;
     }
+
     #mode_cart_profile ul:last-child {
         margin-right: 10%;
     }
-    @media screen and (min-width: 1400px){
+    @media screen and (min-width: 1400px) {
         #mode_cart_profile ul {
             gap: 35%;
         }
@@ -455,7 +503,8 @@ figcaption>a{
             margin-right: 45%;
         }
     }
-    #kategoriFelt ul li a{
+
+    #kategoriFelt ul li a {
         text-decoration: none;
         color: black;
         font-size: 1.5rem;
@@ -463,27 +512,8 @@ figcaption>a{
         margin: 0;
     }
 
-    main picture{
-        display: flex;
-        justify-content: center;
-    }
-    .bildeRamme {
-    margin: 0 0 2% 1%;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #desktopFooter{
+    /*------- FOOTER --------*/
+    #desktopFooter {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -494,39 +524,41 @@ figcaption>a{
         height: auto;
         background-color: #858585;
     }
-    #desktopFooter a, #desktopFooter p, #desktopFooter h2, #desktopFooter h3{
+
+    #desktopFooter a,#desktopFooter p,#desktopFooter h2,#desktopFooter h3 {
         color: white;
     }
-    #innhold_footer{
+    #innhold_footer {
         display: flex;
         flex-direction: row;
+        gap: 1%;
     }
-    #kundeKlubb_footer{
+    #kundeKlubb_footer {
         width: 40%;
     }
-    #kundeKlubb_footer>h2{
+    #kundeKlubb_footer>h2 {
         font-size: 2rem;
         margin: 0;
         padding: 0;
     }
-    #kundeKlubb_footer>p{
+    #kundeKlubb_footer>p {
         font-size: 1rem;
         margin-top: 1rem;
         padding: 0;
         max-width: 85%;
     }
-    #kundeKlubb_footer>section{
+    #kundeKlubb_footer>section {
         display: flex;
         flex-direction: row;
         justify-content: left;
         height: auto;
     }
-    #kundeKlubb_footer>section>input{
+    #kundeKlubb_footer>section>input {
         padding: 1rem;
         border: 1px solid black;
         width: 65%;
     }
-    #kundeKlubb_footer>section>button{
+    #kundeKlubb_footer>section>button {
         padding: 1rem;
         margin-left: 1rem;
         border: 1px solid black;
@@ -536,7 +568,7 @@ figcaption>a{
         max-width: 150px;
         width: auto;
     }
-    #snarveier_footer{
+    #snarveier_footer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -544,50 +576,49 @@ figcaption>a{
         gap: 3%;
         width: 60%;
     }
-
-    #snarveier_footer>nav>h3{
+    #snarveier_footer>nav>h3 {
         font-size: 2rem;
         margin: 0;
         padding: 0;
     }
-    #snarveier_footer ul{
+    #snarveier_footer ul {
         padding: 0;
         margin-top: 5%;
     }
-    #snarveier_footer ul li{
+    #snarveier_footer ul li {
         list-style: none;
         padding: 0;
         margin: 0;
     }
-    #snarveier_footer ul li a{
+    #snarveier_footer ul li a {
         font-size: 1.5rem;
         text-decoration: none;
     }
-    footer hr{
+    footer hr {
         border-color: transparent;
         height: 1px;
         padding: 0;
         margin: 0;
     }
-    #copyright_settings_footer{
+    #copyright_settings_footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items:baseline;
+        align-items: baseline;
         padding: 2% 0;
     }
-    #copyright_settings_footer ul li{
+    #copyright_settings_footer ul li {
         list-style: none;
     }
-    #copyright_settings_footer ul li a{
+    #copyright_settings_footer ul li a {
         text-decoration: none;
         font-size: 1rem;
     }
-    #copyright_footer p{
+    #copyright_footer p {
         font-size: 1rem;
         margin: 0;
     }
-    #settings_footer ul{
+    #settings_footer ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -595,4 +626,59 @@ figcaption>a{
         padding: 0;
         margin: 0;
     }
+
+
+    /*------ INDEX ------*/
+    /*MAIN*/
+    .bildeRamme {
+        margin: 0 0 2% 1%;
+    }
+
+    /*------Kategoriside------*/
+
+    /*Filter og sorteringsknapper*/
+    #filter_sorter {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    #filter_sorter>button {
+        padding: 0.5rem 1.5rem;
+        border-color: transparent;
+        background-color: black;
+        color: white;
+        width: 150px;
+        margin: 2% 0;
+    }
+    #filter_sorter>button:last-child {
+        margin-right: 2%;
+    }
+
+    /*MAIN OG ASIDE*/
+    #filter_desktop{
+        display: initial;
+    }
+    #kategori_aside_main{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3%;
+    }
+    #filter_desktop{
+        margin: 0 0 0 3%;
+        padding-right: 5rem;
+    }
+    #filter_desktop ul{
+        margin: 0 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    #filter_desktop ul li{
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        margin: 10% 0;
+    }
+
 }
