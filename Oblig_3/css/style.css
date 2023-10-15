@@ -5,19 +5,17 @@
 }
 
 /*https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
-/* width */
+/*Hentet fra w3schools for å endre utseende på scrollefeltet */
 ::-webkit-scrollbar {
     width: 10px;}
-/* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;}
-/* Handle */
+    background: #f1f1f1;
+    margin: 0 2%;}
 ::-webkit-scrollbar-thumb {
     background: #bbb;}
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;}
-
+/*---------------------------------------------------------------*/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -90,8 +88,6 @@ main>section>picture>img {
     border-radius: 20px;
     height: auto;
     width: 100%;
-    min-width: 500px;
-    max-width: 2000px;
 }
 main>section>h1 {
     font-size: 6vw;
@@ -123,25 +119,26 @@ main>section>a{
     color: black;
 }
 
-/*----------Aside CONTENT----------*/ /*FERDIG MOBIL*/
+/*----------UTSTILLINGS CONTENT----------*/ /*FERDIG MOBIL*/
 .flexbox_standard { /*Brukes flere steder*/
     display: flex;
     flex-direction: row;
     width: 100%;
     overflow: scroll; /*Lar brukeren scrolle gjennom flere sko*/
+    flex-wrap: nowrap;
+    flex-grow: 2;
 }
 .horisontale_utstillinger>h2 {
     font-size: 1.5rem;
     text-align: center;
 }
-
 .bildeRamme {
-    margin: 0 0 0 2%;
-    padding: 0 0 4% 0;
+    margin: 0 0 2% 2%;
+    padding: 0 0 2rem 0;
+    min-width: 170px;
     height: 45%;
-    width: 65%;
+    width: 75%;
     border-radius: 6px;
-    margin-bottom: 2%;
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
 }
 .bildeRamme:last-child { /*Lager litt luft mellom siste element på scrollbaren og kanten av nettsiden*/
@@ -151,13 +148,12 @@ main>section>a{
     text-decoration: none;
     color: black;
 }
-
 .bildeUtstilling {
-    min-width: 175px;
     height: 100%;
     width: 100%;
     padding: 0%;
-    margin: 0%
+    margin: 0%;
+    border-radius: 6px 6px 0 0;
 }
 .skoMerke {
     font-size: 1rem;
@@ -470,6 +466,9 @@ figcaption>a{
     main picture{
         display: flex;
         justify-content: center;
+    }
+    .bildeRamme {
+    margin: 0 0 2% 1%;
     }
 
 
