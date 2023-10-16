@@ -609,7 +609,6 @@ figcaption>a {
 
 
     /*------ INDEX ------*/
-    /*MAIN*/
     .bildeRamme {
         margin: 0 0 2% 1%;
     }
@@ -645,12 +644,12 @@ figcaption>a {
     #filter_sorter_knapper>button:last-child{
         margin-right: 2%;
     }
-    
+    #filterKnapp:hover{
+        cursor: pointer;
+    }
 
     /*MAIN OG ASIDE*/
-    #filter_desktop{
-        display: initial;
-    }
+    
     #kategori_aside_main{
         display: flex;
         flex-direction: row-reverse;
@@ -658,7 +657,7 @@ figcaption>a {
     #filter_desktop{
         margin: 0 0 0 2%;
         width: 20%;
-        
+        display: block;
     }
     #filter_desktop ul{
         margin: 0;
@@ -676,5 +675,4 @@ figcaption>a {
         margin: 0;
         padding: 0;
     }
-    
 }
