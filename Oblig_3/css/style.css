@@ -38,12 +38,31 @@
     width: 100%;
 }
 /*---------------------------------------------------------------*/
+#grid_index{
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main; 
+}
+footer{
+    grid-area: footer;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(1em + 1vw);
     padding: 0;
-    margin: 0;
+    min-width: none !important;
+    max-width: 2000px !important;
+    width: 100% !important;
+    margin: auto !important;
 }
 /*----------HEADER CONTENT----------*/
 #desktopNav {
@@ -87,23 +106,19 @@ header hr {
     border-radius: 20px;
 }
 
-/*----------MAIN CONTENT----------*/
-main {
-    width: 100%;
-}
 
-main>section {
+#hovedbilde {
     position: relative;
-    margin: 2% 2%;
+    margin: 70px 2% 0 2%;
 }
 
-main>section>picture>img {
+#hovedbilde img {
     border-radius: 20px;
     height: auto;
     width: 100%;
 }
 
-main>section>h1 {
+#hovedbilde h1 {
     font-size: 6vw;
     text-align: right;
     width: 53%;
@@ -118,7 +133,7 @@ main>section>h1 {
     border-radius: 20px;
 }
 
-main>section>a {
+#hovedbilde a {
     position: absolute;
     padding: 2vw 4vw;
     margin-top: 3%;
@@ -134,7 +149,7 @@ main>section>a {
     color: black;
 }
 
-/*----------UTSTILLINGS CONTENT----------*/
+/*----------MAIN CONTENT----------*/
 .horisontale_utstillinger>h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -229,24 +244,14 @@ figcaption>a {
     margin-top: 4%;
     margin-bottom: 2%;
     height: auto;
-}
-
-#bliMedlem>article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2% 0;
     background-color: #858585;
-}
-
-#bliMedlem h2,#bliMedlem p {
+    padding: 2% 0;
     text-align: center;
     color: white;
-    margin: 2%;
 }
 #bliMedlem button {
     border-radius: 10px;
-    padding: 1.5vw;
+    padding: 1vw;
     border-color: transparent;
     background-color: black;
     color: white;
@@ -397,6 +402,13 @@ figcaption>a {
 /*--------Desktop--------*/
 /*-----------------------*/
 @media screen and (min-width: 950px) {
+    #grid_index{
+        display: grid;
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
     body {
         max-width: 100%;
         padding: 0;
@@ -450,46 +462,21 @@ figcaption>a {
         border-color: transparent;
         box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
     }
-    #søkeFelt>input {
+    #søkeFelt input {
         padding: 0 0 0 1%;
         margin: 0;
         width: 100%;
         height: 100%;
         border-color: transparent;
     }
-    #søkeFelt figure {
-        height: 100%;
-        width: auto;
-        margin: 0;
-    }
-    #søkeFelt figure>img {
-        width: 90%;
+    #søkeFelt i {
+        font-size: 2rem;
         height: auto;
-        margin: 6px;
-    }
-
-    #mode_cart_profile img {
-        height: 45px;
-        width: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-    #mode_cart_profile ul {
-        gap: 5%;
-        margin-top: 5%;
+        margin: 0px 3px;
     }
 
     #mode_cart_profile ul:last-child {
         margin-right: 10%;
-    }
-    @media screen and (min-width: 1400px) {
-        #mode_cart_profile ul {
-            gap: 35%;
-        }
-        #mode_cart_profile ul:last-child {
-            margin-right: 45%;
-        }
     }
 
     #kategoriFelt ul li a {
@@ -498,6 +485,11 @@ figcaption>a {
         font-size: 1.5rem;
         padding: 0;
         margin: 0;
+    }
+
+    header i{
+        font-size: 2.5rem;
+        margin: 0% 1rem 0 1rem;
     }
 
     /*------- FOOTER --------*/
