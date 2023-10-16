@@ -344,8 +344,11 @@ figcaption>a {
     width: 40%;
     margin: 2rem 5%;
 }
-#filter_desktop{
+#filter_desktop, #filterMenyTekst{
     display: none;       
+}
+#filterMenyTekst{
+    display: none !important;
 }
 
 /*----------MAIN CONTENT----------*/
@@ -360,7 +363,7 @@ figcaption>a {
 #skoUtstilling>a {
     min-width: 150px;
     max-width: 550px;
-    width: 48%;
+    width: 45%;
     text-decoration: none;
     color: black;
     margin: 1% 1%;
@@ -386,7 +389,7 @@ figcaption>a {
     padding: 0;
 }
 
-.skoRamme>img {
+.skoRamme img {
     width: 100%;
     height: auto;
     margin: 0;
@@ -621,7 +624,7 @@ figcaption>a {
         align-items: baseline;
         justify-content: space-between;
     }
-    #filter_sorter>h2{
+    #filterMenyTekst{
         display: initial;
         font-size: 2rem;
         margin: 0 0 0 2%;
@@ -642,7 +645,7 @@ figcaption>a {
         margin: 2% 0;
     }
     #filter_sorter_knapper>button:last-child{
-        margin-right: 2%;
+        margin-right: 20%;
     }
     #filterKnapp:hover{
         cursor: pointer;
@@ -653,6 +656,7 @@ figcaption>a {
     #kategori_aside_main{
         display: flex;
         flex-direction: row-reverse;
+        gap: 0%;
     }
     #filter_desktop{
         margin: 0 0 0 2%;
@@ -662,17 +666,20 @@ figcaption>a {
     #filter_desktop ul{
         margin: 0;
         padding: 0;
-        
     }
     #filter_desktop ul li{
         list-style: none;
-        padding: 0;
         padding: 1rem 0;
         font-size: 1.5rem;
+        white-space: nowrap; /*Hentet fra Chat GPT 16.10.23*/
     }
     #filter_desktop hr{
         border: 1px solid #858585;
         margin: 0;
         padding: 0;
     }
+    #filter_desktop ul li + li { /*Hentet fra Chat GPT 16.10.23*/
+    border-top: 1px solid #858585;
+    padding-top: 1rem; 
+}
 }
