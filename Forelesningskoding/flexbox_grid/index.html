@@ -22,26 +22,30 @@
                 <ul class="navBar">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#services">Services</a></li>
                 </ul>
             </nav>
             <section>
                 <h1>Bolleoppskrifter</h1>
-                <a href=""></a>
+                <a class="black_btn" href="">Read more</a>
             </section>
         </header>
         <main>
-            <section>
-                <img src="#" alt="">
-                <h2>Lorem Ipsum</h2>
-                <p>Minim non tempor laboris eu ullamco. Id occaecat dolore aute minim pariatur do eu occaecat cupidatat.</p>
+            <section class="flex_section left">
+                <img src="https://placehold.co/600x400.png" alt="">
+                <article>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Minim non tempor laboris eu ullamco. Id occaecat dolore aute minim pariatur do eu occaecat cupidatat.</p>
+                </article>
             </section>
-            <section>
-                <img src="#" alt="">
-                <h2>Lorem Ipsum</h2>
-                <p>Minim non tempor laboris eu ullamco. Id occaecat dolore aute minim pariatur do eu occaecat cupidatat.</p>
+            <section class="flex_section right">
+                <img src="https://placehold.co/600x400.png" alt="">
+                <article>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Minim non tempor laboris eu ullamco. Id occaecat dolore aute minim pariatur do eu occaecat cupidatat.</p>
+                </article>
             </section>
-            <section>
+            <section id="services">
                 <h2>Services</h2>
                 <article>
                     <h3>Lorem Impsum</h3>
@@ -61,5 +65,16 @@
 
         </footer>
     </div>
+    <script>
+        let x = document.querySelector(".navBar");
+
+        document.getElementById("meny").addEventListener("click", (e) => {
+            if (x.className === "navBar"){
+                x.className += " responsive";
+            } else {
+                x.className = "navBar";
+            }
+        })
+    </script>
 </body>
 </html>
