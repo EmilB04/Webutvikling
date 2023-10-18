@@ -106,7 +106,6 @@ header hr {
     border-radius: 20px;
 }
 
-
 #hovedbilde {
     position: relative;
     margin: 70px 2% 0 2%;
@@ -615,6 +614,9 @@ figcaption>a {
     .bildeRamme {
         margin: 0 0 2% 1%;
     }
+    #hovedbilde {
+        margin-top: 2%;
+    }
 
     /*------Kategoriside------*/
 
@@ -671,14 +673,14 @@ figcaption>a {
         list-style: none;
         padding: 1rem 0;
         font-size: 1.5rem;
-        white-space: nowrap; /*Hentet fra Chat GPT 16.10.23*/
+        white-space: nowrap; /*Hentet fra Chat GPT 16.10.23*/ /* Spurte om å få all tekst på én linje*/
     }
     #filter_desktop hr{
         border: 1px solid #858585;
         margin: 0;
         padding: 0;
     }
-    #filter_desktop ul li + li { /*Hentet fra Chat GPT 16.10.23*/
+    #filter_desktop ul li + li { /*Hentet fra Chat GPT 16.10.23*/  /* Spurte om å få skiller mellom li elementene*/
     border-top: 1px solid #858585;
     padding-top: 1rem; 
 }
