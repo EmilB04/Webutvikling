@@ -403,7 +403,7 @@ figcaption>a {
     overflow: hidden;
 }
 #hovedBilde img {
-    height: 350px auto;
+    height: 350px;
     width: 100%;
 }
 #hovedBilde button.prev, button.next {
@@ -426,10 +426,11 @@ figcaption>a {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    padding-bottom: 1rem ;
 }
 #tilpass>h2{
     flex-basis: 100%;
-    margin-left: 2%;
+    margin: 2% 0 4% 2%;
 }
 #tilpass>button{
     flex-basis: 25%;
@@ -440,7 +441,93 @@ figcaption>a {
     margin-left: 2%;
 }
 
+#produkt_info_punkter{
+    margin: 0% 2%;
+}
+.nedtrekksMeny{
+    padding: 0.5rem;
+}
+.nedtrekksMeny{
+    border-top: 2px solid black; 
+}
+.nedtrekksMeny:last-child{
+    border-bottom: 2px solid black;
+}
 
+.nedtrekksKnapp{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.nedtrekksKnapp > h3, .nedtrekksKnapp > button{
+    font-size: 1.5rem;
+    margin: 0;
+    align-self: center; /*Sentrert basert på resten av teksten*/
+}
+.nedtrekksKnapp button{
+    background-color: transparent;
+    border: transparent;
+    margin-right: 2%;
+    padding: 10px;
+}
+.nedtrekksKnapp button:hover{
+    cursor: pointer;
+}
+.nedtrekk_paragraf{
+    margin: 0 0 0 2%;
+    font-size: 1rem;
+    display: none;
+}
+.nedtrekk_paragraf li{
+    list-style: square;
+}
+
+#kjøp{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 2%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    background-color: #dedede;
+}
+#sko_info{
+    display: flex;
+    flex-direction: column;
+}
+#sko_info>h3{
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+#sko_info>h4{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+#sko_pris_kjøp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sko_pris_kjøp>h3{
+    text-align: center;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+#sko_pris_kjøp>button{
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    background-color: black;
+    color: white;
+    border: transparent;
+}
 
 /*-----------------------*/
 /*--------Desktop--------*/
