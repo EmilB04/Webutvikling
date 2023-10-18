@@ -38,21 +38,15 @@
     width: 100%;
 }
 /*---------------------------------------------------------------*/
-#grid_index{
+#grid_container{
     display: grid;
     grid-template-areas: "header header header" "main main main" "footer footer footer";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-header{
-    grid-area: header;
-}
-main{
-    grid-area: main; 
-}
-footer{
-    grid-area: footer;
-}
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
 
 
 body {
@@ -60,7 +54,7 @@ body {
     font-size: calc(1em + 1vw);
     padding: 0;
     min-width: none !important;
-    max-width: 2000px !important;
+    max-width: 2200px !important;
     width: 100% !important;
     margin: auto !important;
 }
@@ -312,7 +306,7 @@ figcaption>a {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 2rem 0;
+    margin: 4rem 0 1rem 0 ;
     padding: 0;
 }
 
@@ -397,6 +391,54 @@ figcaption>a {
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.10);
 }
 
+/*------------------------------*/
+/*------ PRODUKT HTML ----------*/
+/*------------------------------*/
+
+/* Brødsmulemenyen ligger på kategori html*/
+
+#hovedBilde {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+#hovedBilde img {
+    height: 350px auto;
+    width: 100%;
+}
+#hovedBilde button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#hovedBilde button.prev {
+    left: 10px;
+}
+#hovedBilde button.next {
+    right: 10px;
+}
+#tilpass{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+#tilpass>h2{
+    flex-basis: 100%;
+    margin-left: 2%;
+}
+#tilpass>button{
+    flex-basis: 25%;
+    background-color: black;
+    color: white;
+    border: transparent;
+    padding: 0.5rem;
+    margin-left: 2%;
+}
 
 
 
@@ -404,7 +446,7 @@ figcaption>a {
 /*--------Desktop--------*/
 /*-----------------------*/
 @media screen and (min-width: 950px) {
-    #grid_index{
+    #grid_container{
         display: grid;
         grid-template-areas: "header header header" "main main main" "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr;
@@ -624,7 +666,7 @@ figcaption>a {
     #filter_sorter{
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
+        justify-content: right;
     }
     #filterMenyTekst{
         display: initial;
