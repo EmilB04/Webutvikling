@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://static.xx.fbcdn.net/rsrc.php/yk/r/TYhiZ_A7dmu.ico">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Fjasebook</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="#">fjasebook</a></h1>
+            <h2>Fjasebook hjelper deg med å holde kontakten og dele opplevelser med menneskene i livet ditt.</h2>
+        </header>
+        <section>
+            <article>
+                <form method="post" action="#">
+                    <label for="email">E-postadresse</label>
+                    <input type="email" name="email" placeholder="nora@epost.no" id="email" required>
+                    <label for="password">Passord</label>
+                    <input type="password" name="password" placeholder="********" id="password" required>
+                    <input type="submit" value="Logg inn">
+                    <a href="#">Glemt passord?</a>
+                </form>
+                <button onclick="openClose(`flex`)">Opprett ny konto</button>
+            </article>
+            <p><strong>Opprett en side</strong> for en kjendis, et merke eller en bedrift.</p>
+        </section>
+    </main>
+    <section id="user-registration">
+        <form id="user-reg" method="post" accept="#" autocomplete="on">
+            <span onclick="openClose(`none`)">X</span>
+            <h3>Registrer bruker</h3>
+            <h4>Det er raskt og lett</h4>
+            <label for="name">
+                Fornavn
+                <input type="text" name="name" placeholder="Ola">
+            </label>
+            <label for="lname">
+                Etternavn
+                <input type="text" name="lname" placeholder="Nordman">
+            </label>
+            <label for="user-reg-email">E-postadresse</label>
+            <input type="email" name="user-reg-email" id="user-reg-email" placeholder="ola@epost.no">
+
+            <label for="user-reg-pass">Passord</label>
+            <input type="password" name="user-reg-pass" id="user-reg-pass" placeholder="********">
+
+            <label class="select-option-text">Fødselsdato</label>
+            <select id="day" name="daylist" form="user-reg"></select>
+
+            <select id="month" name="monthlist" form="user-reg">
+                <option value="jan.">jan.</option>
+                <option value="feb.">feb.</option>
+                <option value="mar.">mar.</option>
+                <option value="apr.">apr.</option>
+                <option value="mai.">mai.</option>
+                <option value="jun.">jun.</option>
+                <option value="jul.">jul.</option>
+                <option value="aug.">aug.</option>
+                <option value="sep.">sep.</option>
+                <option value="okt.">okt.</option>
+                <option value="nov.">nov.</option>
+                <option value="des.">des.</option>
+            </select>
+            <select id="year" name="yearlist" form="user-reg"></select>
+            <label class="select-option-text">Kjønn</label>
+
+            <label class="radio-label">
+                Kvinne
+                <input type="radio" value="kvinne" id="kvinne" name="gender">
+            </label>
+            <label class="radio-label">
+                Mann
+                <input type="radio" value="mann" id="mann" name="gender">
+            </label>
+            <label class="radio-label">
+                Egendefinert
+                <input type="radio" value="egen" id="egen" name="gender">
+            </label>
+            <p>Culpa enim cillum ex ex do do eu duis.Officia veniam duis labore culpa sit est cupidatat eiusmod elit labore nostrud aute nulla reprehenderit.</p>
+            <p>Eiusmod proident anim veniam sit aliqua.Quis consectetur duis elit consectetur Lorem mollit quis amet mollit excepteur commodo.</p>
+        </form>
+    </section>
+
+    <script>
+        let dayList = document.getElementById("day")
+        let yearList = document.getElementById("year")
+        let thisYear = new Date().getFullYear()
+
+        for (let i = 1; i<=31; i++){
+            let option = new Option(i, i)
+            dayList.appendChild(option)
+        }
+        for (let i = thisYear; i>=(thisYear-100); i--){
+            let option = new Option(i, i)
+            yearList.appendChild(option)
+        }
+
+
+        const openClose = (value)=>{
+            document.getElementById("user-registration").style.display = value;
+        }
+    </script>
+</body>
+</html>
