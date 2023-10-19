@@ -243,7 +243,7 @@
         <footer id="desktopFooter">
             <section id="innhold_footer">
                 <article id="kundeKlubb_footer">
-                    <h2>TrendyWear</h3>
+                    <h3>TrendyWear</h3>
                         <p>Bli medlem for å holde deg oppdatert og motta gode tilbud</p>
                         <section>
                             <input type="text" placeholder="Skriv inn din e-post">
@@ -300,23 +300,23 @@
             </section>
         </footer>
     </div>
-</body>
 <script>/* Hentet inspirasjon fra Ann-Charlott sin forelesning 16.10.2023*/
     document.getElementById("filterKnapp").addEventListener("click", () => {
-            let filterMeny = document.getElementById('filter_desktop');
-            let filterTekst = document.getElementById('filterMenyTekst');
-            let knapper = document.getElementById('filter_sorter');
+        let filterMeny = document.getElementById('filter_desktop');
+        let filterTekst = document.getElementById('filterMenyTekst');
+        let knapper = document.getElementById('filter_sorter');
 
-            if (filterMeny.style.display === "none" || filterMeny.style.display === "") {
-                filterMeny.style.display = "block";
-                filterTekst.style.display = "block";
-                knapper.style.justifyContent = "right";
-            } else {
-                filterMeny.style.display = "none";
-                filterTekst.style.display = "none";
-                knapper.style.justifyContent = "right";
-            }
-        });
+        if (filterMeny.style.display === "none" || filterMeny.style.display === "") {
+            filterMeny.style.display = "block";
+            filterTekst.style.display = "block";
+            knapper.style.justifyContent = "right";
+        } else {
+            filterMeny.style.display = "none";
+            filterTekst.style.display = "none";
+            knapper.style.justifyContent = "right";
+        }
+    });
 
 </script>
+</body>
 </html>
