@@ -7,15 +7,14 @@
     <link href="css/ikoner/css/brands.css" rel="stylesheet">
     <link href="css/ikoner/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Produktside</title>
 </head>
 <body>
     <div id="grid_container">
         <header>
             <nav id="mobilNav">
                 <ul>
-                    <li><i class="fa-solid fa-bars"></i></li>
-                    <!--Javascript?-->
+                    <li><i class="fa-solid fa-bars"></i></li><!--Javascript?-->
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>
                     <li id="LOGO"><a href="index.html">TRENDYWEAR</a></li>
                     <li><i class="fa-solid fa-cart-shopping"></i></li>
@@ -64,33 +63,74 @@
         </header>
 
         <main>
-            <section id="hovedBilde">
-                <div class="slider">
-                    <picture class="slide">
-                        <img src="img/index/main/main_shoe1.jpg" alt="">
-                    </picture>
-                    <picture class="slide">
-                        <img src="img/index/main/main_shoe.jpg" alt="">
-                    </picture>
-                    <picture class="slide">
-                        <img src="img/index/main/main_shoe1.jpg" alt="">
-                    </picture>
-                </div>
-                <button class="prev" onclick="changeSlide(-1)">&#8249;</button> <!--"koden" til pilene er hentet fra Chat GPT 18.20.23-->
-                <button class="next" onclick="changeSlide(1)">&#8250;</button> <!--"koden" til pilene er hentet fra Chat GPT 18.20.23-->
-            </section>
+            <section id="desktop_produkt_flex"">
+                <section id="hovedBilde">
+                    <div class="slider">
+                        <picture class="slide">
+                            <img src="img/index/main/main_shoe1.jpg" alt="">
+                        </picture>
+                        <picture class="slide">
+                            <img src="img/index/main/main_shoe.jpg" alt="">
+                        </picture>
+                        <picture class="slide">
+                            <img src="img/index/main/main_shoe1.jpg" alt="">
+                        </picture>
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)">&#8249;</button> <!--"koden" til pilene er hentet fra Chat GPT 18.20.23-->
+                    <button class="next" onclick="changeSlide(1)">&#8250;</button> <!--"koden" til pilene er hentet fra Chat GPT 18.20.23-->
+                </section>
 
-            <section id="tilpass">
-                <h2>Tilpass dine sko!</h2>
-                <button>Størrelse</button>
-                <button>Farger</button>
+                <section id="mobil_tilpass_kjøp">
+                    <section id="tilpass">
+                        <h2>Tilpass din sko!</h2>
+                        <button>Størrelse</button>
+                        <button>Farger</button>
+                    </section>
+                    <section id="kjøp">
+                        <article id="sko_info">
+                            <h3>Nike</h3>
+                            <h4>Air Force</h4>
+                        </article>
+                        <article id="sko_pris_kjøp">
+                            <h3>kr 999,-</h3>
+                            <button>Legg i handlekurv</button>
+                        </article>
+                    </section>
+                </section>
+                <section id="desktop_tilpass_kjøp">
+                    <article id="sko_info">
+                        <h3>Nike Air Force</h3>
+                        <h4>Farge</h4>
+                        <h3>Pris: 999,-</h3>
+                    </article>
+                    <section id="sko_farge">
+                        <h3>Farge: Lorem Ipsum</h3>
+                        <span></span>
+                        <span></span>
+                    </section>
+                    <section id="Størrelse">
+                        <h3>Størrelse: Lorem Ipsum</h3>
+                        <span>39</span>
+                        <span>40</span>
+                        <span>41</span>
+                        <span>42</span>
+                        <span>43</span>
+                        <span>44</span>
+                        <span>45</span>
+                    </section>
+                    <section>
+                        <button>Kjøp nå</button>
+                        <button>Legg i handlekurv</button>
+                    </section>
+
+                </section>
             </section>
 
             <section id="produkt_info_punkter">
                 <article class="nedtrekksMeny">
                     <div class="nedtrekksKnapp">
                         <h3>Produktinfo</h3>
-                        <button id="knapp1"><i class="fa-solid fa-caret-down"></i></button>
+                        <button class="knapp" id="knapp1"><i class="fa-solid fa-caret-down"></i></button>
                     </div>
                     <article class="nedtrekk_paragraf" id="paragraf1">
                         <ul>
@@ -103,7 +143,7 @@
                 <article class="nedtrekksMeny">
                     <div class="nedtrekksKnapp">
                         <h3>Størrelseguide</h3>
-                        <button id="knapp2"><i class="fa-solid fa-caret-down"></i></button>
+                        <button class="knapp" id="knapp2"><i class="fa-solid fa-caret-down"></i></button>
                     </div>
                     <article class="nedtrekk_paragraf" id="paragraf2">
                         <ul>
@@ -115,8 +155,8 @@
                 </article>
                 <article class="nedtrekksMeny">
                     <div class="nedtrekksKnapp">
-                        <h3>Produktinfo</h3>
-                        <button id="knapp3"><i class="fa-solid fa-caret-down"></i></button>
+                        <h3>Lorem Ipsum</h3>
+                        <button class="knapp" id="knapp3"><i class="fa-solid fa-caret-down"></i></button>
                     </div>
                     <article class="nedtrekk_paragraf" id="paragraf3">
                         <ul>
@@ -128,17 +168,315 @@
                 </article>
             </section>
             
-            <section id="kjøp">
-                <article id="sko_info">
-                    <h3>Nike</h3>
-                    <h4>Air Force</h4>
+            <section class="horisontale_utstillinger">
+                <h2>Andre har også sett på</h2>
+                <section class="flexbox_standard">
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                </section>
+            </section>
+            <section class="horisontale_utstillinger">
+                <h2>Sko på tilbud denne uken</h2>
+                <section class="flexbox_standard">
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Nike sko">
+                            <!--https://no.pinterest.com/pin/447263806745041352/-->
+                            <h4 class="skoMerke">Nike</h4>
+                            <h5 class="skoType">Air Force</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Adidas Sko">
+                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
+                            <h4 class="skoMerke">Adidas</h4>
+                            <h5 class="skoType">VL Court 2.0</h5>
+                        </a>
+                    </article>
+                    <article class="bildeRamme">
+                        <a href="produkt.html">
+                            <img src="img/index/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av Reebok Sko">
+                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
+                            <h4 class="skoMerke">Reebok</h4>
+                            <h5 class="skoType">Nano X3</h5>
+                        </a>
+                    </article>
+                </section>
+            </section>
+
+
+        </main>
+        <footer id="mobilFooter" style="margin-bottom: 100px;">
+            <nav class="kolonne_footer">
+                <section class="undertittel_footer">
+                    <hr>
+                    <h3>Snarveier</h3>
+                    <hr>
+                </section>
+                <ul class="linker_footer">
+                    <li><a href="#">Min side</a></li>
+                    <li><a href="#">Ordreoversikt</a></li>
+                    <li><a href="#">Gavekort</a></li>
+                    <li><a href="#">Retur</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#">Om oss</a></li>
+                </ul>
+            </nav>
+            <nav class="kolonne_footer">
+                <section class="undertittel_footer">
+                    <hr>
+                    <h3>Informasjon</h3>
+                    <hr>
+                </section>
+                <ul class="linker_footer">
+                    <li><a href="#">Spørsmål og svar</a></li>
+                    <li><a href="#">Reklamasjon og garanti</a></li>
+                    <li><a href="#">Åpenhetsloven</a></li>
+                    <li><a href="#">Personopplysninger</a></li>
+                    <li><a href="#">Salgsbetingelser</a></li>
+                    <li><a href="#">Nye produkter</a></li>
+                </ul>
+            </nav>
+            <section class="flexbox_center">
+                <figure>
+                    <a href="#"><img src="img/footer/TikTok_logo.png" alt="Logo og link til Tiktok"></a>
+                </figure>
+                <figure>
+                    <a href="#"><img src="img/footer/Instagram_logo.png" alt="Logo og link til Instagram"></a>
+                </figure>
+                <figure>
+                    <a href="#"><img src="img/footer/YouTube_Shorts_logo.png" alt="Logo og link til YouTube Shorts"></a>
+                </figure>
+            </section>
+        </footer>
+        <footer id="desktopFooter">
+            <section id="innhold_footer">
+                <article id="kundeKlubb_footer">
+                    <h2>TrendyWear</h2>
+                    <p>Bli medlem for å holde deg oppdatert og motta gode tilbud</p>
+                    <section>
+                        <input type="text" placeholder="Skriv inn din e-post">
+                        <button>Meld deg inn!</button>
+                    </section>
+                    <p>
+                        Ved å abonnere, gottar du vår personvernserklæring og gir samtykke
+                        til å motta oppdateringer fra selskapet vårt.
+                    </p>
                 </article>
-                <article id="sko_pris_kjøp">
-                    <h3>kr 999,-</h3>
-                    <button>Legg i handlekurv</button>
+                <article id="snarveier_footer">
+                    <nav>
+                        <h3>Snarveier</h3>
+                        <ul>
+                            <li><a href="#">Min side</a></li>
+                            <li><a href="#">Ordreoversikt</a></li>
+                            <li><a href="#">Gavekort</a></li>
+                            <li><a href="#">Retur</a></li>
+                            <li><a href="#">Kontakt oss</a></li>
+                            <li><a href="#">Om oss</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <h3>Informasjon</h3>
+                        <ul>
+                            <li><a href="#">Spørsmål og svar</a></li>
+                            <li><a href="#">Reklamasjon og garanti</a></li>
+                            <li><a href="#">Åpenhetsloven</a></li>
+                            <li><a href="#">Personopplysninger</a></li>
+                            <li><a href="#">Salgsbetingelser</a></li>
+                            <li><a href="#">Nye produkter</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <h3>Følg oss</h3>
+                        <ul>
+                            <li><a href="#">TikTok</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">YouTube Shorts</a></li>
+                        </ul>
+                    </nav>
                 </article>
             </section>
-        </main>
+            <hr>
+            <section id="copyright_settings_footer">
+                <article id="copyright_footer">
+                    <p>2023 TrendyWear. Alle rettigheter reservert</p>
+                </article>
+                <article id="settings_footer">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookies Settings</a></li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
 
 
 
@@ -173,7 +511,7 @@
         }
 
     </script>
-    <script> /*Hentet fra Chat GPT den 18.10.23*/ /*Spurte om responsiv knapp for brukerinput*/
+    <script> /*Hentet fra Chat GPT den 19.10.23*/ /*Spurte om responsiv knapp for brukerinput*/
         const button1 = document.getElementById("knapp1");
         const button2 = document.getElementById("knapp2");
         const button3 = document.getElementById("knapp3");
@@ -183,29 +521,22 @@
         const paragraf3 = document.getElementById("paragraf3");
 
         button1.addEventListener("click", function () {
-            if (paragraf1.style.display === "none") {
-                paragraf1.style.display = "block"; // Show the paragraph
-            } 
-            else {
-                paragraf1.style.display = "none"; // Hide the paragraph
-            }
-        button2.addEventListener("click", function () {     /* Gjentatt av GitHub Copilot*/
-            if (paragraf2.style.display === "none") {
-                paragraf2.style.display = "block"; // Show the paragraph
-            } 
-            else {
-                paragraf2.style.display = "none"; // Hide the paragraph
-            }
-        button3.addEventListener("click", function () {     /* Gjentatt av GitHub Copilot*/
-            if (paragraf3.style.display === "none") {
-                paragraf3.style.display = "block"; // Show the paragraph
-            } 
-            else {
-                paragraf3.style.display = "none"; // Hide the paragraph
-            }
+            toggleVisibility(paragraf1);
         });
+        button2.addEventListener("click", function () {
+            toggleVisibility(paragraf2);
         });
+        button3.addEventListener("click", function () {
+            toggleVisibility(paragraf3);
         });
+        function toggleVisibility(element) {
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+
     </script>
 
 </body>

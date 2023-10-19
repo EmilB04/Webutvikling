@@ -66,6 +66,7 @@ body {
     width: auto;
     margin: 0 2%;
 }
+
 #mobilNav ul {
     display: flex;
     flex-wrap: nowrap;
@@ -76,22 +77,27 @@ body {
     padding: 0;
     align-self: baseline;
 }
-#mobilnav ul li {
+
+#mobilNav ul li {
     padding: 0;
     margin: 0;
 }
+
 #mobilNav ul li a {
     text-decoration: none;
     color: black;
 }
-header i{
+
+header i {
     font-size: 2rem;
     margin-top: 10%;
 }
+
 #LOGO {
     font-size: 2rem;
     font-weight: 600;
 }
+
 header hr {
     padding: 0;
     height: 0.2rem;
@@ -99,6 +105,7 @@ header hr {
     background-color: black;
     border-radius: 20px;
 }
+
 
 #hovedbilde {
     position: relative;
@@ -403,8 +410,11 @@ figcaption>a {
     overflow: hidden;
 }
 #hovedBilde img {
-    height: 350px;
+    min-height: 350px;
+    max-height: 500px;
+    height: 100%;
     width: 100%;
+
 }
 #hovedBilde button.prev, button.next {
     position: absolute;
@@ -749,6 +759,10 @@ figcaption>a {
 
     /*------Kategoriside------*/
 
+    #brødsmuleMeny {
+        margin: 2rem 0 1rem 0 ;
+}
+
     /*Filter og sorteringsknapper*/
     #filter_sorter{
         display: flex;
@@ -812,5 +826,68 @@ figcaption>a {
     #filter_desktop ul li + li { /*Hentet fra Chat GPT 16.10.23*/  /* Spurte om å få skiller mellom li elementene*/
     border-top: 1px solid #858585;
     padding-top: 1rem; 
-}
+    }
+
+    /*-------- Produkt side ---------*/
+    #mobil_tilpass_kjøp{
+        display: none;
+    }
+
+    #desktop_produkt_flex{
+        display: flex;
+        margin: 0 2%;
+    }
+
+    #hovedBilde {
+        width: 55%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #produkt_info_punkter{
+        margin: 0% 2%;
+        display: flex;
+        white-space: nowrap;
+        justify-content: space-around;
+        background-color: #858585;
+    }
+    .nedtrekksMeny{
+        padding: 0.5rem;
+        margin: 0;
+        border: none !important;
+        width: 29vw;
+    }
+
+    .nedtrekksKnapp > h3, .nedtrekksKnapp > button{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .nedtrekksKnapp button{
+        background-color: transparent;
+        border: transparent;
+        margin-right: 2%;
+        padding: 10px;
+    }
+    .nedtrekksKnapp button:hover{
+        cursor: pointer;
+    }
+    .nedtrekk_paragraf{
+        margin: 0 0 0 0%;
+        font-size: 1rem;
+        display: none;
+    }
+    .nedtrekk_paragraf ul{
+        padding: 0;
+    }
+    .nedtrekk_paragraf li{
+        list-style: square;
+        white-space: wrap;
+        margin-left: 4%;
+    }
+
+
+
+
+
+
 }
