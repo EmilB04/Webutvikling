@@ -63,9 +63,9 @@
         </header>
 
         <main>
-            <section id="desktop_produkt_flex"">
+            <section id="desktop_produkt_flex">
                 <section id="hovedBilde">
-                    <div class="slider">
+                    <span class="slider">
                         <picture class="slide">
                             <img src="img/index/main/main_shoe1.jpg" alt="">
                         </picture>
@@ -75,7 +75,7 @@
                         <picture class="slide">
                             <img src="img/index/main/main_shoe1.jpg" alt="">
                         </picture>
-                    </div>
+                    </span>
                     <button class="prev" onclick="changeSlide(-1)">&#8249;</button> <!--"koden" til pilene er hentet fra Chat GPT 18.20.23-->
                     <button class="next" onclick="changeSlide(1)">&#8250;</button> <!--"koden" til pilene er hentet fra Chat GPT 18.20.23-->
                 </section>
@@ -86,8 +86,8 @@
                         <button>Størrelse</button>
                         <button>Farger</button>
                     </section>
-                    <section id="kjøp">
-                        <article id="sko_info">
+                    <section id="mobil_kjøp">
+                        <article id="mobil_sko_info">
                             <h3>Nike</h3>
                             <h4>Air Force</h4>
                         </article>
@@ -97,14 +97,22 @@
                         </article>
                     </section>
                 </section>
+
+
                 <section id="desktop_tilpass_kjøp">
-                    <article id="sko_info">
+                    <article id="desktop_sko_info">
                         <h3>Nike Air Force</h3>
                         <h4>Farge</h4>
-                        <h3>Pris: 999,-</h3>
+                        <article id="desktop_pris">
+                            <h3>Pris:</h3>
+                            <h4>999,-</h4>
+                        </article>
                     </article>
                     <section id="sko_farge">
-                        <h3>Farge: Lorem Ipsum</h3>
+                        <article>
+                            <h3>Farge:</h3>
+                            <h4>Lorem Ipsum</h4>
+                        </article>
                         <span></span>
                         <span></span>
                     </section>
@@ -477,7 +485,6 @@
                 </article>
             </section>
         </footer>
-
 
 
 
