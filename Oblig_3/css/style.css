@@ -888,10 +888,10 @@ figcaption>a {
         margin: 0;
         padding: 2%;
     }
-    #desktop_sko_info>h3{
+    #desktop_sko_info > h3{
         margin: 0;
         padding: 0;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     #desktop_sko_info>h4{
         margin: 0;
@@ -899,23 +899,100 @@ figcaption>a {
         font-size: 1.5rem;
         font-weight: normal;
     }
+
+
     #desktop_pris{
         display: flex;
         gap: 10px;
         font-size: 1.5rem; 
         padding: 0;
         margin: 0;
-        align-self: baseline;
+        align-items: baseline;
     }
-    #desktop_pris>h3{
+    #desktop_pris > h3{
         font-weight: 600;
+        font-size: 2rem;
     }
-    #desktop_pris>h4{
+    #desktop_pris > h4{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
         font-weight: normal;
     }
-    #sko_farge span{
+
+
+    #desktop_farge{
         display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
     }
+    #desktop_farge > h3{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+    #desktop_farge > h4{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    #desktop_sko_farger > section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+    }
+    #desktop_sko_farger span{
+        margin: 1% 0 0 2px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+    }
+    #desktop_sko_farger span:hover{
+        cursor: pointer;
+    }
+
+    #desktop_størrelse{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    #desktop_størrelse > h3{
+        font-size: 2rem;
+        padding: 0;
+        margin-bottom:  0;
+    }
+    #desktop_størrelse > h4{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    
+    #desktop_størrelser section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #desktop_størrelser span{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0 1px;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid black;
+    }
+
+    
 
 
 }
