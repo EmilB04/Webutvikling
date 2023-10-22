@@ -263,6 +263,9 @@ figcaption>a {
 #desktopFooter {
     display: none;
 }
+footer i {
+    color: white;
+}
 
 #mobilFooter {
     margin-top: 4%;
