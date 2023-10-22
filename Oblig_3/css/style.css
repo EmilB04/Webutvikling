@@ -915,6 +915,7 @@ footer i {
     #desktop_pris > h3{
         font-weight: 600;
         font-size: 2rem;
+        margin: 3% 0;
     }
     #desktop_pris > h4{
         font-size: 1.5rem;
@@ -936,6 +937,7 @@ footer i {
         font-size: 2rem;
         margin: 0;
         padding: 0;
+        margin: 3% 0;
     }
     #desktop_farge > h4{
         font-size: 1.5rem;
@@ -958,6 +960,7 @@ footer i {
     #desktop_sko_farger span:hover{
         cursor: pointer;
     }
+
 
     #desktop_størrelse{
         display: flex;
@@ -994,8 +997,27 @@ footer i {
         height: 2.5rem;
         border: 1px solid black;
     }
+    #desktop_størrelser span:hover{
+        cursor: pointer;
+    }
 
-    
+    #desktop_handlekurv_kjøp{
+        margin-top: 1%;
+        display: flex;
+        justify-content: left;
+        gap: 1rem;
+    }
+    #desktop_handlekurv_kjøp button{
+        padding: 0.5rem 1.5rem;
+        border-color: transparent;
+        background-color: black;
+        color: white;
+        width: 150px;
+        margin: 2% 0;
+    }
+    #desktop_handlekurv_kjøp button:hover{
+        cursor: pointer;
+    }
 
 
 }
