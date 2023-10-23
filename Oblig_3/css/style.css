@@ -229,7 +229,6 @@ header hr {
     font-size: 1rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    /* Legg til en bakgrunnsfarge for knappen */
 }
 figcaption>a {
     text-decoration: none;
@@ -238,7 +237,6 @@ figcaption>a {
 
 
 /*----------Bli medlem CONTENT----------*/
-/*FERDIG MOBIL*/
 #bliMedlem {
     width: 100%;
     margin-top: 4%;
