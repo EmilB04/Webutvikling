@@ -59,8 +59,9 @@ body {
     margin: auto !important;
 }
 /*----------HEADER CONTENT----------*/
-#desktopNav {
+#desktopNav{
     display: none;
+    z-index: 0;
 }
 #mobilNav {
     width: auto;
@@ -109,7 +110,7 @@ header hr {
 
 #hovedbilde {
     position: relative;
-    margin: 70px 2% 0 2%;
+    margin: 2% 2% 0 2%;
 }
 
 #hovedbilde img {
@@ -314,7 +315,7 @@ footer i {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 4rem 0 1rem 0 ;
+    margin: 1rem 0 1rem 0 ;
     padding: 0;
 }
 
@@ -343,7 +344,7 @@ footer i {
     background-color: black;
     color: white;
     width: 40%;
-    margin: 2rem 5%;
+    margin: 1rem 5%;
 }
 #filter_desktop, #filterMenyTekst{
     display: none;       
@@ -561,7 +562,7 @@ footer i {
     #mobilNav, #mobilFooter {
         display: none;
     }
-    #desktopNav {
+    #desktopNav, #desktopFooter {
         display: initial;
     }
     #desktopNav ul {
@@ -826,8 +827,8 @@ footer i {
         padding: 0;
     }
     #filter_desktop ul li + li { /*Hentet fra Chat GPT 16.10.23*/  /* Spurte om å få skiller mellom li elementene*/
-    border-top: 1px solid #858585;
-    padding-top: 1rem; 
+        border-top: 1px solid #858585;
+        padding-top: 1rem; 
     }
 
     /*-------- Produkt side ---------*/
@@ -843,7 +844,7 @@ footer i {
 
     #desktop_produkt_flex{
         display: flex;
-        margin: 0 2%;
+        margin: 2% 2% 0 2%;
     }
     #hovedBilde {
         width: 55%;
@@ -852,6 +853,7 @@ footer i {
     #hovedBilde img{
         width: 100%;
         max-height: 900px;
+        height: 100%;
     }
     #produkt_info_punkter{
         margin: 0% 2%;
