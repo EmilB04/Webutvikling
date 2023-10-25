@@ -1,0 +1,1017 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/*Importerer inn Roboto Font*/
+* {
+    box-sizing: border-box;
+}
+
+/*https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
+/*Hentet fra w3schools for å endre utseende på scrollefeltet */
+::-webkit-scrollbar {
+    width: 10px;}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    margin: 0 2%;}
+::-webkit-scrollbar-thumb {
+    background: #bbb;}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;}
+
+/*---------------------------------------------------------------*/
+.flexbox_standard { /*Brukes flere steder*/
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll; /*Lar brukeren scrolle gjennom flere sko*/
+    flex-wrap: nowrap;
+    flex-grow: 2;
+}
+
+.flexbox_center { /*Brukes flere steder*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+/*---------------------------------------------------------------*/
+#grid_container{
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(1em + 1vw);
+    padding: 0;
+    min-width: none !important;
+    max-width: 2200px !important;
+    width: 100% !important;
+    margin: auto !important;
+}
+/*----------HEADER CONTENT----------*/
+#desktopNav{
+    display: none;
+    z-index: 0;
+}
+#mobilNav {
+    width: auto;
+    margin: 0 2%;
+}
+
+#mobilNav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-self: baseline;
+}
+
+#mobilNav ul li {
+    padding: 0;
+    margin: 0;
+}
+
+#mobilNav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header i {
+    font-size: 2rem;
+    margin-top: 10%;
+}
+
+#LOGO {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header hr {
+    padding: 0;
+    height: 0.2rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+#hovedbilde {
+    position: relative;
+    margin: 2% 2% 0 2%;
+}
+
+#hovedbilde img {
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+}
+
+#hovedbilde h1 {
+    font-size: 6vw;
+    text-align: right;
+    width: 53%;
+    position: absolute;
+    margin: 2%;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(39, 39, 39, 0.7);
+    color: #fff;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#hovedbilde a {
+    position: absolute;
+    padding: 2vw 4vw;
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 15px;
+    border-color: transparent;
+    z-index: 1;
+    top: 20vw;
+    right: 10vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vw;
+    color: black;
+}
+
+/*----------MAIN CONTENT----------*/
+.horisontale_utstillinger>h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bildeRamme {
+    margin: 0 0 2% 2%;
+    padding: 0 0 2rem 0;
+    min-width: 170px;
+    min-height: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
+}
+
+.bildeRamme:last-child { /*Lager litt luft mellom siste element på scrollbaren og kanten av nettsiden*/
+    margin-right: 2%;
+}
+.bildeRamme a {
+    text-decoration: none;
+    color: black;
+}
+.bildeUtstilling {
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 6px 6px 0 0;
+}
+.skoMerke {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.2rem 0 0 0;
+    margin: -0.4rem 0 0 2%;
+}
+.skoType {
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 0% 2%;
+}
+
+/*----------Avdeling CONTENT----------*/
+/*FERDIG MOBIL*/
+#velg_avdeling>h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.avdeling_boks {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 40%;
+    height: auto;
+}
+
+.avdeling_boks img {
+    min-height: 250px;
+    max-height: 1000px;
+    min-width: 200px;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.avdeling_boks figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+figcaption>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*----------Bli medlem CONTENT----------*/
+#bliMedlem {
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    height: auto;
+    background-color: #858585;
+    padding: 2% 0;
+    text-align: center;
+    color: white;
+}
+#bliMedlem button {
+    border-radius: 10px;
+    padding: 1vw;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    width: 40%;
+    margin: auto auto 2% auto;
+}
+
+/*----------Footer CONTENT----------*/
+#desktopFooter {
+    display: none;
+}
+footer i {
+    color: white;
+}
+
+#mobilFooter {
+    margin-top: 4%;
+    width: 100%;
+    height: auto;
+    background-color: #858585;
+}
+
+#mobilFooter .undertittel_footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.undertittel_footer hr {
+    background-color: white;
+    border-color: transparent;
+    margin: 36px 10px;
+    height: 0px;
+    width: 50%;
+}
+
+#mobilFooter .linker_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#mobilFooter .linker_footer>li {
+    list-style: none;
+    padding: 5% 0;
+}
+
+#mobilFooter .linker_footer li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem;
+}
+/*-----------------------------------------------*/
+/*------------------Kategori html----------------*/
+/*-----------------------------------------------*/
+
+#brødsmuleMeny {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 1rem 0 1rem 0 ;
+    padding: 0;
+}
+
+#brødsmuleHjem {
+    padding: 0 0 0 2% !important;
+}
+
+#brødsmuleMeny p, #brødsmuleMeny a {
+    padding-left: 1.5px;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+#filter_sorter>h2{
+    display: none;
+}
+#filter_sorter_knapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#filter_sorter_knapper>button {
+    padding: 0.5rem 1.5rem;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    width: 40%;
+    margin: 1rem 5%;
+}
+#filter_desktop, #filterMenyTekst{
+    display: none;       
+}
+#filterMenyTekst{
+    display: none !important;
+}
+
+/*----------MAIN CONTENT----------*/
+#skoUtstilling {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0%;
+}
+
+#skoUtstilling>a {
+    min-width: 150px;
+    max-width: 550px;
+    width: 45%;
+    text-decoration: none;
+    color: black;
+    margin: 1% 1%;
+}
+
+.pris {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 1% 0% 4% 2%;
+    margin: 0;
+}
+
+.skoRamme {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.skoRamme article {
+    background-color: white;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
+    border-radius: 0 0 6px 6px;
+    padding: 0;
+}
+
+.skoRamme img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.10);
+}
+
+/*------------------------------*/
+/*------ PRODUKT HTML ----------*/
+/*------------------------------*/
+
+/* Brødsmulemenyen ligger på kategori html*/
+
+#hovedBilde {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+#hovedBilde img {
+    min-height: 350px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+
+}
+#hovedBilde button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#hovedBilde button.prev {
+    left: 10px;
+}
+#hovedBilde button.next {
+    right: 10px;
+}
+#desktop_tilpass_kjøp{
+    display: none;
+}
+#tilpass{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-bottom: 1rem ;
+}
+#tilpass>h2{
+    flex-basis: 100%;
+    margin: 2% 0 4% 2%;
+}
+#tilpass>button{
+    flex-basis: 25%;
+    background-color: black;
+    color: white;
+    border: transparent;
+    padding: 0.5rem;
+    margin-left: 2%;
+}
+
+#produkt_info_punkter{
+    margin: 0% 2%;
+}
+.nedtrekksMeny{
+    padding: 0.5rem;
+    border-top: 2px solid black; 
+    color: black
+}
+.nedtrekksMeny:last-child{
+    border-bottom: 2px solid black;
+}
+.nedtrekksKnapp{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.nedtrekksKnapp > h3, .knapp{
+    font-size: 1.5rem;
+    margin: 0;
+    align-self: center; /*Sentrert basert på resten av teksten*/
+}
+.knapp{
+    background-color: transparent;
+    border: transparent;
+    margin-right: 2%;
+    padding: 10px;
+}
+.knapp:hover{
+    cursor: pointer;
+}
+.nedtrekk_paragraf{
+    margin: 0 0 0 2%;
+    font-size: 1rem;
+    display: none;
+}
+.nedtrekk_paragraf li{
+    list-style: square;
+}
+
+#mobil_kjøp{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 2%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    background-color: #dedede;
+}
+#mobil_sko_info{
+    display: flex;
+    flex-direction: column;
+}
+#mobil_sko_info>h3{
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+#mobil_sko_info>h4{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+#sko_pris_kjøp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sko_pris_kjøp>h3{
+    text-align: center;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+#sko_pris_kjøp>button{
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    background-color: black;
+    color: white;
+    border: transparent;
+}
+
+/*-----------------------*/
+/*--------Desktop--------*/
+/*-----------------------*/
+@media screen and (min-width: 950px) {
+    #grid_container{
+        display: grid;
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    body {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    /*------- HEADER ------*/
+    #mobilNav, #mobilFooter {
+        display: none;
+    }
+    #desktopNav, #desktopFooter {
+        display: initial;
+    }
+    #desktopNav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #toppBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 2%;
+        margin: 0;
+        width: 100%;
+        height: 5vh;
+        background-color: white;
+    }
+    #logo, header h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+    #søkeFelt {
+        display: flex;
+        align-items: center;
+        gap: 1%;
+        min-width: 50%;
+        max-width: 550px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border-color: transparent;
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.10);
+    }
+    #søkeFelt input {
+        padding: 0 0 0 1%;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-color: transparent;
+    }
+    #søkeFelt i {
+        font-size: 2rem;
+        height: auto;
+        margin: 0px 3px;
+    }
+
+    #mode_cart_profile ul:last-child {
+        margin-right: 10%;
+    }
+
+    #kategoriFelt ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    header i{
+        font-size: 2.5rem;
+        margin: 0% 1rem 0 1rem;
+    }
+
+    /*------- FOOTER --------*/
+    #desktopFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        padding: 2% 2% 0 2%;
+        margin: 5% 0 0 0;
+        width: 100%;
+        height: auto;
+        background-color: #858585;
+    }
+
+    #desktopFooter a,#desktopFooter p,#desktopFooter h2,#desktopFooter h3 {
+        color: white;
+    }
+    #innhold_footer {
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+    }
+    #kundeKlubb_footer {
+        width: 40%;
+    }
+    #kundeKlubb_footer>h2 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+    #kundeKlubb_footer>p {
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0;
+        max-width: 85%;
+    }
+    #kundeKlubb_footer>section {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        height: auto;
+    }
+    #kundeKlubb_footer>section>input {
+        padding: 1rem;
+        border: 1px solid black;
+        width: 65%;
+    }
+    #kundeKlubb_footer>section>button {
+        padding: 1rem;
+        margin-left: 1rem;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        min-width: 115px;
+        max-width: 150px;
+        width: auto;
+    }
+    #snarveier_footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 3%;
+        width: 60%;
+    }
+    #snarveier_footer>nav>h3 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+    #snarveier_footer ul {
+        padding: 0;
+        margin-top: 5%;
+    }
+    #snarveier_footer ul li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #snarveier_footer ul li a {
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    footer hr {
+        border-color: transparent;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+    }
+    #copyright_settings_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 2% 0;
+    }
+    #copyright_settings_footer ul li {
+        list-style: none;
+    }
+    #copyright_settings_footer ul li a {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    #copyright_footer p {
+        font-size: 1rem;
+        margin: 0;
+    }
+    #settings_footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /*------ INDEX ------*/
+    .bildeRamme {
+        margin: 0 0 2% 1%;
+    }
+    #hovedbilde {
+        margin-top: 2%;
+    }
+
+    /*------Kategoriside------*/
+
+    #brødsmuleMeny {
+        margin: 2rem 0 1rem 0 ;
+}
+
+    /*Filter og sorteringsknapper*/
+    #filter_sorter{
+        display: flex;
+        align-items: baseline;
+        justify-content: right;
+    }
+    #filterMenyTekst{
+        display: initial;
+        font-size: 2rem;
+        margin: 0 0 0 2%;
+        padding: 0;
+    }
+
+    #filter_sorter_knapper{
+        display: flex;
+        gap: 1rem;
+    }
+
+    #filter_sorter_knapper>button{
+        padding: 0.5rem 1.5rem;
+        border-color: transparent;
+        background-color: black;
+        color: white;
+        width: 150px;
+        margin: 2% 0;
+    }
+    #filter_sorter_knapper>button:last-child{
+        margin-right: 20%;
+    }
+    #filterKnapp:hover{
+        cursor: pointer;
+    }
+
+    /*MAIN OG ASIDE*/
+    
+    #kategori_aside_main{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0%;
+    }
+    #filter_desktop{
+        margin: 0 0 0 2%;
+        width: 20%;
+        display: block;
+    }
+    #filter_desktop ul{
+        margin: 0;
+        padding: 0;
+    }
+    #filter_desktop ul li{
+        list-style: none;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        white-space: nowrap; /*Hentet fra Chat GPT 16.10.23*/ /* Spurte om å få all tekst på én linje*/
+    }
+    #filter_desktop hr{
+        border: 1px solid #858585;
+        margin: 0;
+        padding: 0;
+    }
+    #filter_desktop ul li + li { /*Hentet fra Chat GPT 16.10.23*/  /* Spurte om å få skiller mellom li elementene*/
+        border-top: 1px solid #858585;
+        padding-top: 1rem; 
+    }
+
+    /*-------- Produkt side ---------*/
+    #mobil_tilpass_kjøp{
+        display: none;
+    }
+    #desktop_tilpass_kjøp{
+        width: 45%;
+        margin: 0 0 0.5% 0;
+        display: initial;
+        background-color: #dedede;
+    }
+
+    #desktop_produkt_flex{
+        display: flex;
+        margin: 2% 2% 0 2%;
+    }
+    #hovedBilde {
+        width: 55%;
+        height: 100%;
+    }
+    #hovedBilde img{
+        width: 100%;
+        max-height: 900px;
+        height: 100%;
+    }
+    #produkt_info_punkter{
+        margin: 0% 2%;
+        display: flex;
+        white-space: nowrap;
+        justify-content:space-around;
+        background-color: #858585;
+    }
+    .nedtrekksMeny{
+        padding: 0.5rem;
+        margin: 0;
+        border: none !important;
+        max-width: 29vw;
+        color: white;
+    }
+    .knapp{
+        color: white;
+    }
+    .nedtrekksKnapp > h3, .nedtrekksKnapp > button{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .nedtrekk_paragraf ul{
+        padding: 0;
+    }
+    .nedtrekk_paragraf li{
+        list-style: square;
+        white-space: wrap;
+        margin-left: 4%;
+    }
+
+    #desktop_tilpass_kjøp{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 2%;
+    }
+    #desktop_sko_info > h3{
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
+    }
+    #desktop_sko_info>h4{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+
+    #desktop_pris{
+        display: flex;
+        gap: 10px;
+        font-size: 1.5rem; 
+        padding: 0;
+        margin: 0;
+        align-items: baseline;
+    }
+    #desktop_pris > h3{
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 3% 0;
+    }
+    #desktop_pris > h4{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+
+    #desktop_farge{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    #desktop_farge > h3{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        margin: 3% 0;
+    }
+    #desktop_farge > h4{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    #desktop_sko_farger > section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+    }
+    #desktop_sko_farger span{
+        margin: 1% 0 0 2px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+    }
+    #desktop_sko_farger span:hover{
+        cursor: pointer;
+    }
+
+
+    #desktop_størrelse{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    #desktop_størrelse > h3{
+        font-size: 2rem;
+        padding: 0;
+        margin-bottom:  0;
+    }
+    #desktop_størrelse > h4{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    
+    #desktop_størrelser section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #desktop_størrelser span{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0 1px;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid black;
+    }
+    #desktop_størrelser span:hover{
+        cursor: pointer;
+    }
+
+    #desktop_handlekurv_kjøp{
+        margin-top: 1%;
+        display: flex;
+        justify-content: left;
+        gap: 1rem;
+    }
+    #desktop_handlekurv_kjøp button{
+        padding: 0.5rem 1.5rem;
+        border-color: transparent;
+        background-color: black;
+        color: white;
+        width: 150px;
+        margin: 2% 0;
+    }
+    #desktop_handlekurv_kjøp button:hover{
+        cursor: pointer;
+    }
+}
