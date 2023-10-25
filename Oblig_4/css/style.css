@@ -139,7 +139,8 @@ header hr {
     border-color: transparent;
     z-index: 1;
     top: 20vw;
-    right: 10vw;
+    right: 2%;
+    width: 40%;
     text-decoration: none;
     text-align: center;
     font-size: 3vw;
