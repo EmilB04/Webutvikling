@@ -7,51 +7,9 @@
     <link href="css/ikoner/css/brands.css" rel="stylesheet">
     <link href="css/ikoner/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/analyseStil.css">
     <title>Analyseside for TrendyWear</title>
 </head>
-    <style>
-        main{
-            margin: 0 2%;
-        }
-        main>h1{
-            text-align: center;
-            font-size: 3rem;
-        }
-        main>section{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        main>section>h2{
-            flex-basis: 100%;
-            font-size: 2rem;
-        }
-        main>section>article{
-            flex-basis: 50%;
-            text-align: center;
-            
-        }
-        main>section h3{
-            font-weight: normal;
-            font-weight: 600;
-            font-size: 1.5rem;
-            background-color: rgb(222, 222, 222);
-            padding: 2% 0;
-            margin: 0 0 2% 0;
-        }
-        main li, main ul{
-            list-style: none;
-            padding: 2% 0;
-            margin: 0;
-            font-size: 1.5rem;
-            background-color: rgb(222, 222, 222);
-        }
-        main article p{
-            background-color: rgb(222, 222, 222);
-            margin: 0;
-            padding: 4% 0;
-            font-size: 1.5rem;
-        }
-    </style>
 
 <body>
     <div id="grid_container-">
@@ -104,7 +62,7 @@
 
         <main>
             <h1>Analyseside for TrendyWear</h1>
-            <section>
+            <section id="google_trends">
                 <h2>Nøkkelord undersøkelse - Google Trends</h2>
                 <article>
                     <h3>Resultater - 30 siste dager</h3>
@@ -126,6 +84,41 @@
                     <p>Forklar hvorfor disse ble valgt ut</p>
                 </article>
             </section>
+            <section id="SEO_analyse">
+                <h2>SEO analyse - Lighthouse</h2>
+                <article>
+                    <h3>Index</h3>
+                    <picture class="SEO_bilder">
+                        <img src="img/analyse/Lighthouse/SEO_index.png" alt="SEO analyse fra Lighthouse for index-siden">
+                    </picture>
+                    <p class="beskrivende_tekst">Bildet over er fra SEO analysen av Lighthouse. Analysen er foretatt av index-siden og kom tilbake med få feil</p>
+                </article>
+                <article>
+                    <h3>Kategoriside</h3>
+                    <picture class="SEO_bilder">
+                        <img src="img/analyse/Lighthouse/SEO_Kategori.png" alt="SEO analyse fra Lighthouse for kategorisiden">
+                    </picture>
+                </article>
+                <article>
+                    <h3>Produktside</h3>
+                    <picture class="SEO_bilder">
+                        <img src="img/analyse/Lighthouse/SEO_Produkt.png" alt="SEO analyse fra Lighthouse for produktsiden">
+                    </picture>
+                </article>
+            </section>
+            <section id="UU_analyse">
+                <!--TOM-->
+            </section>
+            <section id="chatGPT_resultater">
+                <!--TOM-->
+            </section>
+            <section id="resultat_tabell">
+                <!--TOM-->
+            </section>
+            <section id="liste_m_tiltak">
+                <!--TOM-->
+            </section>
+
         </main>
 
 
