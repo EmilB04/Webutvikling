@@ -1,57 +1,70 @@
+
 main{
-            margin: 0 2%;
-        }
-        main>h1{
-            text-align: center;
-            font-size: 3rem;
-        }
-        main>section>article{
-            flex-basis: 50%;
-            text-align: center;
-            
-        }
-        h3{
-            font-weight: normal;
-            font-weight: 600;
-            font-size: 1.5rem;
-            background-color: rgb(222, 222, 222);
-            padding: 2% 0;
-            margin: 2% 0;
-        }
-        main li, main ul{
-            list-style: none;
-            padding: 2% 0;
-            margin: 0;
-            font-size: 1.5rem;
-            background-color: rgb(222, 222, 222);
-        }
-        main p{
-            background-color: rgb(222, 222, 222);
-            margin: 0;
-            padding: 4% 0;
-            font-size: 1.5rem;
-        }
+    margin: 0 2%;
+    max-width: 2200px;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+    flex-basis: 100%;
+}
+h3{
+    font-weight: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: rgb(222, 222, 222);
+    padding: 2% 0;
+    margin: 2% 0;
+}
+main>section>article{
+    flex-basis: 50%;
+    text-align: center;
+}
+main li, main ul{
+    list-style: none;
+    padding: 2% 0;
+    margin: 0;
+    font-size: 1.5rem;
+    background-color: rgb(222, 222, 222);
+}
+#google_trends{
+    display: flex;
+    flex-wrap: wrap;
+}
+.SEO_bilder{
+    width: 100%;
+    height: auto;
+}
+.SEO_bilder > img {
+    margin: 0;
+    padding: 0;
+    width: 96%;
+    height: 70%; 
+    object-fit:fill;
+}
+.beskrivende_tekst{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 96%;
+    margin: 20px 0 0 2%;
+    background-color: rgb(222, 222, 222);
+    padding: 2% 0;
+}
 
-
-        #google_trends{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        #google_trends h2{
-            flex-basis: 100%;
-            font-size: 2rem;
-        }
-
-        .SEO_bilder{
-            display: flex;
-            justify-content: center;
-            width: 70%;
-            margin: 0 auto;
-        }
-        .SEO_bilder>img{
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: auto;
-        }
-        
+.flex_nowrap_center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .flex_nowrap_center {
+        flex-wrap: nowrap;
+    }
+}
+.flex_row_wrap h3{
+    flex-basis: 100%;
+}
