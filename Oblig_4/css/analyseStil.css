@@ -3,23 +3,24 @@ main{
     margin: 0 2%;
     max-width: 2200px;
 }
-h1{
+main h1{
     text-align: center;
     font-size: 3rem;
 }
-h2{
+main h2{
     font-size: 2rem;
     flex-basis: 100%;
 }
-h3{
+main h3{
     font-weight: normal;
     font-weight: 600;
     font-size: 1.5rem;
-    background-color: rgb(222, 222, 222);
+    background-color: #000;
+    color: white;
     padding: 2% 0;
     margin: 2% 0;
 }
-main>section>article{
+#google_trends>article{
     flex-basis: 50%;
     text-align: center;
 }
@@ -40,6 +41,7 @@ main li, main ul{
     justify-content: center;
     width: 100%;
     margin: 0 auto;
+    
 }
 
 .SEO_bilder > img {
@@ -47,6 +49,7 @@ main li, main ul{
     padding: 0;
     width: 100%; 
     height: auto;
+    border-radius: 10px;
 }
 
 .beskrivende_tekst {
@@ -56,23 +59,24 @@ main li, main ul{
     margin: 10px 0;
     background-color: rgb(222, 222, 222);
     padding: 2% 0;
+    border-radius: 10px;
 }
 
-.flex_nowrap_center {
+.flex_center {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
 @media screen and (min-width: 768px) {
-    .flex_nowrap_center {
+    .flex_center {
         flex-wrap: nowrap;
     }
     .beskrivende_tekst {
         width: 96%; /* Adjust width as needed for larger screens */
         margin-left: 2%;
     }
-}
-.flex_row_wrap h3{
-    flex-basis: 100%;
+    .SEO_bilder {
+        width: 96%;
+    }
 }
