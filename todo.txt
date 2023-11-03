@@ -1,0 +1,9 @@
+Dette må ordnes på:
+
+ALLE NETTSIDENE:
+- Ordne meta description
+
+
+
+INDEX:
+- Fikse "label" på <input> / inntastingsfelt
