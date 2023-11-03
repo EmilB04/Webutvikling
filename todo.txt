@@ -4,6 +4,8 @@ ALLE NETTSIDENE:
 - Ordne meta description
 
 
-
+---- DESKTOP ----
 INDEX:
-- Fikse "label" på <input> / inntastingsfelt
+- Fikse "label" til <input> / inntastingsfelt
+- Fikse farger i footer
+- Bytte ut "p" i bli medlem til en h-tagg
