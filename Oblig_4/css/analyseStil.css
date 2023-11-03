@@ -6,6 +6,7 @@ main{
 main h1{
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 5rem;
 }
 main h2{
     font-size: 2rem;
@@ -21,11 +22,8 @@ main h3{
     margin: 2% 0;
 }
 article{
-    flex-basis: 50%;
-}
-#google_trends{
-    display: flex;
-    flex-wrap: wrap;
+    flex-basis: 49%;
+    text-align: center;
 }
 
 main li, main ul{
@@ -35,19 +33,14 @@ main li, main ul{
     font-size: 1.5rem;
     background-color: rgb(222, 222, 222);
 }
-.flex_center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
+
 .SEO_bilder {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    
 }
+
 .SEO_bilder > img {
     margin: 0;
     padding: 0;
@@ -62,15 +55,22 @@ main li, main ul{
     width: 100%; 
     margin: 10px 0;
     background-color: rgb(222, 222, 222);
-    padding: 2% 0;
+    padding: 2%;
     border-radius: 10px;
 }
-@media screen and (min-width: 768px) {
-    .flex_center {
-        flex-wrap: nowrap;
+
+.flex_center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+@media screen and (max-width: 950px) {
+    article{
+        flex-basis: 100%;
     }
     .beskrivende_tekst {
-        width: 96%; /* Adjust width as needed for larger screens */
+        width: 96%; 
         margin-left: 2%;
     }
     .SEO_bilder {
