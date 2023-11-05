@@ -88,7 +88,10 @@
                 </section>
             </section>
             <section id="SEO_analyse">
-                <h2>SEO analyse - Lighthouse</h2>
+                <div class="goTo">
+                    <h2>SEO analyse - Lighthouse</h2>
+                    <a href="#SEO_OPPSUMMERING">Gå til oppsumering av SEO</a>
+                </div>
                 <section class="flex_center"> <!--INDEX-->
                     <article>
                         <h3>Index - Desktop</h3>
@@ -167,7 +170,7 @@
                         </p>
                     </article>
                 </section>
-                <section> <!--OPPSUMMERING-->
+                <section id="SEO_OPPSUMMERING"> <!--OPPSUMMERING-->
                     <article>
                         <h3>Oppsummering av SEO analyse fra Lighthouse</h3>
                         <p class="beskrivende_tekst">
@@ -260,11 +263,16 @@
                 </section>
             </section>
             <section id="chatGPT_resultater">
+                <div class="goTo">
                 <h2>SEO og UU perspektiv - Chat GPT</h2>
+                <a href="#CHATGPT_LØSNING">Gå til Chat GPT sine løsninger</a>
+                </div>
                 <section> <!--INDEX-->
                     <article>
-                        <h3>Index - Desktop</h3>
+                        <h3>Index</h3>
                         <p class="beskrivende_tekst">
+                            <strong>Spørsmål til Chat GPT:</strong>
+                            <br>
                             Ettersom jeg ikke fikk ønsket tilbakemelding måtte jeg stille to spørsmål før jeg fikk ønsket tilbakemelding.
                             <br>
                             Denne tilbakemeldingen fikk jeg da jeg skrev inn følgende spørsmål:
@@ -274,9 +282,9 @@
                             "Kan du gi konkrete tilbakemeldinger til koden jeg har vist til?"
 
                             <span class="deler"></span>
-                            Universell utforming (UU)
+                            <strong>Universell utforming (UU)</strong>
 
-                            <br><br>1. Bildetags (alt-attributter): Du har inkludert alt-attributter for bildene dine, som er viktig for å gi beskrivelser av
+                            <br>1. Bildetags (alt-attributter): Du har inkludert alt-attributter for bildene dine, som er viktig for å gi beskrivelser av
                             bildene for personer med funksjonshemninger som er avhengige av skjermlesere.
                         
                             <br><br>2. Meta viewport tag: Du har inkludert et meta viewport-tag, som er viktig for å sikre at nettstedet ditt er responsivt og
@@ -296,9 +304,9 @@
                             tilgjengelighet for brukere med funksjonshemninger.
 
                             <span class="deler"></span>
-                            Search Engine Optimalization (SEO)
+                            <strong>Search Engine Optimalization (SEO)</strong>
 
-                            <br><br>1. Tittel: Tittelen på nettsiden din "Trendy og stilfulle sko for ungdom - TrendyWear" ser ut til å være relevant for
+                            <br>1. Tittel: Tittelen på nettsiden din "Trendy og stilfulle sko for ungdom - TrendyWear" ser ut til å være relevant for
                             innholdet på siden.
 
                             <br><br>2. Meta-beskrivelse: Det er viktig å inkludere en relevant og beskrivende meta-beskrivelse for å oppmuntre brukere til å
@@ -322,8 +330,81 @@
 
                             <span class="deler"></span>
 
-                            <!--Sammendrag og/eller kommentarer til chat her-->
+                            <strong>Oppsummering</strong>
+                            
+                            <br>
+                            Samlet sett sier Chat GPT at mye innholdet på nettsiden er veldig bra.
+                            Det som blir påpekt er mye av det samme som Lighthouse og Webaim.
+                            Det blir sagt at det mangler en meta description, og at det er viktig å ha en beskrivende tekst for bildene.
+                            Noe annet som også blir sagt er bruken "Klikk her". Dette ble påpekt i forelesning av Ann-Charlott, og også av Chat GPT her.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Kategoriside</h3>
+                        <p class="beskrivende_tekst">
+                            <strong>Spørsmål til Chat GPT:</strong>
+                            <br>
+                            Jeg tok utgangspunktet i forrige forspørel om index-siden og spurte derfor om den kunne gjøre samme vurdering på en annen kode.
+                            <br>
+                            Denne tilbakemeldingen fikk jeg da jeg skrev inn følgende spørsmål:
+                            <br><br>
+                            Kan du vurdere denne koden på samme måte som forrige vedlagte kode?
 
+                            <span class="deler"></span>
+                            <strong>Universell utforming (UU)</strong>
+                            
+                            <br><br>1. Språkangivelse: Du har satt et lang-attributt på "html"-elementet for å angi språket som brukes på siden. Dette er
+                            viktig for tilgjengelighet og oversettelsesverktøy.
+                            
+                            <br><br>2. Bildetekster: Du har inkludert alt-attributter på bildene, noe som er bra for skjermlesere og for folk med nedsatt syn.
+                            Det er imidlertid viktig å sørge for at disse teksten gir meningsfulle beskrivelser av bildene, ikke bare gjentar
+                            informasjonen som allerede er synlig.
+                            
+                            <br><br>3. Håndterbarhet: Koden ser ryddig og organisert ut, og det er få unødvendige elementer eller attributter. Dette er bra for
+                            å opprettholde en god tilgjengelighet.
+                            
+                            <br><br>4. Navigasjon: Nettstedet har en tydelig og konsistent navigasjon i form av menyelementer og linker til forskjellige deler
+                            av nettstedet.
+                            
+                            <br><br>5. **Kontrast: **Sikre at tekst og bakgrunn har god kontrast for bedre lesbarhet, spesielt viktig for personer med nedsatt
+                            syn. Dette må sjekkes i dine egne CSS-stiler, spesielt hvis du tilpasser farger.
+                            
+                            <span class="deler"></span>
+                            <strong>Søkemotoroptimalisering (SEO)</strong>
+                            
+                            <br><br>1. Tittel: Du har inkludert en "title"-tagg, som er viktig for SEO. Søkemotorer bruker tittelen til å vise i
+                            søkeresultater.
+                            
+                            <br><br>2. Lenker: Det er mange lenker på siden, og du bruker "a"-elementer med gode ankertekster. Ankertekster bør være
+                            beskrivende og relatert til lenkens mål.
+                            
+                            <br><br>3. Bildeoptimalisering: Du har brukt "img"-elementer med alt-attributter, som nevnt tidligere. Også vurder å
+                            inkludere relevante filnavn og bildetekster for ytterligere SEO-fordeler.
+                    
+                            <br><br>4. Metabeskrivelser: Selv om det ikke er inkludert i HTML-koden, er metabeskrivelser viktige for SEO. Disse kan
+                            legges til i "head"-delen ved hjelp av "meta"-elementer. En god metabeskrivelse gir en kort oppsummering av hva siden handler om og kan øke
+                            sannsynligheten for høyere rangering i søkeresultater.
+                
+                            <br><br>5. Strukturert data: Bruk av strukturert data (for eksempel Schema.org-merking) kan hjelpe søkemotorer med å
+                            forstå innholdet på siden og gi bedre søkeresultater.
+                
+                            <br><br>6. Responsivt design: Et responsivt design som tilpasser seg ulike skjermstørrelser er viktig for SEO, da
+                            Google favoriserer mobilvennlige nettsteder.
+
+                            <span class="deler"></span>
+                            <strong>Oppsummering</strong>
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Produktside</h3>
+                        <p class="beskrivende_tekst">
+
+                        </p>
+                    </article>
+                    <article id="CHATGPT_LØSNING">
+                        <h3>Løsninger fra Chat GPT</h3>
+                        <p class="beskrivende_tekst">
+                            
                         </p>
                     </article>
                 </section>

@@ -73,6 +73,22 @@ main li, main ul{
     justify-content: space-between;
     text-align: center;
 }
+.goTo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.goTo > a {
+    background-color: darkgreen;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+    align-self: center;
+}
 @media screen and (max-width: 950px) {
     article{
         flex-basis: 100%;
@@ -83,5 +99,14 @@ main li, main ul{
     }
     .SEO_bilder {
         width: 96%;
+    }
+    .goTo{
+        display: flex;
+        flex-direction: column;
+    }
+    .goTo> a{
+        position: relative;
+        right: 0;
+        margin: 2% 0;
     }
 }
