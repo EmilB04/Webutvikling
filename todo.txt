@@ -2,6 +2,7 @@ Dette må ordnes på:
 
 ALLE NETTSIDENE:
 - Ordne meta description
+- Bedre "alt" beskriverlser til bilder
 
 
 ---- DESKTOP ----
