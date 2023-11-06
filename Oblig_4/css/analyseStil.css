@@ -90,6 +90,25 @@ main li:last-child{
     white-space: nowrap;
     align-self: center;
 }
+
+table{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table tr th{
+    border: 1px solid black;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.less_border{
+    background-color: lightgrey;
+    color: black;
+}
+
 @media screen and (max-width: 950px) {
     article{
         flex-basis: 100%;
