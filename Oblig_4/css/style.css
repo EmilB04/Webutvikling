@@ -259,22 +259,22 @@ figcaption>a {
 #desktopFooter {
     display: none;
 }
-footer i {
+footer i, footer {
     color: white;
 }
+
 
 #mobilFooter {
     margin-top: 4%;
     width: 100%;
     height: auto;
-    background-color: #858585;
+    background-color: #4D4D4D;
 }
 
 #mobilFooter .undertittel_footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    color: white;
 }
 
 .undertittel_footer hr {
@@ -283,6 +283,7 @@ footer i {
     margin: 36px 10px;
     height: 0px;
     width: 50%;
+    align-self: center;
 }
 
 #mobilFooter .linker_footer {
