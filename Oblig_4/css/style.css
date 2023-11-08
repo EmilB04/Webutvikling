@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    overflow: scroll; /*Lar brukeren scrolle gjennom flere sko*/
+    overflow: auto; /*Lar brukeren scrolle gjennom flere sko*/
     flex-wrap: nowrap;
     flex-grow: 2;
 }
@@ -240,7 +240,7 @@ figcaption>a {
     margin-top: 4%;
     margin-bottom: 2%;
     height: auto;
-    background-color: #858585;
+    background-color: #4D4D4D;
     padding: 2% 0;
     text-align: center;
     color: white;
