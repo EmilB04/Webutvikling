@@ -529,7 +529,7 @@
             </section>
         </footer>
     </div>
-    <script>
+    <script> // Hentet fra Chat GPT den 08.11.23 //Spurte om en hamburgermeny for mobil
         const openButton = document.getElementById('open_button');
         const closeButton = document.getElementById('close_button');
         const hamburgerMenu = document.getElementById('hamburger_menu');
@@ -542,14 +542,12 @@
             hamburgerMenu.style.display = 'none';
         });
 
-        // Close the menu when clicking outside of it
         document.addEventListener('click', (event) => {
             if (event.target !== hamburgerMenu && event.target !== openButton) {
                 hamburgerMenu.style.display = 'none';
         }
         });
 
-        // Prevent the menu from closing when clicking inside it
         hamburgerMenu.addEventListener('click', (event) => {
             event.stopPropagation();
         });
