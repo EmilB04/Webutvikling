@@ -63,14 +63,14 @@
             </section>
         </header>
         <main>
-            <section id="filter_sorter">
-                <h2 id="filterMenyTekst">Filtermeny</h2>
+            <section id="heading">
+                <h1 style="flex-basis: 90%; margin-left: 2%; ">Utforsk vår trendy samling</h1>
                 <section id="filter_sorter_knapper">
                     <button id="filterKnapp">Filter</button>
                     <button>Sorter</button>
                 </section>
             </section>
-        
+            
             <section id="kategori_aside_main">
                 <section id="skoUtstilling">
                     <a href="produkt.html">
@@ -316,16 +316,13 @@
 <script>/* Hentet inspirasjon fra Ann-Charlott sin forelesning 16.10.2023*/
     document.getElementById("filterKnapp").addEventListener("click", () => {
         let filterMeny = document.getElementById('filter_desktop');
-        let filterTekst = document.getElementById('filterMenyTekst');
         let knapper = document.getElementById('filter_sorter');
 
         if (filterMeny.style.display === "none" || filterMeny.style.display === "") {
             filterMeny.style.display = "block";
-            filterTekst.style.display = "block";
             knapper.style.justifyContent = "right";
         } else {
             filterMeny.style.display = "none";
-            filterTekst.style.display = "none";
             knapper.style.justifyContent = "right";
         }
     });
