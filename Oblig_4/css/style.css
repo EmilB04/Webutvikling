@@ -245,6 +245,9 @@ figcaption>a {
     text-align: center;
     color: white;
 }
+#bliMedlem h3{
+    font-size: 2rem;
+}
 #bliMedlem button {
     border-radius: 10px;
     padding: 1vw;
