@@ -89,6 +89,7 @@ main li:last-child{
     text-decoration: none;
     white-space: nowrap;
     align-self: center;
+    margin: 2% 0;
 }
 
 table{
@@ -96,6 +97,7 @@ table{
     justify-content: center;
     margin-bottom: 1rem;
     width: 100%;
+    font-size: 1.5rem;
 }
 
 table tr th{
@@ -111,8 +113,7 @@ table tr th{
     font-weight: 600;
 }
 
-#liste_m_tiltak  section{ 
-    font-style: "Arial", sans-serif;
+#liste_m_tiltak section{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,9 +151,6 @@ table tr th{
 
 
 
-
-
-
 @media screen and (max-width: 950px) {
     article{
         flex-basis: 100%;
@@ -171,6 +169,5 @@ table tr th{
     .goTo> a{
         position: relative;
         right: 0;
-        margin: 2% 0;
     }
 }
