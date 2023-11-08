@@ -330,9 +330,6 @@ footer i, footer {
     font-size: 1rem;
     color: black;
 }
-#filter_sorter>h2{
-    display: none;
-}
 #filter_sorter_knapper {
     display: flex;
     flex-direction: row;
@@ -444,7 +441,7 @@ footer i, footer {
     flex-wrap: wrap;
     padding-bottom: 1rem ;
 }
-#tilpass>h2{
+#tilpass>h1{
     flex-basis: 100%;
     margin: 2% 0 4% 2%;
 }
@@ -767,11 +764,12 @@ footer i, footer {
         margin: 2rem 0 1rem 0 ;
 }
 
-    /*Filter og sorteringsknapper*/
-    #filter_sorter{
+    /*tittel, filter og sorteringsknapper*/
+    #heading{
         display: flex;
         align-items: baseline;
         justify-content: right;
+        align-items: baseline
     }
     #filterMenyTekst{
         display: initial;
@@ -892,12 +890,12 @@ footer i, footer {
         margin: 0;
         padding: 2%;
     }
-    #desktop_sko_info > h3{
-        margin: 0;
+    #desktop_sko_info > h1{
         padding: 0;
+        margin: 0;
         font-size: 3rem;
     }
-    #desktop_sko_info>h4{
+    #desktop_sko_info>h2{
         margin: 0;
         padding: 0;
         font-size: 1.5rem;
