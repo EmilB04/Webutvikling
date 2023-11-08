@@ -10,3 +10,9 @@ INDEX:
 - Fikse "label" til <input> / inntastingsfelt
 - Fikse farger i footer                                 (DONE)
 - Bytte ut "p" i bli medlem til en h-tagg               (DONE)
+
+
+
+-- ANALYSE --
+
+- Hurtigknapper til forskjellige seksjoner
