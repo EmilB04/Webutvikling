@@ -55,7 +55,7 @@ main li:last-child{
     text-align: start;
     width: 100%; 
     margin: 10px 0;
-    background-color: rgb(222, 222, 222);
+    background-color: #E6E6E6;
     padding: 2%;
     border-radius: 10px;
 }
