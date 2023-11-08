@@ -1,7 +1,7 @@
 Dette må ordnes på:
 
 ALLE NETTSIDENE:
-- Ordne meta description
+- Ordne meta description                                (DONE)
 - Bedre "alt" beskriverlser til bilder
 
 

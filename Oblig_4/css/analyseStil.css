@@ -22,7 +22,7 @@ main h3{
     margin: 2% 0;
 }
 article{
-    flex-basis: 49%;
+    flex-basis: 100%;
     text-align: center;
 }
 
@@ -38,7 +38,7 @@ main li:last-child{
 .SEO_bilder {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 96%;
     margin: 0 auto;
 }
 
@@ -53,8 +53,8 @@ main li:last-child{
 .beskrivende_tekst {
     font-size: 1.5rem;
     text-align: start;
-    width: 100%; 
-    margin: 10px 0;
+    width: 96%; 
+    margin: 10px 0 0 2%;
     background-color: #E6E6E6;
     padding: 2%;
     border-radius: 10px;
@@ -77,7 +77,7 @@ main li:last-child{
 .goTo{
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
+    flex-direction: column;
 }
 
 .goTo > a {
@@ -98,19 +98,23 @@ table{
     margin-bottom: 1rem;
     width: 100%;
     font-size: 1.5rem;
+    white-space: wrap;
 }
 
 table tr th{
     border: 1px solid black;
     font-weight: normal;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 0.2rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    white-space: wrap;
 }
+
 .form_background{
     background-color: lightgrey;
     color: black;
     font-weight: 600;
+    white-space: wrap;
+    font-size: 1rem;
 }
 
 #liste_m_tiltak section{ 
@@ -124,11 +128,11 @@ table tr th{
 }
 
 #liste_m_tiltak section li { 
-    color: #4F4F4F; 
+    color: black; 
     padding-left: 16px;
     margin-top: 24px;
     position: relative;
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 20px;
     list-style:decimal
 }
@@ -139,9 +143,9 @@ table tr th{
     width: 42px;
     border-radius: 50%;
     border: 2px solid #ddd;
-    position: absolute; /* yeah, you have to manually position it based on the text size, line height, etc. (in the parent li style). it's not the smarest solution */
+    position: absolute; 
     top: -14px;
-    left: -35px;
+    left: -37px;
 }
 #liste_m_tiltak ol li:before { 
     border-color: #0BAD02; 
@@ -151,23 +155,44 @@ table tr th{
 
 
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 950px) {
     article{
-        flex-basis: 100%;
+        flex-basis: 49%;
     }
     .beskrivende_tekst {
-        width: 96%; 
-        margin-left: 2%;
+        width: 100%; 
+        margin-left: 0%;
     }
+    
+
     .SEO_bilder {
-        width: 96%;
+        width: 100%;
     }
     .goTo{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .goTo> a{
         position: relative;
         right: 0;
     }
+    table{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 100%;
+        font-size: 1.5rem 
+    }
+
+    table tr th{
+        border: 1px solid black;
+        font-weight: normal;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    } 
+    .form_background{
+        font-size: 2rem;
+    }    
+    
 }
