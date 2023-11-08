@@ -45,6 +45,10 @@ main{grid-area: main;}
 footer{grid-area: footer;}
 
 
+
+
+
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(1em + 1vw);
@@ -102,6 +106,43 @@ header hr {
     background-color: black;
     border-radius: 20px;
 }
+
+#hamburger_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 250px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#hamburger_menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+#hamburger_menu li {
+    padding: 10px;
+}
+#hamburger_menu li a {
+    text-decoration: none;
+    color: black;
+}
+#hamburger_menu li:active {
+    background-color: #f0f0f0;
+}
+#close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#open_button{
+    cursor: pointer;
+}
+
+
 
 
 #hovedbilde {

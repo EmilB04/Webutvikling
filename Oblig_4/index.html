@@ -19,7 +19,7 @@
         <header>
             <nav id="mobilNav">
                 <ul>
-                    <li><i class="fa-solid fa-bars"></i></li>
+                    <li><i class="fa-solid fa-bars" id="open_button"></i></li>
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>
                     <li id="LOGO"><a href="index.html">TrendyWear</a></li>
                     <li><i class="fa-solid fa-cart-shopping"></i></li>
@@ -27,6 +27,17 @@
                 </ul>
                 <hr>
             </nav>
+            <nav id="hamburger_menu">
+                <span id="close_button">X</span>
+                <ul>
+                    <li><a href="kategori.html">Herreavdeling</a></li>
+                    <li><a href="kategori.html">Dameavdeling</a></li>
+                    <li><a href="kategori.html">Barneavdeling</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="analyse.html">Analyseside</a></li>
+                </ul>
+            </nav>
+
             <nav id="desktopNav">
                 <section id="toppBar">
                     <h2><a href="index.html" id="logo">TrendyWear</a></h2>
@@ -518,5 +529,30 @@
             </section>
         </footer>
     </div>
+    <script>
+        const openButton = document.getElementById('open_button');
+        const closeButton = document.getElementById('close_button');
+        const hamburgerMenu = document.getElementById('hamburger_menu');
+
+        openButton.addEventListener('click', () => {
+            hamburgerMenu.style.display = 'block';
+        });
+
+        closeButton.addEventListener('click', () => {
+            hamburgerMenu.style.display = 'none';
+        });
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            if (event.target !== hamburgerMenu && event.target !== openButton) {
+                hamburgerMenu.style.display = 'none';
+        }
+        });
+
+        // Prevent the menu from closing when clicking inside it
+        hamburgerMenu.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+    </script>
 </body>
 </html>
