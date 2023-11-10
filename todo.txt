@@ -15,6 +15,7 @@ INDEX:
 
 PRODUKT:
 - Ordne opp i metadata error
+- Endre fargen på nedtrekk
 
 
 -- ANALYSE --
