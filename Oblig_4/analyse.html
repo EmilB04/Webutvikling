@@ -18,53 +18,54 @@
 <body>
     <div id="grid_container-">
         <header>
-            <nav id="mobilNav">
+            <nav id="mobilNav" aria-label="navigasjonselementer for mobil">
                 <ul>
-                    <li><i class="fa-solid fa-bars" id="open_button"></i></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li id="LOGO"><a href="index.html">TrendyWear</a></li>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-bars" id="open_button" aria-label="Åpne meny"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass" aria-label="Søk"></i></li>
+                    <li id="LOGO"><a href="index.html" aria-label="TrendyWear logo">TrendyWear</a></li>
+                    <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv"></i></li>
+                    <li><i class="fa-solid fa-user" aria-label="Brukerprofil"></i></li>
                 </ul>
                 <hr>
             </nav>
-            <nav id="hamburger_menu">
-                <span id="close_button">X</span>
+            
+            <nav id="hamburger_menu" aria-label="navigasjonsmeny for mobil">
+                <span id="close_button" aria-label="Lukk meny">X</span>
                 <ul>
-                    <li><a href="kategori.html">Herreavdeling</a></li>
-                    <li><a href="kategori.html">Dameavdeling</a></li>
-                    <li><a href="kategori.html">Barneavdeling</a></li>
-                    <li><a href="#">Om oss</a></li>
-                    <li><a href="analyse.html">Analyseside</a></li>
+                    <li><a href="kategori.html" aria-label="Herreavdeling">Herreavdeling</a></li>
+                    <li><a href="kategori.html" aria-label="Dameavdeling">Dameavdeling</a></li>
+                    <li><a href="kategori.html" aria-label="Barneavdeling">Barneavdeling</a></li>
+                    <li><a href="#" aria-label="Om oss">Om oss</a></li>
+                    <li><a href="analyse.html" aria-label="Analyseside">Analyseside</a></li>
                 </ul>
             </nav>
             
-            <nav id="desktopNav">
+            <nav id="desktopNav" aria-label="navigasjonsmeny og elementer for desktop">
                 <section id="toppBar">
-                    <h2><a href="index.html" id="logo">TrendyWear</a></h2>
-                    <span id="søkeFelt">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" name="search" placeholder="Hva leter du etter">
+                    <h2><a href="index.html" id="logo" aria-label="TrendyWear logo">TrendyWear</a></h2>
+                    <span id="søkeFelt" aria-label="Søkefelt">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="search" name="search" placeholder="Hva leter du etter" aria-label="Søk">
                     </span>
-                    <div id="mode_cart_profile">
+                    <div id="mode_cart_profile" aria-label="Interaktive knapper">
                         <ul>
-                            <li><i class="fa-solid fa-circle-half-stroke"></i></li>
-                            <li><i class="fa-solid fa-cart-shopping"></i></li>
-                            <li><i class="fa-solid fa-user"></i></li>
+                            <li><i class="fa-solid fa-circle-half-stroke" aria-label="Fargemodus"></i></li>
+                            <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv"></i></li>
+                            <li><i class="fa-solid fa-user" aria-label="Brukerprofil"></i></li>
                         </ul>
                     </div>
                 </section>
-                <section id="kategoriFelt">
+                <section id="kategoriFelt" aria-label="Kategorier">
                     <ul>
-                        <li><a href="kategori.html">Dame</a></li>
-                        <li><a href="kategori.html">Herre</a></li>
-                        <li><a href="kategori.html">Barn</a></li>
-                        <li><a href="kategori.html">Merker</a></li>
-                        <li><a href="#">Tilbehør</a></li>
-                        <li><a href="#">Klubbfordeler</a></li>
-                        <li><a href="#">Om oss</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="analyse.html">Analyse</a></li>
+                        <li><a href="kategori.html" aria-label="Dame">Dame</a></li>
+                        <li><a href="kategori.html" aria-label="Herre">Herre</a></li>
+                        <li><a href="kategori.html" aria-label="Barn">Barn</a></li>
+                        <li><a href="kategori.html" aria-label="Merker">Merker</a></li>
+                        <li><a href="#" aria-label="Tilbehør">Tilbehør</a></li>
+                        <li><a href="#" aria-label="Klubbfordeler">Klubbfordeler</a></li>
+                        <li><a href="#" aria-label="Om oss">Om oss</a></li>
+                        <li><a href="#" aria-label="Kontakt">Kontakt</a></li>
+                        <li><a href="analyse.html" aria-label="Analyse">Analyse</a></li>
                     </ul>
                 </section>
             </nav>
