@@ -34,6 +34,12 @@ main li{
 main li:last-child{
     padding: 0;
 }
+#hurtigKnapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 
 .SEO_bilder {
     display: flex;
@@ -78,6 +84,7 @@ main li:last-child{
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-basis: 100%;
 }
 
 .goTo > a {
@@ -87,10 +94,13 @@ main li:last-child{
     border-radius: 10px;
     font-size: 1.5rem;
     text-decoration: none;
-    white-space: nowrap;
     align-self: center;
     margin: 2% 0;
+    width: 100%;
+    text-align: center;
 }
+
+
 
 table{
     display: flex;
@@ -117,7 +127,7 @@ table tr th{
     font-size: 1rem;
 }
 
-#liste_m_tiltak section{ 
+#liste_m_tiltak article{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +137,7 @@ table tr th{
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
 }
 
-#liste_m_tiltak section li { 
+#liste_m_tiltak article li { 
     color: black; 
     padding-left: 16px;
     margin-top: 24px;
@@ -136,7 +146,7 @@ table tr th{
     line-height: 20px;
     list-style:decimal
 }
-#liste_m_tiltak section li:before {
+#liste_m_tiltak article li:before {
     content: '';
     display: block;
     height: 42px;
@@ -147,7 +157,7 @@ table tr th{
     top: -14px;
     left: -37px;
 }
-#liste_m_tiltak ol li:before { 
+#liste_m_tiltak article li:before { 
     border-color: #0BAD02; 
 }
 
@@ -177,6 +187,7 @@ table tr th{
     .goTo{
         display: flex;
         flex-direction: row;
+        flex-basis: auto;
     }
     .goTo> a{
         position: relative;
