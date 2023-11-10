@@ -3,6 +3,7 @@ Dette må ordnes på:
 ALLE NETTSIDENE:
 - Ordne meta description                                (DONE)
 - Bedre "alt" beskriverlser til bilder                  (DONE)
+- Legge til aria-label                                  (DONE)  
 
 
 ---- DESKTOP ----
@@ -15,4 +16,4 @@ INDEX:
 
 -- ANALYSE --
 
-- Hurtigknapper til forskjellige seksjoner
+- Hurtigknapper til forskjellige seksjoner              (DONE)
