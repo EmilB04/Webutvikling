@@ -16,7 +16,7 @@
 <body>
     <div id="grid_container">
         <header>
-            <nav id="mobilNav" aria-label="navigasjonselementer for mobil">
+            <nav id="mobilNav">
                 <ul>
                     <li><i class="fa-solid fa-bars" id="open_button" aria-label="Åpne meny"></i></li>
                     <li><i class="fa-solid fa-magnifying-glass" aria-label="Søk"></i></li>
@@ -27,7 +27,7 @@
                 <hr>
             </nav>
             
-            <nav id="hamburger_menu" aria-label="navigasjonsmeny for mobil">
+            <nav id="hamburger_menu">
                 <span id="close_button" aria-label="Lukk meny">X</span>
                 <ul>
                     <li><a href="kategori.html" aria-label="Herreavdeling">Herreavdeling</a></li>
@@ -38,7 +38,7 @@
                 </ul>
             </nav>
             
-            <nav id="desktopNav" aria-label="navigasjonsmeny og elementer for desktop">
+            <nav id="desktopNav">
                 <section id="toppBar">
                     <h2><a href="index.html" id="logo" aria-label="TrendyWear logo">TrendyWear</a></h2>
                     <span id="søkeFelt" aria-label="Søkefelt">
@@ -68,16 +68,16 @@
                 </section>
             </nav>
             <section id="brødsmuleMeny">
-                <p id="brødsmuleHjem"><a href="index.html">Hjem</a></p>
+                <p id="brødsmuleHjem" aria-label="Hjem"><a href="index.html">Hjem</a></p>
                 <p>/</p>
-                <p><a href="kategori.html">Kategori</a></p>
+                <p aria-label="Kategoriside"><a href="#">Kategori</a></p>
                 <p>/</p>
-                <p><a href="#">Produkt</a></p>
+                <p aria-label="nåværende side"><a href="#">Produkt</a></p>
             </section>
         </header>
 
         <main>
-            < id="desktop_produkt_flex">
+            <section id="desktop_produkt_flex">
                 <section id="hovedBilde" aria-label="Bilder av produktet">
                     <span class="slider">
                         <picture class="slide">
