@@ -106,23 +106,25 @@
                 <section id="desktop_produkt_flex">
                     <section id="hovedBilde" aria-label="Bilder av produktet">
                         <span class="slider">
-                            <picture class="slide" itemprop="associatedMedia">
+                            <picture class="slide" itemprop="associatedMedia" itemtype="https://schema.org/ImageObject">
                                 <img src="img/utstilling/Nike_Shoe_Row1.jpg" alt="Bilde 1 av skoen" itemprop="image">
-                                <meta itemprop="caption" content="Bilde 1 av skoen">
+                                <meta itemprop="name" content="skobilde">
+                                <meta itemprop="caption" content="bilde 1">
                             </picture>
-                            <picture class="slide" itemprop="associatedMedia">
+                            <picture class="slide" itemprop="associatedMedia" itemtype="https://schema.org/ImageObject">
                                 <img src="img/utstilling/Adidas_Shoe_Row1.jpg" alt="Bilde 2 av skoen" itemprop="image">
-                                <meta itemprop="caption" content="Bilde 2 av skoen">
+                                <meta itemprop="name" content="skobilde">
+                                <meta itemprop="caption" content="bilde 2">
                             </picture>
-                            <picture class="slide" itemprop="associatedMedia">
+                            <picture class="slide" itemprop="associatedMedia" itemtype="https://schema.org/ImageObject">
                                 <img src="img/utstilling/Reebok_Shoe_Row1.jpg" alt="Bilde 3 av skoen" itemprop="image">
-                                <meta itemprop="caption" content="Bilde 3 av skoen">
+                                <meta itemprop="name" content="skobilde">
+                                <meta itemprop="caption" content="bilde 3">
                             </picture>
                         </span>
                         <button class="prev" onclick="changeSlide(-1)" aria-label="Forrige bilde">&#8249;</button>
                         <button class="next" onclick="changeSlide(1)" aria-label="Neste bilde">&#8250;</button>
                     </section>
-                </section>
 
                     <section id="mobil_tilpass_kjøp" aria-label="Tilpass og kjøp seksjon for mobil">
                         <section id="tilpass" aria-label="Tilpass seksjon" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
@@ -161,6 +163,7 @@
                             <meta itemprop="priceCurrency" content="NOK">
                         </article>
 
+<!----------    ------------------------------------------------------------------------------------------------------------------------------------------->
                         <section id="desktop_sko_farger" aria-label="Farger"">
                             <article id="desktop_farge" aria-label="Farge" itemprop="name">
                                 <h3 itemprop="description">Farge:</h3>
@@ -247,176 +250,262 @@
                     </article>
                 </section>
             </div>
-<!----------------------------------------------------------------------------------------------------------------------------------------------------->
-            <section class="horisontale_utstillinger" itemscope itemtype="https://schema.org/Product">
-                <h2 itemprop="name">Utvalgte herresko</h2>
-                <section class="flexbox_standard" aria-label="område for skoutstilling">
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+            
+            <section class="horisontale_utstillinger">
+                <h2>Utvalgte herresko</h2>
+                <section class="flexbox_standard" aria-label="område for skoutstilling" itemprop="hasOfferCatalog">
+                    <meta itemprop="name" content="Utvalgte herresko">
+            
+                    <!-- Product 1 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
-                            <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke" itemprop="brand">Nike</h4>
-                            <h5 class="skoType" itemprop="model">Air Force</h5>
+                            <h5 class="skoType" itemprop="name">Air Force</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+            
+                    <!-- Product 2 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
-                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke" itemprop="brand">Adidas</h4>
-                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
+                            <h5 class="skoType" itemprop="name">VL Court 2.0</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+            
+                    <!-- Product 3 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
-                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke" itemprop="brand">Reebok</h4>
-                            <h5 class="skoType" itemprop="model">Nano X3</h5>
+                            <h5 class="skoType" itemprop="name">Nano X3</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    <!-- Product 1 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
-                            <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke" itemprop="brand">Nike</h4>
-                            <h5 class="skoType" itemprop="model">Air Force</h5>
+                            <h5 class="skoType" itemprop="name">Air Force</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 2 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
-                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke" itemprop="brand">Adidas</h4>
-                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
+                            <h5 class="skoType" itemprop="name">VL Court 2.0</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 3 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
-                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke" itemprop="brand">Reebok</h4>
-                            <h5 class="skoType" itemprop="model">Nano X3</h5>
+                            <h5 class="skoType" itemprop="name">Nano X3</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    <!-- Product 1 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
-                            <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke" itemprop="brand">Nike</h4>
-                            <h5 class="skoType" itemprop="model">Air Force</h5>
+                            <h5 class="skoType" itemprop="name">Air Force</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 2 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
-                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke" itemprop="brand">Adidas</h4>
-                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
+                            <h5 class="skoType" itemprop="name">VL Court 2.0</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 3 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
-                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke" itemprop="brand">Reebok</h4>
-                            <h5 class="skoType" itemprop="model">Nano X3</h5>
+                            <h5 class="skoType" itemprop="name">Nano X3</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
                 </section>
             </section>
-            <section class="horisontale_utstillinger" itemscope itemtype="https://schema.org/Product">
+            <section class="horisontale_utstillinger"">
                 <h2 itemprop="name">Utvalgte damesko</h2>
                 <section class="flexbox_standard" aria-label="område for skoutstilling">
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    <!-- Product 1 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
-                            <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke" itemprop="brand">Nike</h4>
-                            <h5 class="skoType" itemprop="model">Air Force</h5>
+                            <h5 class="skoType" itemprop="name">Air Force</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 2 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
-                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke" itemprop="brand">Adidas</h4>
-                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
+                            <h5 class="skoType" itemprop="name">VL Court 2.0</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 3 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
-                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke" itemprop="brand">Reebok</h4>
-                            <h5 class="skoType" itemprop="model">Nano X3</h5>
+                            <h5 class="skoType" itemprop="name">Nano X3</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    <!-- Product 1 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
-                            <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke" itemprop="brand">Nike</h4>
-                            <h5 class="skoType" itemprop="model">Air Force</h5>
+                            <h5 class="skoType" itemprop="name">Air Force</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 2 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
-                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke" itemprop="brand">Adidas</h4>
-                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
+                            <h5 class="skoType" itemprop="name">VL Court 2.0</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 3 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
-                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke" itemprop="brand">Reebok</h4>
-                            <h5 class="skoType" itemprop="model">Nano X3</h5>
+                            <h5 class="skoType" itemprop="name">Nano X3</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    <!-- Product 1 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
-                            <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke" itemprop="brand">Nike</h4>
-                            <h5 class="skoType" itemprop="model">Air Force</h5>
+                            <h5 class="skoType" itemprop="name">Air Force</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 2 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
-                            <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke" itemprop="brand">Adidas</h4>
-                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
+                            <h5 class="skoType" itemprop="name">VL Court 2.0</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
-                    <article class="bildeRamme" itemprop="isRelatedTo">
-                        <a href="produkt.html">
+                    
+                    <!-- Product 3 -->
+                    <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <a href="produkt.html" itemprop="url">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
                                 alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
-                            <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke" itemprop="brand">Reebok</h4>
-                            <h5 class="skoType" itemprop="model">Nano X3</h5>
+                            <h5 class="skoType" itemprop="name">Nano X3</h5>
                         </a>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="999">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                        </div>
                     </article>
                 </section>
             </section>
