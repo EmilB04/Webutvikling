@@ -13,6 +13,9 @@ INDEX:
 - Bytte ut "p" i bli medlem til en h-tagg               (DONE)
 
 
+PRODUKT:
+- Ordne opp i metadata error
+
 
 -- ANALYSE --
 
