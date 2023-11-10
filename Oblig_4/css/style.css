@@ -364,10 +364,12 @@ footer i, footer {
     justify-content: left;
     margin: 1rem 0 1rem 0 ;
     padding: 0;
+    align-items: baseline;
+    list-style: none;
 }
 
 #brødsmuleHjem {
-    padding: 0 0 0 2% !important;
+    margin: 0 0 0 2% !important;
 }
 
 #brødsmuleMeny p, #brødsmuleMeny a {

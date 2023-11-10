@@ -69,10 +69,24 @@
                     </ul>
                 </section>
             </nav>
-            <section id="brødsmuleMeny">
-                <p id="brødsmuleHjem"><a href="index.html">Hjem</a></p>
-                <p>/</p>
-                <p><a href="#">Analyse</a></p>
+            <section itemscope itemtype="https://schema.org/BreadcrumbList">
+                <ul id="brødsmuleMeny" itemtype="https://schema.org/BreadcrumbList">
+                    <li id="brødsmuleHjem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="1">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="name">Hjem</span>
+                        </a>
+                    </li>
+                    <li>
+                        <p>/</p>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="2">
+                        <a itemprop="item" href="#">
+                            <span itemprop="name">Analyse</span>
+                        </a>
+                    </li>
+                </ul>
             </section>
         </header>
         <main>

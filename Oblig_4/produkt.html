@@ -66,18 +66,40 @@
                     </ul>
                 </section>
             </nav>
-            <section id="brødsmuleMeny">
-                <p id="brødsmuleHjem" aria-label="Hjem"><a href="index.html">Hjem</a></p>
-                <p>/</p>
-                <p aria-label="Kategoriside"><a href="kategori.html">Kategori</a></p>
-                <p>/</p>
-                <p aria-label="nåværende side"><a href="#">Produkt</a></p>
+            <section itemscope itemtype="https://schema.org/BreadcrumbList">
+                <ul id="brødsmuleMeny" itemtype="https://schema.org/BreadcrumbList">
+                    <li id="brødsmuleHjem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="1">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="name">Hjem</span>
+                        </a>
+                    </li>
+                    <li>
+                        <p>/</p>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="2">
+                        <a itemprop="item" href="kategori.html">
+                            <span itemprop="name">Kategori</span>
+                        </a>
+                    </li>
+                    <li>
+                        <p>/</p>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="3">
+                        <a itemprop="item" href="#">
+                            <span itemprop="name">Produkt</span>
+                        </a>
+                    </li>
+                </ul>
             </section>
         </header>
 
         <main itemscope itemtype="http://schema.org/Product">
             <section id="desktop_produkt_flex">
                 <section id="hovedBilde" aria-label="Bilder av produktet">
+                    <meta itemprop="name" content="Hovedbilde">
                     <span class="slider">
                         <picture class="slide">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" alt="Bilde 1 av skoen" itemprop="image">
@@ -94,37 +116,40 @@
                 </section>
 
                 <section id="mobil_tilpass_kjøp" aria-label="Tilpass og kjøp seksjon for mobil">
+                    <meta itemprop="name" content="Tilpass og kjøp">
                     <section id="tilpass" aria-label="Tilpass seksjon">
                         <h1 aria-label="Overskrift">Tilpass din Nike Air Force!</h1>
-                        <button aria-label="Størrelseknapp">Størrelse</button>
-                        <button aria-label="Fargerknapp">Farger</button>
+                        <button aria-label="Størrelseknapp" itemprop="">Størrelse</button>
+                        <button aria-label="Fargerknapp" itemprop="color">Farger</button>
                     </section>
-                    <section id="mobil_kjøp" aria-label="Kjøp seksjon" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <section id="mobil_kjøp" aria-label="Kjøp seksjon" itemprop="offers">
                         <article id="mobil_sko_info" aria-label="Sko informasjon">
                             <h3 aria-label="Merke" itemprop="brand">Nike</h3>
                             <h4 aria-label="Modell" itemprop="name">Air Force</h4>
                         </article>
-                        <article id="sko_pris_kjøp" aria-label="Pris og kjøp">
-                            <h3 aria-label="Pris" itemprop="price">kr 999,-</h3>
+                        <article id="sko_pris_kjøp" aria-label="Pris og kjøp" >
+                            <h3 aria-label="Pris" itemprop="price">999</h3>
+                            <meta itemprop="priceCurrency" content="NOK">
                             <button aria-label="Legg i handlekurv">Legg i handlekurv</button>
                         </article>
                     </section>
                 </section>
 
 
-                <section id="desktop_tilpass_kjøp" aria-label="Tilpass og kjøp seksjon for desktop">
+                <section id="desktop_tilpass_kjøp" aria-label="Tilpass og kjøp seksjon for desktop" >
                     <article id="desktop_sko_info" aria-label="Sko informasjon">
                         <h1 itemprop="name">Nike Air Force</h1>
-                        <h2>Farge</h2>
-                        <article id="desktop_pris" aria-label="Pris" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                            <h3>Pris:</h3>
-                            <h4 itemprop="price">999,-</h4>
+                        <h2 itemprop="color">Farge</h2>
+                        <article id="desktop_pris" aria-label="Pris">
+                            <h3 itemprop="description">Pris:</h3>
+                            <h4 itemprop="price">999</h4>
+                            <meta itemprop="priceCurrency" content="NOK">
                         </article>
                     </article>
-                    <section id="desktop_sko_farger" aria-label="Farger" itemscope itemtype="http://schema.org/Product">
-                        <article id="desktop_farge" aria-label="Farge" itemprop="color">
-                            <h3 itemprop="name">Farge:</h3>
-                            <h4 itemprop="description">Lorem Ipsum</h4>
+                    <section id="desktop_sko_farger" aria-label="Farger" ">
+                        <article id="desktop_farge" aria-label="Farge">
+                            <h3 itemprop="description">Farge:</h3>
+                            <h4 itemprop="color">Lorem Ipsum</h4>
                         </article>
                         <section>
                             <span style="background-color: black;" itemprop="color"></span>
@@ -133,19 +158,20 @@
                             <span style="background-color: wheat;" itemprop="color"></span>
                         </section>
                     </section>
-                    <section id="desktop_størrelser" aria-label="Størrelser" itemscope itemtype="http://schema.org/Product">
-                        <article id="desktop_størrelse" itemprop="size">
-                            <h3>Størrelse:</h3>
-                            <h4>Lorem Ipsum</h4>
+                    <section id="desktop_størrelser" aria-label="Størrelser" >
+                        <meta itemprop="name" content="Størrelseoversikt">
+                        <article id="desktop_størrelse">
+                            <h3 itemprop="description">Størrelse:</h3>
+                            <h4 itemprop="size">Lorem Ipsum</h4>
                         </article>
                         <section>
-                            <span aria-label="størrelse 39">39</span>
-                            <span aria-label="størrelse 40">40</span>
-                            <span aria-label="størrelse 41">41</span>
-                            <span aria-label="størrelse 42">42</span>
-                            <span aria-label="størrelse 43">43</span>
-                            <span aria-label="størrelse 44">44</span>
-                            <span aria-label="størrelse 45">45</span>
+                            <span aria-label="størrelse 39" itemprop="size">39</span>
+                            <span aria-label="størrelse 40" itemprop="size">40</span>
+                            <span aria-label="størrelse 41" itemprop="size">41</span>
+                            <span aria-label="størrelse 42" itemprop="size">42</span>
+                            <span aria-label="størrelse 43" itemprop="size">43</span>
+                            <span aria-label="størrelse 44" itemprop="size">44</span>
+                            <span aria-label="størrelse 45" itemprop="size">45</span>
                         </section>
                     </section>
                     <section id="desktop_handlekurv_kjøp" aria-label="Handlekurv og kjøp">
@@ -156,6 +182,7 @@
             </section>
 
             <section id="produkt_info_punkter">
+                <meta itemprop="name" content="Info om produkt">
                 <article class="nedtrekksMeny">
                     <div class="nedtrekksKnapp">
                         <h3 aria-label="Produktinformasjon">Produktinfo</h3>
@@ -182,7 +209,7 @@
                         </ul>
                     </article>
                 </article>
-                <article class="nedtrekksMeny" itemscope itemtype="http://schema.org/Product">
+                <article class="nedtrekksMeny">
                     <div class="nedtrekksKnapp">
                         <h3 aria-label="Lorem Ipsum">Lorem Ipsum</h3>
                         <button class="knapp" id="knapp3" aria-label="Vis/skjul Lorem Ipsum"><i class="fa-solid fa-caret-down"></i></button>
@@ -370,7 +397,7 @@
                 </section>
             </section>
 
-
+        </main> 
         <footer id="mobilFooter" itemscope itemtype="http://schema.org/WPFooter">
             <nav class="kolonne_footer">
                 <section class="undertittel_footer">

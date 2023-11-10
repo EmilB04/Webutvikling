@@ -68,10 +68,24 @@
                     </ul>
                 </section>
             </nav>
-            <section id="brødsmuleMeny" aria-label="Brødsmulemeny">
-                <p id="brødsmuleHjem" aria-label="Hjem"><a href="index.html">Hjem</a></p>
-                <p>/</p>
-                <p aria-label="nåværende side"><a href="#">Kategori</a></p>
+            <section itemscope itemtype="https://schema.org/BreadcrumbList">
+                <ul id="brødsmuleMeny" itemtype="https://schema.org/BreadcrumbList">
+                    <li id="brødsmuleHjem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="1">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="name">Hjem</span>
+                        </a>
+                    </li>
+                    <li>
+                        <p>/</p>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="2">
+                        <a itemprop="item" href="#">
+                            <span itemprop="name">Kategori</span>
+                        </a>
+                    </li>
+                </ul>
             </section>
         </header>
         <main>
