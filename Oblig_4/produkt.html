@@ -10,7 +10,6 @@
     <link href="css/ikoner/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-
     <title>Handle Nike Air Force - TrendyWear</title>
 </head>
 <body>
@@ -76,18 +75,18 @@
             </section>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Product">
             <section id="desktop_produkt_flex">
                 <section id="hovedBilde" aria-label="Bilder av produktet">
                     <span class="slider">
                         <picture class="slide">
-                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" alt="Bilde 1 av skoen">
+                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" alt="Bilde 1 av skoen" itemprop="image">
                         </picture>
                         <picture class="slide">
-                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" alt="Bilde 2 av skoen">
+                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" alt="Bilde 2 av skoen" itemprop="image">
                         </picture>
                         <picture class="slide">
-                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" alt="Bilde 3 av skoen">
+                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" alt="Bilde 3 av skoen" itemprop="image">
                         </picture>
                     </span>
                     <button class="prev" onclick="changeSlide(-1)" aria-label="Forrige bilde">&#8249;</button>
@@ -100,13 +99,13 @@
                         <button aria-label="Størrelseknapp">Størrelse</button>
                         <button aria-label="Fargerknapp">Farger</button>
                     </section>
-                    <section id="mobil_kjøp" aria-label="Kjøp seksjon">
+                    <section id="mobil_kjøp" aria-label="Kjøp seksjon" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <article id="mobil_sko_info" aria-label="Sko informasjon">
-                            <h3 aria-label="Merke">Nike</h3>
-                            <h4 aria-label="Modell">Air Force</h4>
+                            <h3 aria-label="Merke" itemprop="brand">Nike</h3>
+                            <h4 aria-label="Modell" itemprop="name">Air Force</h4>
                         </article>
                         <article id="sko_pris_kjøp" aria-label="Pris og kjøp">
-                            <h3 aria-label="Pris">kr 999,-</h3>
+                            <h3 aria-label="Pris" itemprop="price">kr 999,-</h3>
                             <button aria-label="Legg i handlekurv">Legg i handlekurv</button>
                         </article>
                     </section>
@@ -115,27 +114,27 @@
 
                 <section id="desktop_tilpass_kjøp" aria-label="Tilpass og kjøp seksjon for desktop">
                     <article id="desktop_sko_info" aria-label="Sko informasjon">
-                        <h1>Nike Air Force</h1>
+                        <h1 itemprop="name">Nike Air Force</h1>
                         <h2>Farge</h2>
-                        <article id="desktop_pris" aria-label="Pris">
+                        <article id="desktop_pris" aria-label="Pris" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <h3>Pris:</h3>
-                            <h4>999,-</h4>
+                            <h4 itemprop="price">999,-</h4>
                         </article>
                     </article>
-                    <section id="desktop_sko_farger" aria-label="Farger">
-                        <article id="desktop_farge" aria-label="Farge">
-                            <h3>Farge:</h3>
-                            <h4>Lorem Ipsum</h4>
+                    <section id="desktop_sko_farger" aria-label="Farger" itemscope itemtype="http://schema.org/Product">
+                        <article id="desktop_farge" aria-label="Farge" itemprop="color">
+                            <h3 itemprop="name">Farge:</h3>
+                            <h4 itemprop="description">Lorem Ipsum</h4>
                         </article>
                         <section>
-                            <span style="background-color: black;"></span>
-                            <span style="background-color: red;"></span>
-                            <span style="background-color: blue;"></span>
-                            <span style="background-color: wheat;"></span>
+                            <span style="background-color: black;" itemprop="color"></span>
+                            <span style="background-color: red;" itemprop="color"></span>
+                            <span style="background-color: blue;" itemprop="color"></span>
+                            <span style="background-color: wheat;" itemprop="color"></span>
                         </section>
                     </section>
-                    <section id="desktop_størrelser" aria-label="Størrelser">
-                        <article id="desktop_størrelse">
+                    <section id="desktop_størrelser" aria-label="Størrelser" itemscope itemtype="http://schema.org/Product">
+                        <article id="desktop_størrelse" itemprop="size">
                             <h3>Størrelse:</h3>
                             <h4>Lorem Ipsum</h4>
                         </article>
@@ -162,7 +161,7 @@
                         <h3 aria-label="Produktinformasjon">Produktinfo</h3>
                         <button class="knapp" id="knapp1" aria-label="Vis/skjul produktinformasjon"><i class="fa-solid fa-caret-down"></i></button>
                     </div>
-                    <article class="nedtrekk_paragraf" id="paragraf1">
+                    <article class="nedtrekk_paragraf" id="paragraf1" itemprop="description">
                         <ul>
                             <li>Nulla laboris ullamco magna minim veniam eiusmod.</li>
                             <li>Irure elit fugiat pariatur ullamco.</li>
@@ -175,7 +174,7 @@
                         <h3 aria-label="Størrelsesguide">Størrelseguide</h3>
                         <button class="knapp" id="knapp2" aria-label="Vis/skjul størrelsesguide"><i class="fa-solid fa-caret-down"></i></button>
                     </div>
-                    <article class="nedtrekk_paragraf" id="paragraf2">
+                    <article class="nedtrekk_paragraf" id="paragraf2" itemprop="size">
                         <ul>
                             <li>Nulla laboris ullamco magna minim veniam eiusmod.</li>
                             <li>Irure elit fugiat pariatur ullamco.</li>
@@ -183,12 +182,12 @@
                         </ul>
                     </article>
                 </article>
-                <article class="nedtrekksMeny">
+                <article class="nedtrekksMeny" itemscope itemtype="http://schema.org/Product">
                     <div class="nedtrekksKnapp">
                         <h3 aria-label="Lorem Ipsum">Lorem Ipsum</h3>
                         <button class="knapp" id="knapp3" aria-label="Vis/skjul Lorem Ipsum"><i class="fa-solid fa-caret-down"></i></button>
                     </div>
-                    <article class="nedtrekk_paragraf" id="paragraf3">
+                    <article class="nedtrekk_paragraf" id="paragraf3" itemprop="additionalProperty">
                         <ul>
                             <li>Nulla laboris ullamco magna minim veniam eiusmod.</li>
                             <li>Irure elit fugiat pariatur ullamco.</li>
@@ -199,180 +198,180 @@
             </section>
             
             <section class="horisontale_utstillinger">
-                <h2>Utvalgte herresko</h2>
+                <h2 itemprop="name">Utvalgte herresko</h2>
                 <section class="flexbox_standard" aria-label="område for skoutstilling">
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
-                            <h4 class="skoMerke">Nike</h4>
-                            <h5 class="skoType">Air Force</h5>
+                            <h4 class="skoMerke" itemprop="brand">Nike</h4>
+                            <h5 class="skoType" itemprop="model">Air Force</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
-                            <h4 class="skoMerke">Adidas</h4>
-                            <h5 class="skoType">VL Court 2.0</h5>
+                            <h4 class="skoMerke" itemprop="brand">Adidas</h4>
+                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
-                            <h4 class="skoMerke">Reebok</h4>
-                            <h5 class="skoType">Nano X3</h5>
+                            <h4 class="skoMerke" itemprop="brand">Reebok</h4>
+                            <h5 class="skoType" itemprop="model">Nano X3</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
-                            <h4 class="skoMerke">Nike</h4>
-                            <h5 class="skoType">Air Force</h5>
+                            <h4 class="skoMerke" itemprop="brand">Nike</h4>
+                            <h5 class="skoType" itemprop="model">Air Force</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
-                            <h4 class="skoMerke">Adidas</h4>
-                            <h5 class="skoType">VL Court 2.0</h5>
+                            <h4 class="skoMerke" itemprop="brand">Adidas</h4>
+                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
-                            <h4 class="skoMerke">Reebok</h4>
-                            <h5 class="skoType">Nano X3</h5>
+                            <h4 class="skoMerke" itemprop="brand">Reebok</h4>
+                            <h5 class="skoType" itemprop="model">Nano X3</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
-                            <h4 class="skoMerke">Nike</h4>
-                            <h5 class="skoType">Air Force</h5>
+                            <h4 class="skoMerke" itemprop="brand">Nike</h4>
+                            <h5 class="skoType" itemprop="model">Air Force</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
-                            <h4 class="skoMerke">Adidas</h4>
-                            <h5 class="skoType">VL Court 2.0</h5>
+                            <h4 class="skoMerke" itemprop="brand">Adidas</h4>
+                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
-                            <h4 class="skoMerke">Reebok</h4>
-                            <h5 class="skoType">Nano X3</h5>
+                            <h4 class="skoMerke" itemprop="brand">Reebok</h4>
+                            <h5 class="skoType" itemprop="model">Nano X3</h5>
                         </a>
                     </article>
                 </section>
             </section>
             <section class="horisontale_utstillinger">
-                <h2>Utvalgte damesko</h2>
+                <h2 itemprop="name">Utvalgte damesko</h2>
                 <section class="flexbox_standard" aria-label="område for skoutstilling">
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
-                            <h4 class="skoMerke">Nike</h4>
-                            <h5 class="skoType">Air Force</h5>
+                            <h4 class="skoMerke" itemprop="brand">Nike</h4>
+                            <h5 class="skoType" itemprop="model">Air Force</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
-                            <h4 class="skoMerke">Adidas</h4>
-                            <h5 class="skoType">VL Court 2.0</h5>
+                            <h4 class="skoMerke" itemprop="brand">Adidas</h4>
+                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
-                            <h4 class="skoMerke">Reebok</h4>
-                            <h5 class="skoType">Nano X3</h5>
+                            <h4 class="skoMerke" itemprop="brand">Reebok</h4>
+                            <h5 class="skoType" itemprop="model">Nano X3</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
-                            <h4 class="skoMerke">Nike</h4>
-                            <h5 class="skoType">Air Force</h5>
+                            <h4 class="skoMerke" itemprop="brand">Nike</h4>
+                            <h5 class="skoType" itemprop="model">Air Force</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
-                            <h4 class="skoMerke">Adidas</h4>
-                            <h5 class="skoType">VL Court 2.0</h5>
+                            <h4 class="skoMerke" itemprop="brand">Adidas</h4>
+                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
-                            <h4 class="skoMerke">Reebok</h4>
-                            <h5 class="skoType">Nano X3</h5>
+                            <h4 class="skoMerke" itemprop="brand">Reebok</h4>
+                            <h5 class="skoType" itemprop="model">Nano X3</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                                alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" itemprop="image">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
-                            <h4 class="skoMerke">Nike</h4>
-                            <h5 class="skoType">Air Force</h5>
+                            <h4 class="skoMerke" itemprop="brand">Nike</h4>
+                            <h5 class="skoType" itemprop="model">Air Force</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                                alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" itemprop="image">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
-                            <h4 class="skoMerke">Adidas</h4>
-                            <h5 class="skoType">VL Court 2.0</h5>
+                            <h4 class="skoMerke" itemprop="brand">Adidas</h4>
+                            <h5 class="skoType" itemprop="model">VL Court 2.0</h5>
                         </a>
                     </article>
-                    <article class="bildeRamme">
+                    <article class="bildeRamme" itemprop="isRelatedTo">
                         <a href="produkt.html">
                             <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling"
-                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                                alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" itemprop="image">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
-                            <h4 class="skoMerke">Reebok</h4>
-                            <h5 class="skoType">Nano X3</h5>
+                            <h4 class="skoMerke" itemprop="brand">Reebok</h4>
+                            <h5 class="skoType" itemprop="model">Nano X3</h5>
                         </a>
                     </article>
                 </section>
             </section>
 
 
-        <footer id="mobilFooter">
+        <footer id="mobilFooter" itemscope itemtype="http://schema.org/WPFooter">
             <nav class="kolonne_footer">
                 <section class="undertittel_footer">
                     <hr>
@@ -380,12 +379,12 @@
                     <hr>
                 </section>
                 <ul class="linker_footer">
-                    <li><a href="#" aria-label="Min side">Min side</a></li>
-                    <li><a href="#" aria-label="Ordreoversikt">Ordreoversikt</a></li>
-                    <li><a href="#" aria-label="Gavekort">Gavekort</a></li>
-                    <li><a href="#" aria-label="Retur">Retur</a></li>
-                    <li><a href="#" aria-label="Kontakt oss">Kontakt oss</a></li>
-                    <li><a href="#" aria-label="Om oss">Om oss</a></li>
+                    <li><a href="#" aria-label="Min side" itemprop="url">Min side</a></li>
+                    <li><a href="#" aria-label="Ordreoversikt" itemprop="url">Ordreoversikt</a></li>
+                    <li><a href="#" aria-label="Gavekort" itemprop="url">Gavekort</a></li>
+                    <li><a href="#" aria-label="Retur" itemprop="url">Retur</a></li>
+                    <li><a href="#" aria-label="Kontakt oss" itemprop="url">Kontakt oss</a></li>
+                    <li><a href="#" aria-label="Om oss" itemprop="url">Om oss</a></li>
                 </ul>
             </nav>
             <nav class="kolonne_footer">
@@ -395,61 +394,61 @@
                     <hr>
                 </section>
                 <ul class="linker_footer">
-                    <li><a href="#" aria-label="Spørsmål og svar">Spørsmål og svar</a></li>
-                    <li><a href="#" aria-label="Reklamasjon og garanti">Reklamasjon og garanti</a></li>
-                    <li><a href="#" aria-label="Åpenhetsloven">Åpenhetsloven</a></li>
-                    <li><a href="#" aria-label="Personopplysninger">Personopplysninger</a></li>
-                    <li><a href="#" aria-label="Salgsbetingelser">Salgsbetingelser</a></li>
-                    <li><a href="#" aria-label="Nye produkter">Nye produkter</a></li>
+                    <li><a href="#" aria-label="Spørsmål og svar" itemprop="url">Spørsmål og svar</a></li>
+                    <li><a href="#" aria-label="Reklamasjon og garanti" itemprop="url">Reklamasjon og garanti</a></li>
+                    <li><a href="#" aria-label="Åpenhetsloven" itemprop="url">Åpenhetsloven</a></li>
+                    <li><a href="#" aria-label="Personopplysninger" itemprop="url">Personopplysninger</a></li>
+                    <li><a href="#" aria-label="Salgsbetingelser" itemprop="url">Salgsbetingelser</a></li>
+                    <li><a href="#" aria-label="Nye produkter" itemprop="url">Nye produkter</a></li>
                 </ul>
             </nav>
-            <section class="flexbox_center">
-                <figure>
-                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <section class="flexbox_center" itemscope itemtype="http://schema.org/Organization">
+                <figure itemprop="socialMedia">
+                    <a href="#" aria-label="TikTok" itemprop="sameAs"><i class="fa-brands fa-tiktok"></i></a>
                 </figure>
-                <figure>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <figure itemprop="socialMedia"">
+                    <a href="#" aria-label="Instagram" itemprop="sameAs"><i class="fa-brands fa-instagram"></i></a>
                 </figure>
-                <figure>
-                    <a href="#" aria-label="YouTube Shorts"><i class="fa-brands fa-youtube"></i></a>
+                <figure itemprop="socialMedia">
+                    <a href="#" aria-label="YouTube Shorts" itemprop="sameAs"><i class="fa-brands fa-youtube"></i></a>
                 </figure>
             </section>
         </footer>
-        <footer id="desktopFooter">
+        <footer id="desktopFooter" itemscope itemtype="http://schema.org/WPFooter">
             <section id="innhold_footer">
-                <article id="kundeKlubb_footer">
-                    <h2>TrendyWear</h2>
+                <article id="kundeKlubb_footer" itemprop="isRelatedTo">
+                    <h2 itemprop="name">TrendyWear</h2>
                     <p>Bli medlem for å holde deg oppdatert og motta gode tilbud</p>
                     <section>
-                        <input type="email" name="email" placeholder="Skriv inn din e-post" aria-label="E-postadresse">
-                        <button>Meld deg inn!</button>
+                        <input type="email" name="email" placeholder="Skriv inn din e-post" aria-label="E-postadresse" itemprop="email">
+                        <button itemprop="subscribe">Meld deg inn!</button>
                     </section>
                     <p>
                         Ved å abonnere, gottar du vår personvernserklæring og gir samtykke
                         til å motta oppdateringer fra selskapet vårt.
                     </p>
                 </article>
-                <article id="snarveier_footer">
+                <article id="snarveier_footer" itemprop="isRelatedTo">
                     <nav>
                         <h3>Snarveier</h3>
                         <ul>
-                            <li><a href="#" aria-label="Min side">Min side</a></li>
-                            <li><a href="#" aria-label="Ordreoversikt">Ordreoversikt</a></li>
-                            <li><a href="#" aria-label="Gavekort">Gavekort</a></li>
-                            <li><a href="#" aria-label="Retur">Retur</a></li>
-                            <li><a href="#" aria-label="Kontakt oss">Kontakt oss</a></li>
-                            <li><a href="#" aria-label="Om oss">Om oss</a></li>
+                            <li><a href="#" aria-label="Min side" itemprop="url">Min side</a></li>
+                            <li><a href="#" aria-label="Ordreoversikt" itemprop="url">Ordreoversikt</a></li>
+                            <li><a href="#" aria-label="Gavekort" itemprop="url">Gavekort</a></li>
+                            <li><a href="#" aria-label="Retur" itemprop="url">Retur</a></li>
+                            <li><a href="#" aria-label="Kontakt oss" itemprop="url">Kontakt oss</a></li>
+                            <li><a href="#" aria-label="Om oss" itemprop="url">Om oss</a></li>
                         </ul>
                     </nav>
                     <nav>
                         <h3>Informasjon</h3>
                         <ul>
-                            <li><a href="#" aria-label="Spørsmål og svar">Spørsmål og svar</a></li>
-                            <li><a href="#" aria-label="Reklamasjon og garanti">Reklamasjon og garanti</a></li>
-                            <li><a href="#" aria-label="Åpenhetsloven">Åpenhetsloven</a></li>
-                            <li><a href="#" aria-label="Personopplysninger">Personopplysninger</a></li>
-                            <li><a href="#" aria-label="Salgsbetingelser">Salgsbetingelser</a></li>
-                            <li><a href="#" aria-label="Nye produkter">Nye produkter</a></li>
+                            <li><a href="#" aria-label="Spørsmål og svar" itemprop="url">Spørsmål og svar</a></li>
+                            <li><a href="#" aria-label="Reklamasjon og garanti" itemprop="url">Reklamasjon og garanti</a></li>
+                            <li><a href="#" aria-label="Åpenhetsloven" itemprop="url">Åpenhetsloven</a></li>
+                            <li><a href="#" aria-label="Personopplysninger" itemprop="url">Personopplysninger</a></li>
+                            <li><a href="#" aria-label="Salgsbetingelser" itemprop="url">Salgsbetingelser</a></li>
+                            <li><a href="#" aria-label="Nye produkter" itemprop="url">Nye produkter</a></li>
                         </ul>
                     </nav>
                     <nav>
@@ -457,15 +456,15 @@
                         <ul>
                             <li>
                                 <i class="fa-brands fa-tiktok" aria-label="TikTok"></i>
-                                <a href="#" aria-label="TikTok">TikTok</a>
+                                <a href="#" aria-label="TikTok" itemprop="sameAs">TikTok</a>
                             </li>
                             <li>
                                 <i class="fa-brands fa-instagram" aria-label="Instagram"></i>
-                                <a href="#" aria-label="Instagram">Instagram</a>
+                                <a href="#" aria-label="Instagram" itemprop="sameAs">Instagram</a>
                             </li>
                             <li>
                                 <i class="fa-brands fa-youtube" aria-label="YouTube Shorts"></i>
-                                <a href="#" aria-label="YouTube Shorts">YouTube Shorts</a>
+                                <a href="#" aria-label="YouTube Shorts" itemprop="sameAs">YouTube Shorts</a>
                             </li>
                         </ul>
                     </nav>
@@ -474,13 +473,16 @@
             <hr>
             <section id="copyright_settings_footer">
                 <article id="copyright_footer">
-                    <p aria-label="Opphavsrett">2023 TrendyWear. Alle rettigheter reservert</p>
+                    <p aria-label="Opphavsrett" itemprop="copyright">
+                        <span itemprop="name">2023 TrendyWear</span>. 
+                        <span itemprop="description">Alle rettigheter reservert</span>
+                    </p>
                 </article>
                 <article id="settings_footer">
                     <ul>
-                        <li><a href="#" aria-label="Personvern">Privacy Policy</a></li>
-                        <li><a href="#" aria-label="Vilkår for bruk">Terms of Service</a></li>
-                        <li><a href="#" aria-label="Informasjonskapsler">Cookies Settings</a></li>
+                        <li><a href="#" aria-label="Personvern" itemprop="privacyPolicy">Privacy Policy</a></li>
+                        <li><a href="#" aria-label="Vilkår for bruk" itemprop="termsOfService">Terms of Service</a></li>
+                        <li><a href="#" aria-label="Informasjonskapsler" itemprop="cookieSettings">Cookies Settings</a></li>
                     </ul>
                 </article>
             </section>
