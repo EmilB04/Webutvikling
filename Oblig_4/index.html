@@ -28,11 +28,11 @@
         <header>
             <nav id="mobilNav">
                 <ul>
-                    <li><i class="fa-solid fa-bars" id="open_button" aria-label="Åpne meny"></i></li>
-                    <li><i class="fa-solid fa-magnifying-glass" aria-label="Søk"></i></li>
-                    <li id="LOGO"><a href="index.html" aria-label="TrendyWear logo">TrendyWear</a></li>
-                    <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv"></i></li>
-                    <li><i class="fa-solid fa-user" aria-label="Brukerprofil"></i></li>
+                    <li><i class="fa-solid fa-bars" id="open_button" aria-label="Åpne meny" tabindex="1"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass" aria-label="Søk" tabindex="2"></i></li>
+                    <li id="LOGO"><a href="index.html" aria-label="TrendyWear logo" tabindex="3">TrendyWear</a></li>
+                    <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv" tabindex="4"></i></li>
+                    <li><i class="fa-solid fa-user" aria-label="Brukerprofil" tabindex="5"></i></li>
                 </ul>
                 <hr>
             </nav>
@@ -40,61 +40,61 @@
             <nav id="hamburger_menu">
                 <span id="close_button" aria-label="Lukk meny">X</span>
                 <ul>
-                    <li><a href="kategori.html" aria-label="Herreavdeling">Herreavdeling</a></li>
-                    <li><a href="kategori.html" aria-label="Dameavdeling">Dameavdeling</a></li>
-                    <li><a href="kategori.html" aria-label="Barneavdeling">Barneavdeling</a></li>
-                    <li><a href="#" aria-label="Om oss">Om oss</a></li>
-                    <li><a href="analyse.html" aria-label="Analyseside">Analyseside</a></li>
+                    <li><a href="kategori.html" aria-label="Herreavdeling" tabindex="1">Herreavdeling</a></li>
+                    <li><a href="kategori.html" aria-label="Dameavdeling" tabindex="2">Dameavdeling</a></li>
+                    <li><a href="kategori.html" aria-label="Barneavdeling" tabindex="3">Barneavdeling</a></li>
+                    <li><a href="#" aria-label="Om oss" tabindex="4">Om oss</a></li>
+                    <li><a href="analyse.html" aria-label="Analyseside"tabindex="5">Analyseside</a></li>
                 </ul>
             </nav>
 
-                <nav id="desktopNav">
-                    <section id="toppBar">
-                        <h2><a href="index.html" id="logo" aria-label="TrendyWear logo">TrendyWear</a></h2>
-                        <span id="søkeFelt" aria-label="Søkefelt">
-                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                            <input type="search" name="search"  placeholder="Hva leter du etter" aria-label="Søk">
-                        </span>
-                        <div id="mode_cart_profile" aria-label="Interaktive knapper">
-                            <ul>
-                                <li><i class="fa-solid fa-circle-half-stroke" aria-label="Fargemodus"></i></li>
-                                <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv"></i></li>
-                                <li><i class="fa-solid fa-user" aria-label="Brukerprofil"></i></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section id="kategoriFelt" aria-label="Kategorier">
-                        <ul>
-                            <li><a href="kategori.html" aria-label="Dame">Dame</a></li>
-                            <li><a href="kategori.html" aria-label="Herre">Herre</a></li>
-                            <li><a href="kategori.html" aria-label="Barn">Barn</a></li>
-                            <li><a href="kategori.html" aria-label="Merker">Merker</a></li>
-                            <li><a href="#" aria-label="Tilbehør">Tilbehør</a></li>
-                            <li><a href="#" aria-label="Klubbfordeler">Klubbfordeler</a></li>
-                            <li><a href="#" aria-label="Om oss">Om oss</a></li>
-                            <li><a href="#" aria-label="Kontakt">Kontakt</a></li>
-                            <li><a href="analyse.html" aria-label="Analyse">Analyse</a></li>
+            <nav id="desktopNav" role="navigation">
+                <section id="toppBar">
+                    <h2><a href="index.html" id="logo" aria-label="TrendyWear logo" tabindex="1">TrendyWear</a></h2>
+                    <span id="søkeFelt" aria-label="Søkefelt">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="search" name="search"  placeholder="Hva leter du etter" aria-label="Søk" tabindex="2">
+                    </span>
+                    <div id="mode_cart_profile" aria-label="Interaktive knapper">
+                        <ul aria-label="Kategorier">
+                            <li><i class="fa-solid fa-circle-half-stroke" aria-label="Fargemodus" tabindex="3"></i></li>
+                            <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv" tabindex="4"></i></li>
+                            <li><i class="fa-solid fa-user" aria-label="Brukerprofil" tabindex="5"></i></li>
                         </ul>
-                    </section>
-                </nav>
-
-                <section id="hovedbilde" aria-label="Viktig bilde">
-                    <h1>Trendy skotøy for ungdom!</h1>
-                    <picture>
-                        <img src="img/hovedbilder/main_shoe1.jpg"
-                            alt="Bilde av en svart og limegrønn tursko fra Kujo med navnet X1 Landscape Boot "> <!--https://cloud.kujo.com/wr-styled-x1-backlit-medium-blended-a23a77857b.jpg-->
-                    </picture>
-                    <a href="kategori.html">Trykk her for å handle trendy skotøy!</a>
+                    </div>
                 </section>
-            </header>
+                <section id="kategoriFelt" aria-label="Kategorier" tabindex="6">
+                    <ul>
+                        <li><a href="kategori.html" aria-label="Dame" tabindex="7">Dame</a></li>
+                        <li><a href="kategori.html" aria-label="Herre" tabindex="8">Herre</a></li>
+                        <li><a href="kategori.html" aria-label="Barn" tabindex="9">Barn</a></li>
+                        <li><a href="kategori.html" aria-label="Merker" tabindex="10">Merker</a></li>
+                        <li><a href="#" aria-label="Tilbehør" tabindex="11">Tilbehør</a></li>
+                        <li><a href="#" aria-label="Klubbfordeler" tabindex="12">Klubbfordeler</a></li>
+                        <li><a href="#" aria-label="Om oss" tabindex="13">Om oss</a></li>
+                        <li><a href="#" aria-label="Kontakt" tabindex="14">Kontakt</a></li>
+                        <li><a href="analyse.html" aria-label="Analyse" tabindex="15">Analyse</a></li>
+                    </ul>
+                </section>
+            </nav>
+
+            <section id="hovedbilde" aria-label="Viktig bilde" tabindex="16">
+                <h1>Trendy skotøy for ungdom!</h1>
+                <picture>
+                    <img src="img/hovedbilder/main_shoe1.jpg"
+                        alt="Bilde av en svart og limegrønn tursko fra Kujo med navnet X1 Landscape Boot "> <!--https://cloud.kujo.com/wr-styled-x1-backlit-medium-blended-a23a77857b.jpg-->
+                </picture>
+                <a href="kategori.html" tabindex="17">Trykk her for å handle trendy skotøy!</a>
+            </section>
+        </header>
 
             <main>
             <section class="horisontale_utstillinger">
-                <h2>Ukens utvalgte</h2>
-                <section class="flexbox_standard" aria-label="område for skoutstilling">
+                <h2 tabindex="17">Ukens utvalgte</h2>
+                <section class="flexbox_standard" aria-label="område for skoutstilling"tabindex="18">
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" tabindex="19">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke">Nike</h4>
                             <h5 class="skoType">Air Force</h5>
@@ -102,7 +102,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" tabindex="20">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke">Adidas</h4>
                             <h5 class="skoType">VL Court 2.0</h5>
@@ -110,7 +110,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" tabindex="21">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke">Reebok</h4>
                             <h5 class="skoType">Nano X3</h5>
@@ -118,7 +118,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" tabindex="22">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke">Nike</h4>
                             <h5 class="skoType">Air Force</h5>
@@ -126,7 +126,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" tabindex="23">
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke">Adidas</h4>
                             <h5 class="skoType">VL Court 2.0</h5>
@@ -134,7 +134,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" tabindex="24">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke">Reebok</h4>
                             <h5 class="skoType">Nano X3</h5>
@@ -142,7 +142,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force">
+                            <img src="img/utstilling/Nike_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av rød og svart sneakers fra Nike med navnet Air Force" tabindex="25">
                             <!--https://no.pinterest.com/pin/447263806745041352/-->
                             <h4 class="skoMerke">Nike</h4>
                             <h5 class="skoType">Air Force</h5>
@@ -150,7 +150,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0">
+                            <img src="img/utstilling/Adidas_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en rosa og hvit fritidssko fra Adidas med navnet VL Court 2.0" tabindex="26"> 
                             <!--https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/010c457588424a95b541af45018b262e_9366/VL_Court_2.0_Suede_Sko_Rosa_H06114_04_standard.jpg-->
                             <h4 class="skoMerke">Adidas</h4>
                             <h5 class="skoType">VL Court 2.0</h5>
@@ -158,7 +158,7 @@
                     </article>
                     <article class="bildeRamme">
                         <a href="produkt.html">
-                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3">
+                            <img src="img/utstilling/Reebok_Shoe_Row1.jpg" class="bildeUtstilling" alt="Bilde av en svart og hvit løpesko fra Reebok med navnet Nano X3" tabindex="27">
                             <!--https://www.reebok.eu/de-at/shopping/nano-x3-froning-shoes-20138445-->
                             <h4 class="skoMerke">Reebok</h4>
                             <h5 class="skoType">Nano X3</h5>
@@ -168,25 +168,25 @@
             </section>
 
             <section id="velg_avdeling">
-                <h2>Velg avdeling</h2>
+                <h2 tabindex="28">Velg avdeling</h2>
                 <section class="flexbox_standard">
                     <figure class="avdeling_boks">
                         <a href="kategori.html">
-                            <img src="img/avdeling/herre_avdeling.jpg" alt="Bilde som representerer herreavdeling">
+                            <img src="img/avdeling/herre_avdeling.jpg" alt="Bilde som representerer herreavdeling" tabindex="29">
                         </a>
-                        <figcaption><a href="kategori.html">Gå til Herre</a></figcaption>
+                        <figcaption><a href="kategori.html" tabindex="30">Gå til Herre</a></figcaption>
                     </figure>
                     <figure class="avdeling_boks">
                         <a href="kategori.html">
-                            <img src="img/avdeling/dame_avdeling.jpg" alt="Bilde som representerer dameavdeling">
+                            <img src="img/avdeling/dame_avdeling.jpg" alt="Bilde som representerer dameavdeling" tabindex="31">
                         </a>
-                        <figcaption><a href="kategori.html">Gå til Dame</a></figcaption>
+                        <figcaption><a href="kategori.html" tabindex="32">Gå til Dame</a></figcaption>
                     </figure>
                     <figure class="avdeling_boks">
                         <a href="kategori.html">
-                            <img src="img/avdeling/barne_avdeling.jpg" alt="Bilde som representerer barneavdeling">
+                            <img src="img/avdeling/barne_avdeling.jpg" alt="Bilde som representerer barneavdeling"tabindex="33">
                         </a>
-                        <figcaption><a href="kategori.html">Gå til Barn</a></figcaption>
+                        <figcaption><a href="kategori.html" tabindex="34">Gå til Barn</a></figcaption>
                     </figure>
                 </section>
             </section>
