@@ -85,13 +85,36 @@ main li:last-child{
     align-items: center;
     flex-direction: column;
     flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 0;
 }
-
-.goTo > a {
+.goTo a{
     background-color: darkgreen;
     color: white;
     padding: 1rem 2rem;
     margin: 2% 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
+
+.goTo_top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.goTo_top a{
+    background-color: darkgreen;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1% 0;
     border-radius: 10px;
     font-size: 1.5rem;
     text-decoration: none;
@@ -180,7 +203,6 @@ table tr th{
         margin-left: 0%;
     }
     
-
     .SEO_bilder {
         width: 100%;
     }
@@ -189,6 +211,12 @@ table tr th{
         flex-direction: row;
         flex-basis: auto; 
     }
+    .goTo_top {
+        display: flex;
+        flex-direction: row;
+        flex-basis: auto;
+    }
+
     table{
         display: flex;
         justify-content: center;
@@ -210,6 +238,5 @@ table tr th{
         display: flex;
         flex-wrap: nowrap;
 }
-    
-    
+
 }
