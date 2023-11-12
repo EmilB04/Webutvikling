@@ -41,81 +41,76 @@
 <body>
     <div id="grid_container-">
         <header>
-            <header>
-                <nav id="mobilNav">
-                    <ul>
-                        <li><i class="fa-solid fa-bars" id="open_button" aria-label="Åpne meny" tabindex="1"></i></li>
-                        <li><i class="fa-solid fa-magnifying-glass" aria-label="Søk" tabindex="2"></i></li>
-                        <li id="LOGO"><a href="index.html" aria-label="TrendyWear logo" tabindex="3">TrendyWear</a></li>
-                        <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv" tabindex="4"></i></li>
-                        <li><i class="fa-solid fa-user" aria-label="Brukerprofil" tabindex="5"></i></li>
-                    </ul>
-                    <hr>
-                </nav>
-
-                <nav id="hamburger_menu">
-                    <span id="close_button" aria-label="Lukk meny">X</span>
-                    <ul>
-                        <li><a href="kategori.html" aria-label="Herreavdeling" tabindex="1">Herreavdeling</a></li>
-                        <li><a href="kategori.html" aria-label="Dameavdeling" tabindex="2">Dameavdeling</a></li>
-                        <li><a href="kategori.html" aria-label="Barneavdeling" tabindex="3">Barneavdeling</a></li>
-                        <li><a href="#" aria-label="Om oss" tabindex="4">Om oss</a></li>
-                        <li><a href="analyse.html" aria-label="Analyseside" tabindex="5">Analyseside</a></li>
-                    </ul>
-                </nav>
-
-                <nav id="desktopNav" role="navigation">
-                    <section id="toppBar">
-                        <h2><a href="index.html" id="logo" aria-label="TrendyWear logo" tabindex="1">TrendyWear</a></h2>
-                        <span id="søkeFelt" aria-label="Søkefelt">
-                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                            <input type="search" name="search" placeholder="Hva leter du etter" aria-label="Søk"
-                                tabindex="2">
-                        </span>
-                        <div id="mode_cart_profile" aria-label="Interaktive knapper">
-                            <ul aria-label="Kategorier">
-                                <li><i class="fa-solid fa-circle-half-stroke" aria-label="Fargemodus" tabindex="3"></i>
-                                </li>
-                                <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv" tabindex="4"></i></li>
-                                <li><i class="fa-solid fa-user" aria-label="Brukerprofil" tabindex="5"></i></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section id="kategoriFelt" aria-label="Kategorier" tabindex="6">
-                        <ul>
-                            <li><a href="kategori.html" aria-label="Dame" tabindex="7">Dame</a></li>
-                            <li><a href="kategori.html" aria-label="Herre" tabindex="8">Herre</a></li>
-                            <li><a href="kategori.html" aria-label="Barn" tabindex="9">Barn</a></li>
-                            <li><a href="kategori.html" aria-label="Merker" tabindex="10">Merker</a></li>
-                            <li><a href="#" aria-label="Tilbehør" tabindex="11">Tilbehør</a></li>
-                            <li><a href="#" aria-label="Klubbfordeler" tabindex="12">Klubbfordeler</a></li>
-                            <li><a href="#" aria-label="Om oss" tabindex="13">Om oss</a></li>
-                            <li><a href="#" aria-label="Kontakt" tabindex="14">Kontakt</a></li>
-                            <li><a href="analyse.html" aria-label="Analyse" tabindex="15">Analyse</a></li>
+            <nav id="mobilNav">
+                <ul>
+                    <li aria-label="Åpne meny" tabindex="1"><i class="fa-solid fa-bars" id="open_button"></i></li>
+                    <li aria-label="Søk" tabindex="2"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li aria-label="TrendyWear logo" tabindex="3" id="LOGO"><a href="index.html">TrendyWear</a></li>
+                    <li aria-label="Handlekurv" tabindex="4"><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li aria-label="Brukerprofil" tabindex="5"><i class="fa-solid fa-user"></i></li>
+                </ul>
+                <hr>
+            </nav>
+            <nav id="hamburger_menu">
+                <span id="close_button" aria-label="Lukk meny">X</span>
+                <ul>
+                    <li aria-label="Herreavdeling" tabindex="1"><a href="kategori.html">Herreavdeling</a></li>
+                    <li aria-label="Dameavdeling" tabindex="2"><a href="kategori.html">Dameavdeling</a></li>
+                    <li aria-label="Barneavdeling" tabindex="3"><a href="kategori.html">Barneavdeling</a></li>
+                    <li aria-label="Om oss" tabindex="4"><a href="#">Om oss</a></li>
+                    <li aria-label="Analyseside" tabindex="5"><a href="analyse.html">Analyseside</a></li>
+                </ul>
+            </nav>
+            <nav id="desktopNav" role="navigation">
+                <section id="toppBar">
+                    <h2><a href="index.html" id="logo" aria-label="TrendyWear logo" tabindex="1">TrendyWear</a></h2>
+                    <span id="søkeFelt" aria-label="Søkefelt">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="search" name="search" placeholder="Hva leter du etter" aria-label="Søk" tabindex="2">
+                    </span>
+                    <div id="mode_cart_profile" aria-label="Interaktive knapper">
+                        <ul aria-label="Kategorier">
+                            <li><i class="fa-solid fa-circle-half-stroke" aria-label="Fargemodus" tabindex="3"></i>
+                            </li>
+                            <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv" tabindex="4"></i></li>
+                            <li><i class="fa-solid fa-user" aria-label="Brukerprofil" tabindex="5"></i></li>
                         </ul>
-                    </section>
-                </nav>
-                <section itemscope itemtype="https://schema.org/BreadcrumbList">
-                    <ul id="brødsmuleMeny" itemtype="https://schema.org/BreadcrumbList" aria-label="Område for brødsmulemeny" tabindex="16">
-                        <li id="brødsmuleHjem" itemprop="itemListElement" itemscope
-                            itemtype="https://schema.org/ListItem">
-                            <meta itemprop="position" content="1">
-                            <a itemprop="item" href="index.html">
-                                <span itemprop="name" tabindex="17" aria-label="Gå til hjemmesiden">Hjem</span>
-                            </a>
-                        </li>
-                        <li>
-                            <p>/</p>
-                        </li>
-                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <meta itemprop="position" content="2">
-                            <a itemprop="item" href="#">
-                                <span itemprop="name" tabindex="18" aria-label="Du er på analysesiden">Analyse</span>
-                            </a>
-                        </li>
+                    </div>
+                </section>
+                <section id="kategoriFelt" aria-label="Kategorier" tabindex="6">
+                    <ul>
+                        <li><a href="kategori.html" aria-label="Dame" tabindex="7">Dame</a></li>
+                        <li><a href="kategori.html" aria-label="Herre" tabindex="8">Herre</a></li>
+                        <li><a href="kategori.html" aria-label="Barn" tabindex="9">Barn</a></li>
+                        <li><a href="kategori.html" aria-label="Merker" tabindex="10">Merker</a></li>
+                        <li><a href="#" aria-label="Tilbehør" tabindex="11">Tilbehør</a></li>
+                        <li><a href="#" aria-label="Klubbfordeler" tabindex="12">Klubbfordeler</a></li>
+                        <li><a href="#" aria-label="Om oss" tabindex="13">Om oss</a></li>
+                        <li><a href="#" aria-label="Kontakt" tabindex="14">Kontakt</a></li>
+                        <li><a href="analyse.html" aria-label="Analyse" tabindex="15">Analyse</a></li>
                     </ul>
                 </section>
-            </header>
+            </nav>
+            <section itemscope itemtype="https://schema.org/BreadcrumbList">
+                <ul id="brødsmuleMeny" aria-label="Område for brødsmulemeny" tabindex="16">
+                    <li id="brødsmuleHjem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" tabindex="17" aria-label="Gå til hjemmesiden">
+                        <meta itemprop="position" content="1">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="name">Hjem</span>
+                        </a>
+                    </li>
+                    <li>
+                        <p>/</p>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" tabindex="18" aria-label="Du er på analysesiden">
+                        <meta itemprop="position" content="2">
+                        <a itemprop="item" href="#">
+                            <span itemprop="name">Analyse</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </header>
             <main>
                 <h1 tabindex="19">Analyseside for TrendyWear</h1>
                 <section id="hurtigKnapper" tabindex="20" aria-label="Seksjon med hurtknapper til områder på nettsiden"> 
@@ -837,7 +832,7 @@
                     </article>
                     <article>
                         <h3 tabindex="126">Aria atributter</h3>
-                        <p class="beskrivende_tekst"tabindex="127">
+                        <p class="beskrivende_tekst" tabindex="127">
                             Et aria attributt er et HTML attributt som gir ekstra informasjon om et element. Dette er
                             for å gjøre nettsiden mer tilgjengelig for skjermlesere. De fleste elementene som en 
                             skjermleser skulle støte på fikk derfor et aria-attributt.
@@ -935,14 +930,14 @@
                     </ul>
                 </nav>
                 <section class="flexbox_center">
-                    <figure>
-                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok" tabindex="154"></i></a>
+                    <figure aria-label="TikTok" tabindex="154">
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                     </figure>
-                    <figure>
-                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" tabindex="155"></i></a>
+                    <figure aria-label="Instagram" tabindex="155">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </figure>
-                    <figure>
-                        <a href="#" aria-label="YouTube Shorts"><i class="fa-brands fa-youtube" tabindex="156"></i></a>
+                    <figure aria-label="YouTube Shorts" tabindex="156">
+                        <a href="#" ><i class="fa-brands fa-youtube"></i></a>
                     </figure>
                 </section>
             </footer>
@@ -987,17 +982,17 @@
                         <nav aria-label="Område med sosial medier" tabindex="162">
                             <h3 tabindex="163">Følg oss</h3>
                             <ul>
-                                <li>
+                                <li tabindex="164" aria-label="Følg oss på TikTok">
                                     <i class="fa-brands fa-tiktok" aria-label="TikTok"></i>
-                                    <a href="#" aria-label="Følg oss på TikTok" tabindex="164">TikTok</a>
+                                    <a href="#">TikTok</a>
                                 </li>
-                                <li>
-                                    <i class="fa-brands fa-instagram" aria-label="Instagram"></i>
-                                    <a href="#" aria-label="Følg oss påInstagram" tabindex="165">Instagram</a>
+                                <li tabindex="165" aria-label="Følg oss påInstagram">
+                                    <i class="fa-brands fa-instagram" aria-label="Instagram" ></i>
+                                    <a href="#">Instagram</a>
                                 </li>
-                                <li>
+                                <li tabindex="166" aria-label="Følg oss påYouTube Shorts" >
                                     <i class="fa-brands fa-youtube" aria-label="YouTube Shorts"></i>
-                                    <a href="#" aria-label="Følg oss påYouTube Shorts" tabindex="166">YouTube Shorts</a>
+                                    <a href="#">YouTube Shorts</a>
                                 </li>
                             </ul>
                         </nav>
