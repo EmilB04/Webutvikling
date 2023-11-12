@@ -31,6 +31,9 @@
     <meta name="twitter:description" content="Utforsk Nike Air Force hos TrendyWear - Skapt for stil og komfort. Oppdag det ikoniske designet som inspirerer generasjoner. Kjøp din Nike Air Force nå.">
     <meta name="twitter:image" content="img/utstilling/Adidas_Shoe_Row1.jpg"> <!--Et bedre passended bilde plasseres her.-->
 
+    <link href="css/ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="css/ikoner/css/brands.css" rel="stylesheet">
+    <link href="css/ikoner/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Handle Nike Air Force - TrendyWear</title>
@@ -38,29 +41,26 @@
 <body>
     <div id="grid_container">
         <header>
-            <header>
             <nav id="mobilNav">
                 <ul>
-                    <li><i class="fa-solid fa-bars" id="open_button" aria-label="Åpne meny" tabindex="1"></i></li>
-                    <li><i class="fa-solid fa-magnifying-glass" aria-label="Søk" tabindex="2"></i></li>
-                    <li id="LOGO"><a href="index.html" aria-label="TrendyWear logo" tabindex="3">TrendyWear</a></li>
-                    <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv" tabindex="4"></i></li>
-                    <li><i class="fa-solid fa-user" aria-label="Brukerprofil" tabindex="5"></i></li>
+                    <li aria-label="Åpne meny" tabindex="1"><i class="fa-solid fa-bars" id="open_button"></i></li>
+                    <li aria-label="Søk" tabindex="2"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li aria-label="TrendyWear logo" tabindex="3" id="LOGO"><a href="index.html">TrendyWear</a></li>
+                    <li aria-label="Handlekurv" tabindex="4"><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li aria-label="Brukerprofil" tabindex="5"><i class="fa-solid fa-user"></i></li>
                 </ul>
                 <hr>
             </nav>
-            
             <nav id="hamburger_menu">
                 <span id="close_button" aria-label="Lukk meny">X</span>
                 <ul>
-                    <li><a href="kategori.html" aria-label="Herreavdeling" tabindex="1">Herreavdeling</a></li>
-                    <li><a href="kategori.html" aria-label="Dameavdeling" tabindex="2">Dameavdeling</a></li>
-                    <li><a href="kategori.html" aria-label="Barneavdeling" tabindex="3">Barneavdeling</a></li>
-                    <li><a href="#" aria-label="Om oss" tabindex="4">Om oss</a></li>
-                    <li><a href="analyse.html" aria-label="Analyseside" tabindex="5">Analyseside</a></li>
+                    <li aria-label="Herreavdeling" tabindex="1"><a href="kategori.html">Herreavdeling</a></li>
+                    <li aria-label="Dameavdeling" tabindex="2"><a href="kategori.html">Dameavdeling</a></li>
+                    <li aria-label="Barneavdeling" tabindex="3"><a href="kategori.html">Barneavdeling</a></li>
+                    <li aria-label="Om oss" tabindex="4"><a href="#">Om oss</a></li>
+                    <li aria-label="Analyseside" tabindex="5"><a href="analyse.html">Analyseside</a></li>
                 </ul>
             </nav>
-            
             <nav id="desktopNav" role="navigation">
                 <section id="toppBar">
                     <h2><a href="index.html" id="logo" aria-label="TrendyWear logo" tabindex="1">TrendyWear</a></h2>
@@ -70,7 +70,8 @@
                     </span>
                     <div id="mode_cart_profile" aria-label="Interaktive knapper">
                         <ul aria-label="Kategorier">
-                            <li><i class="fa-solid fa-circle-half-stroke" aria-label="Fargemodus" tabindex="3"></i></li>
+                            <li><i class="fa-solid fa-circle-half-stroke" aria-label="Fargemodus" tabindex="3"></i>
+                            </li>
                             <li><i class="fa-solid fa-cart-shopping" aria-label="Handlekurv" tabindex="4"></i></li>
                             <li><i class="fa-solid fa-user" aria-label="Brukerprofil" tabindex="5"></i></li>
                         </ul>
@@ -91,7 +92,7 @@
                 </section>
             </nav>
             <section itemscope itemtype="https://schema.org/BreadcrumbList">
-                <ul id="brødsmuleMeny" itemtype="https://schema.org/BreadcrumbList">
+                <ul id="brødsmuleMeny">
                     <li id="brødsmuleHjem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <meta itemprop="position" content="1">
                         <a itemprop="item" href="index.html">
@@ -126,20 +127,14 @@
                 <section id="desktop_produkt_flex">
                     <section id="hovedBilde" aria-label="Bilder av produktet">
                         <span class="slider">
-                            <picture class="slide" itemprop="associatedMedia" itemtype="https://schema.org/ImageObject">
+                            <picture class="slide" itemprop="name" content="skobilde 1" >
                                 <img src="img/utstilling/Nike_Shoe_Row1.jpg" alt="Bilde 1 av skoen" itemprop="image">
-                                <meta itemprop="name" content="skobilde">
-                                <meta itemprop="caption" content="bilde 1">
                             </picture>
-                            <picture class="slide" itemprop="associatedMedia" itemtype="https://schema.org/ImageObject">
+                            <picture class="slide" itemprop="name" content="skobilde 2">
                                 <img src="img/utstilling/Adidas_Shoe_Row1.jpg" alt="Bilde 2 av skoen" itemprop="image">
-                                <meta itemprop="name" content="skobilde">
-                                <meta itemprop="caption" content="bilde 2">
                             </picture>
-                            <picture class="slide" itemprop="associatedMedia" itemtype="https://schema.org/ImageObject">
+                            <picture class="slide" itemprop="name" content="skobilde 3">
                                 <img src="img/utstilling/Reebok_Shoe_Row1.jpg" alt="Bilde 3 av skoen" itemprop="image">
-                                <meta itemprop="name" content="skobilde">
-                                <meta itemprop="caption" content="bilde 3">
                             </picture>
                         </span>
                         <button class="prev" onclick="changeSlide(-1)" aria-label="Forrige bilde">&#8249;</button>
@@ -183,8 +178,7 @@
                             <meta itemprop="priceCurrency" content="NOK">
                         </article>
 
-<!----------    ------------------------------------------------------------------------------------------------------------------------------------------->
-                        <section id="desktop_sko_farger" aria-label="Farger"">
+                        <section id="desktop_sko_farger" aria-label="Farger">
                             <article id="desktop_farge" aria-label="Farge" itemprop="name">
                                 <h3 itemprop="description">Farge:</h3>
                                 <h4 itemprop="color">Lorem Ipsum</h4>
@@ -214,13 +208,13 @@
                         </section>
                         <section id="desktop_handlekurv_kjøp" aria-label="Handlekurv og kjøp">
                             <button aria-label="kjøp nå" itemprop="potentialAction" itemscope itemtype="https://schema.org/BuyAction">
-                                <meta itemprop="price" content="999" />
-                                <meta itemprop="priceCurrency" content="NOK" />
+                                <meta itemprop="price" content="999">
+                                <meta itemprop="priceCurrency" content="NOK">
                                 Kjøp nå
                             </button>
                             <button aria-label="Legg produktet i handlekurven" itemprop="potentialAction" itemscope itemtype="https://schema.org/AddAction">
-                                <meta itemprop="price" content="999" />
-                                <meta itemprop="priceCurrency" content="NOK" />
+                                <meta itemprop="price" content="999">
+                                <meta itemprop="priceCurrency" content="NOK">
                                 Legg i handlekurv
                             </button>
                         </section>
@@ -273,7 +267,7 @@
             
             <section class="horisontale_utstillinger">
                 <h2>Utvalgte herresko</h2>
-                <section class="flexbox_standard" aria-label="område for skoutstilling" itemprop="hasOfferCatalog">
+                <section class="flexbox_standard" aria-label="område for skoutstilling" itemscope itemtype="https://schema.org/OfferCatalog">
                     <meta itemprop="name" content="Utvalgte herresko">
             
                     <!-- Product 1 -->
@@ -286,7 +280,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
             
@@ -300,7 +294,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
             
@@ -314,7 +308,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     <!-- Product 1 -->
@@ -327,7 +321,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -341,7 +335,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -355,7 +349,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     <!-- Product 1 -->
@@ -368,7 +362,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -382,7 +376,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -396,14 +390,16 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
+                    
                 </section>
             </section>
-            <section class="horisontale_utstillinger"">
-                <h2 itemprop="name">Utvalgte damesko</h2>
-                <section class="flexbox_standard" aria-label="område for skoutstilling">
+            <section class="horisontale_utstillinger">
+                <h2>Utvalgte damesko</h2>
+                <section class="flexbox_standard" aria-label="område for skoutstilling" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <meta itemprop="name" content="Utvalgte damesko">
                     <!-- Product 1 -->
                     <article class="bildeRamme" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
                         <a href="produkt.html" itemprop="url">
@@ -414,7 +410,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -428,7 +424,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -442,7 +438,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     <!-- Product 1 -->
@@ -455,7 +451,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -469,7 +465,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -483,7 +479,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     <!-- Product 1 -->
@@ -496,7 +492,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -510,7 +506,7 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
                     
@@ -524,9 +520,10 @@
                         </a>
                         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="999">
-                            <meta itemprop="priceCurrency" content="NOK" />
+                            <meta itemprop="priceCurrency" content="NOK">
                         </div>
                     </article>
+                    
                 </section>
             </section>
 
@@ -566,7 +563,7 @@
                 <figure itemprop="socialMedia">
                     <a href="#" aria-label="TikTok" itemprop="sameAs"><i class="fa-brands fa-tiktok"></i></a>
                 </figure>
-                <figure itemprop="socialMedia"">
+                <figure itemprop="socialMedia">
                     <a href="#" aria-label="Instagram" itemprop="sameAs"><i class="fa-brands fa-instagram"></i></a>
                 </figure>
                 <figure itemprop="socialMedia">
