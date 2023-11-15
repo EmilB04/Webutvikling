@@ -4,13 +4,10 @@
 * {
     box-sizing: border-box;
 }
-#grid_container{
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-header{grid-area: header;}; main{grid-area: main;}; footer{grid-area: footer;}
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -20,9 +17,13 @@ body {
     width: 100% !important;
 }
 
-@media screen and (min-width: 0px) and (max-width: 950px) {
-    
-
+@media screen and (min-width: 0px) and (max-width: 950px) { /*Mobil og nettbrett*/
+    #grid_container{
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 
     .flex_center{ /*Brukes flere steder*/
         display: flex;
@@ -101,12 +102,15 @@ body {
         padding: 1rem 1.5rem;
         text-align: left;
     }
-    #bakgrunnsbilde{
+    #bakgrunnsMedia{
         background-image: url("/ressurser/bilder/apple_pic.jpg");   /*https://emailanalytics.com/27-ways-to-increase-employee-productivity-in-the-workplace/*/
         background-size: auto;
         background-position: center;
         background-repeat: no-repeat;
         overflow: hidden;
+    }
+    video{
+        display: none;
     }
 
 
@@ -213,6 +217,183 @@ body {
         background-color: #252525 ;
         padding: 5rem 0;
         margin: 0 !important;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 950px) { /*Desktop*/
+    body{
+        margin:0 auto /* Kicker inn hvis bredden blir mer enn max-width som er 2200px*/
+    }
+    #grid_container {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .flex_center{ /*Brukes flere steder*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 10%;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem; /*Lager litt luft for bakgrunnsvideoen*/
+    }
+    nav span{
+        margin: 1rem 0 0 1rem;
+    }
+    nav span img{
+        width: 75%;
+        height: auto;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row !important;
+        margin: 0 !important;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 0 1rem;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    #contact{
+        background-color: #e6bd43;
+        font-weight: 600;
+        padding: 1rem;
+    }
+    #contact:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    #active_navigation{
+        font-weight: 600;
+        padding: 0;
+        border-bottom: solid #e6bd43;
+    }
+    /*---------------------------------------*/
+    /*----------- MAIN STARTER HER ----------*/
+    /*---------------------------------------*/
+
+    main h1{
+        font-size: 3.5rem;
+    }
+    main h2{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    main p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+
+    /*---------------------------------------*/
+
+
+    #main_services{
+        text-align: center;
+        background-size: cover;
+        background-position: center; 
+        color: black;
+        margin: 7rem 0;
+    }
+    #main_services h1{
+        margin-top: 0;
+    }
+    #main_services p{
+        margin: 0 10%;
+    }
+    #main_services a{
+        display: inline-block;
+        width: auto;
+        text-decoration: none;
+        color: black;
+        background-color: #e6bd43;
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        margin-top: 1rem;
+    }
+    #main_services a:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    #bakgrunnsMedia {
+        position: relative;
+        overflow: hidden;
+    }   
+    #background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Setter videoen bak teksten */
+        object-fit: cover; /* For å sikre at videoen dekker hele bakgrunnen */
+    }
+
+    /*---------------------------------------*/
+
+    #help_visitors{
+        justify-content: center;
+        text-align: center;
+        margin: 5rem 10%;
+    }
+
+    /*---------------------------------------*/
+
+
+    #about_us{
+        background-color: #e6bd43;
+        padding: 10%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #about_us picture{
+        margin: 0rem 0 2rem 0;
+        width: 100%;
+        height: 100%;
+    }
+    #about_us img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    
+    #about_us a{
+        display: block;
+        background-color: #e6bd43;
+        border: 2px solid black;
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
     }
 
 }
