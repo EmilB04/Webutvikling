@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/*Importerer inn Roboto Font*/
+
+* {
+    box-sizing: border-box;
+}
+#grid_container{
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+header{grid-area: header;}; main{grid-area: main;}; footer{grid-area: footer;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(1em + 1vw);
+    min-width: none !important;
+    max-width: 2200px !important;
+    width: 100% !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 950px) {
+    .flex_center{ /*Brukes flere steder*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 0.5rem 0;
+    }
+    nav ul li:last-child{
+        padding: 2rem 0;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    #contact{
+        background-color: #e6bd43;
+        font-weight: 600;
+        padding: 1rem;
+    }
+    #active_navigation{
+        font-weight: 600;
+        padding: 0;
+        border-bottom: solid #e6bd43;
+    }
+    /*---------------------------------------*/
+    /*----------- MAIN STARTER HER ----------*/
+    /*---------------------------------------*/
+    h1{
+        font-size: 2.5rem;
+    }
+    #main_services{
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        z-index: 1;
+    }
+    #main_services button{
+        background-color: #e6bd43;
+        border: none;
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    #main_services button a{
+        text-decoration: none;
+        color: black;
+        background-color: #e6bd43;
+    }
+    #bakgrunnsbilde{
+        background-image: url("/Eksamen/ressurser/bilder/apple_pic.jpg");   /*https://emailanalytics.com/27-ways-to-increase-employee-productivity-in-the-workplace/*/
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+
+
+}
