@@ -124,7 +124,7 @@ body {
     }
 
     #about_us picture{
-        margin: 0rem 0 5rem 0;
+        margin: 0rem 0 2rem 0;
     }
     #about_us img{
         width: 100%;
@@ -143,9 +143,25 @@ body {
         cursor: pointer;
     }
 
+    /*---------------------------------------*/
 
+    #our_services{
+        text-align: center;
+        margin: 1rem 0 1rem 10%;
+        gap: 2rem;
+    }
+    #our_services h2{
+        margin: 2rem 0;
+    }
+    #our_services i{
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 
-
+    /*---------------------------------------*/
 
 
 }
