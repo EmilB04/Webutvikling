@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/brands.css">
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/solid.css">
 
-    <link rel="stylesheet" href="https://github.com/necolas/normalize.css/blob/master/normalize.css">
+    <link rel="stylesheet" href="ressurser/stilark/normalize.css">
     <link rel="stylesheet" href="ressurser/stilark/stil.css">
 
     <title>Hovedside</title>
@@ -18,12 +18,12 @@
     <div id="grid_container">
         <header>
             <nav id="top">
+                <span>
+                    <a href="index.html">
+                        <img src="ressurser/bilder/logo2.png" alt="Logo">
+                    </a>
+                </span>
                 <ul class="flex_center">
-                    <span>
-                        <a href="index.html">
-                            <img src="ressurser/bilder/logo2.png" alt="Logo">
-                        </a>
-                    </span>
                     <li><a href="index.html" id="active_navigation">Home</a></li>
                     <li><a href="products.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
@@ -42,9 +42,7 @@
                         Qui est esse consectetur laborum aute laborum aliqua dolore culpa mollit reprehenderit consequat. 
                         Mollit ipsum veniam consequat aliqua sint proident anim eiusmod est sunt aliqua voluptate.
                     </p>
-                    <button>
-                        <a href="about.html">Read more about our services</a>
-                    </button>
+                    <a href="about.html">Read more about our services</a>
                 </article>
             </section>
             </div>
@@ -75,7 +73,7 @@
                         Culpa sunt quis officia irure eu sint magna. Adipisicing esse officia duis anim aliqua enim occaecat fugiat esse quis in fugiat cupidatat.
                         Qui elit laborum labore in Lorem aute culpa. Est sint sit cillum veniam eiusmod aliqua magna commodo exercitation occaecat.
                     </p>
-                    <button>Read more about us</button>
+                    <a href="about.html">Read more about us</a>
                 </article>
             </section>
 
@@ -111,6 +109,19 @@
                 </article>
             </section>
         </main>
+
+        <footer>
+            <section class="flex_center" id="newsletter">
+                <h3>Sign up for our newsletter</h3>
+                <form>
+                    <input type="email" id="email_footer" placeholder="navn@epost.no">
+                    <button>Sign med up!</button>
+                </form>
+            </section>
+            <section class="flex_center" id="logo_footer">
+                <a href="index.html"><img src="/ressurser/bilder/logo2.png" alt="Logo"></a>
+            </section>
+        </footer>
     </div>
 </body>
 </html>
