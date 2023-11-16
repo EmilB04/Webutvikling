@@ -542,6 +542,10 @@ body {
         margin: 10rem 0;
     }
 
+    #explore_previous_jobs{
+        margin-bottom: 4rem;
+    }
+
     #explore_previous_jobs h2{
         border-bottom: solid #e6bd43;
         width: 100%;
@@ -562,5 +566,29 @@ body {
         color: black;
         text-decoration: none;
     }
+
+    #branding{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #branding h2 {
+        border-bottom: solid #e6bd43;
+        width: 100%;
+        padding-bottom: 0.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    #branding picture{
+        width: 100%;
+        height: 100%;
+    }
+    #branding img {
+        width: 100%;
+    }
+    /*TODO!
+        Fiks at bilde blir 100% av tilgengelig bredde hele tiden.
+        Flex wrap skal ikke legges på før 
+    */
 
 }
