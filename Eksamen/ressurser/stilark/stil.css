@@ -33,24 +33,7 @@ body {
     color: black;
     background-color: white;
 }
-
-@media screen and (min-width: 0px) and (max-width: 950px) { /*Index Mobil og nettbrett*/
-    #grid_container{
-        display: grid;
-        grid-template-areas: "header" "main" "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .flex_center{ /*Brukes flere steder*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 10%;
-    }
-
-    /*----------------- INDEX----------------------*/
+@media screen and (min-width: 0px) and (max-width: 950px){ /*Faste verdier på mobil og nettbreett*/
     nav span{
         display: flex;
         justify-content: center;
@@ -84,9 +67,6 @@ body {
         padding: 0;
         border-bottom: solid #e6bd43;
     }
-    
-    /*----------- MAIN STARTER HER ----------*/
-    
     main h1{
         font-size: 2.5rem;
     }
@@ -97,11 +77,79 @@ body {
     main p{
         text-align: left;
     }
+    #grid_container{
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .flex_center{ /*Brukes flere steder*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 10%;
+    }
+
+    #newsletter{
+        background-color: #eeee;
+        padding: 2rem 0 4rem 0;
+        margin: 0;
+    }
+    #newsletter h3{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #newsletter form{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 2%;
+    }
+    #newsletter form button{
+        background-color: #e6bd43;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        flex-basis: 29%;
+        margin-right: 10%;
+    }
+    #newsletter form input{
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 100%;
+        flex-basis: 69%;
+        margin-left: 10%;
+    }
+
+    #logo_footer{
+        background-color: #252525 ;
+        padding: 5rem 0;
+        margin: 0;
+        color: white;
+    }
+    #logo_footer ul{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #logo_footer ul li{
+        list-style: none;
+    }
+    #logo_footer i {
+        color: white;
+        font-size: 2.5rem;
+    }
+}
 
 
-    /*---------------------------------------*/
 
-
+@media screen and (min-width: 0px) and (max-width: 950px) { /*Index Mobil og nettbrett*/
     #main_services{
         text-align: center;
         background-size: cover;
@@ -128,10 +176,9 @@ body {
         background-repeat: no-repeat;
         overflow: hidden;
     }
-    video{
+    #bakgrunnsMedia video{
         display: none;
     }
-
 
     /*---------------------------------------*/
 
@@ -141,9 +188,7 @@ body {
         margin: 5rem 10%;
     }
 
-
     /*---------------------------------------*/
-
 
     #about_us{
         background-color: #e6bd43;
@@ -199,59 +244,7 @@ body {
     }
 
     /*---------------------------------------*/
-    #newsletter{
-        background-color: #eeee;
-        padding: 2rem 0 4rem 0;
-        margin: 0;
-    }
-    #newsletter h3{
-        flex-basis: 100%;
-        text-align: center;
-    }
-    #newsletter form{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        gap: 2%;
-    }
-    #newsletter form button{
-        background-color: #e6bd43;
-        border: none;
-        padding: 1rem;
-        font-size: 1rem;
-        font-weight: 600;
-        flex-basis: 29%;
-        margin-right: 10%;
-    }
-    #newsletter form input{
-        border: none;
-        padding: 1rem;
-        font-size: 1rem;
-        width: 100%;
-        flex-basis: 69%;
-        margin-left: 10%;
-    }
 
-    #logo_footer{
-        background-color: #252525 ;
-        padding: 5rem 0;
-        margin: 0;
-        color: white;
-    }
-    #logo_footer ul{
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-    }
-    #logo_footer ul li{
-        list-style: none;
-    }
-    #logo_footer i {
-        color: white;
-        font-size: 2.5rem;
-    }
 
 }
 @media screen and (min-width: 950px) { /* Index Desktop*/
@@ -529,7 +522,6 @@ body {
     }
 }
 
-
 @media screen and (min-width: 0px) and (max-width: 950px) { /*Products Mobil og nettbrett*/
     #portfolio{
         margin: 0 auto 2rem 0;
@@ -538,6 +530,26 @@ body {
         background-size: cover;
         background-position: center;
     }
+
+    /*---------------- TING SOM BLIR GJENTATT i Products-------------------------------------*/
+    #PRODUCTS h2{
+        border-bottom: solid #e6bd43;
+        width: 100%;
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    #PRODUCTS picture{
+        width: 100%;
+        height: 100%;
+    }
+    #PRODUCTS img {
+        width: 100%;
+    }
+    #PRODUCTS h3 {
+        margin: 1rem 0 3rem 0; /*Mellomrom mellom undertekst/undetittel og neste bilde*/
+    }
+
+    /*------------------------------------------------------------------------------------*/
     #portfolio h1{
         margin: 10rem 0;
     }
@@ -546,12 +558,6 @@ body {
         margin-bottom: 4rem;
     }
 
-    #explore_previous_jobs h2{
-        border-bottom: solid #e6bd43;
-        width: 100%;
-        padding-bottom: 0.5rem;
-        font-size: 1.5rem;
-    }
 
     #explore_previous_jobs article{
         width: 100%;
@@ -566,29 +572,13 @@ body {
         color: black;
         text-decoration: none;
     }
+}
 
-    #branding{
-        display: flex;
-        flex-direction: column;
-    }
 
-    #branding h2 {
-        border-bottom: solid #e6bd43;
-        width: 100%;
-        padding-bottom: 0.5rem;
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-    }
-    #branding picture{
-        width: 100%;
-        height: 100%;
-    }
-    #branding img {
-        width: 100%;
-    }
+
+
+
     /*TODO!
         Fiks at bilde blir 100% av tilgengelig bredde hele tiden.
         Flex wrap skal ikke legges på før 
     */
-
-}
