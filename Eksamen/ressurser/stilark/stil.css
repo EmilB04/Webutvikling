@@ -580,5 +580,6 @@ body {
 
     /*TODO!
         Fiks at bilde blir 100% av tilgengelig bredde hele tiden.
-        Flex wrap skal ikke legges på før 
+        Flex wrap skal ikke legges på før desktop
+        Alle artikkelkortene på porfoliosiden skal ha en maks bredde på 350px og en min bredde på 200px
     */
