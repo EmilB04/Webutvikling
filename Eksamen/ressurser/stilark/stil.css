@@ -12,11 +12,12 @@ footer{grid-area: footer;}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(1em + 1vw);
-    min-width: none !important;
-    max-width: 2200px !important;
+    max-width: 2200px !important; 
     width: 100% !important;
+    margin: 0 auto; /*Nettsiden skal alltid være sentrert på skjermen, uansett bredde*/
 }
 
+/*-------------------------- Felles innhold for alle versjoner ----------------------------------*/
 #toTop{
     position: fixed;
     bottom: 1rem;
@@ -33,7 +34,9 @@ body {
     color: black;
     background-color: white;
 }
-@media screen and (min-width: 0px) and (max-width: 950px){ /*Faste verdier på mobil og nettbreett*/
+
+
+@media screen and (min-width: 0px) and (max-width: 1000px){ /*Faste verdier på mobil og nettbreett*/
     nav span{
         display: flex;
         justify-content: center;
@@ -146,7 +149,7 @@ body {
         font-size: 2.5rem;
     }
 }
-@media screen and (min-width: 950px) {                     /*Faste verdier på desktop*/
+@media screen and (min-width: 1000px) {                     /*Faste verdier på desktop*/
     #grid_container {
         display: grid;
         grid-template-areas:
@@ -161,7 +164,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 0 10%;
     }
     nav{
@@ -227,7 +231,7 @@ body {
 
 
 
-@media screen and (max-width: 950px) { /*Index Mobil og nettbrett*/
+@media screen and (max-width: 1000px) { /*Index Mobil og nettbrett*/
     #main_services{
         text-align: center;
         background-size: cover;
@@ -325,7 +329,7 @@ body {
 
 
 }
-@media screen and (min-width: 950px) { /* Index Desktop*/
+@media screen and (min-width: 1000px) { /* Index Desktop*/
     #main_services{
         text-align: center;
         background-size: cover;
@@ -515,7 +519,7 @@ body {
         font-size: 3rem;
     }
 }
-@media screen and (max-width: 950px) { /*Products Mobil og nettbrett*/
+@media screen and (max-width: 1000px) { /*Products Mobil og nettbrett*/
     #portfolio{
         margin: 0 auto 2rem 0;
         padding: auto;
@@ -532,14 +536,18 @@ body {
         margin-bottom: 2rem;
     }
     #PRODUCTS picture{
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
     }
     #PRODUCTS img {
+        height: auto;
+        max-width: 100%;
         width: 100%;
     }
     #PRODUCTS h3 {
         margin: 1rem 0 3rem 0; /*Mellomrom mellom undertekst/undetittel og neste bilde*/
+    }
+    #PRODUCTS article{ /*Hovedsaklig for at bildene skal ta 100% av bredden*/
+        width: 100%;
     }
 
     /*------------------------------------------------------------------------------------*/
@@ -553,7 +561,6 @@ body {
 
 
     #explore_previous_jobs article{
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 5%;
@@ -565,8 +572,9 @@ body {
         color: black;
         text-decoration: none;
     }
+
 }
-@media screen and (min-width: 950px) { /*Products Desktop*/
+@media screen and (min-width: 1000px) { /*Products Desktop*/
     #portfolio{
         margin: 0 auto 2rem 0;
         padding: auto;
@@ -593,12 +601,14 @@ body {
         text-decoration: none;
     }
 
-    #branding, #design, #development{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex-grow: 2;
+    #branding{
+        justify-content: space-between; /*Syntes denne passet bedre til 4 elementer*/
+    }
+    #design{
+        justify-content: space-around; /*Syntes denne passet bedre til 3 elementer*/
+    }
+    #development{
+        justify-content: space-evenly; /*Syntes denne passet bedre til 2 elementer*/
     }
 
     /*---------------- TING SOM BLIR GJENTATT i Products-------------------------------------*/
@@ -607,6 +617,7 @@ body {
         width: 100%;
         padding-bottom: 0.5rem;
         margin-bottom: 2rem;
+        flex-basis: 100%;
     }
     #PRODUCTS picture{
         width: 100%;
@@ -625,7 +636,7 @@ body {
 
 
 @media screen and (min-width: 2200px) { /*Når skjermen blir max-width*/
-    .flex_center{
+    .flex_center{ /*Fjerner "innhugget" på 20%, og gjør hele nettsiden like bred*/
         margin: 0;
     }
 }
@@ -633,7 +644,5 @@ body {
 
 
     /*TODO!
-        Fiks at bilde blir 100% av tilgengelig bredde hele tiden.
-        Flex wrap skal ikke legges på før desktop
         Alle artikkelkortene på porfoliosiden skal ha en maks bredde på 350px og en min bredde på 200px
     */
