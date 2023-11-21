@@ -746,6 +746,7 @@ body {
     #contact_information ul li i {
         margin-right: 2rem;
         font-size: 1.5rem; 
+        width: 15px;
     }
     iframe{
         width: 125%;
