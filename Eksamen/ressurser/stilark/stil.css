@@ -37,7 +37,7 @@ body {
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 1000px){ /*Faste verdier på mobil og nettbreett*/
+@media screen and (max-width: 1000px) { /*Faste verdier på mobil og nettbreett*/
     nav span{
         display: flex;
         justify-content: center;
@@ -150,7 +150,7 @@ body {
         font-size: 3.5rem;
     }
 }
-@media screen and (min-width: 1000px) {                     /*Faste verdier på desktop*/
+@media screen and (min-width: 1000px) { /*Faste verdier på desktop*/
     #grid_container {
         display: grid;
         grid-template-areas:
@@ -220,8 +220,11 @@ body {
         font-size: 3.5rem;
     }
     main h2{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin: 0;
+    }
+    main h3{
+        font-size: 2.2rem;
     }
     main p{
         text-align: center;
@@ -240,7 +243,7 @@ body {
         background-color: #ffffff86;
         width: 100%;
         margin: 0;
-        padding: 0 10%;
+        padding: 10rem 10%;
     }
     #main_services a{
         display: block;
@@ -339,7 +342,7 @@ body {
         background-size: cover;
         background-position: center; 
         color: black;
-        padding: 7rem 0;
+        padding: 10rem 0;
         width: 100%;
         margin: 0;
         background-color: #ffffff3a;
@@ -386,7 +389,7 @@ body {
     #help_visitors{
         justify-content: center;
         text-align: center;
-        margin: 5rem 10%;
+        padding: 10rem 10%;
     }
 
     /*---------------------------------------*/
@@ -609,7 +612,7 @@ body {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 5%;
+        gap: 2rem;
     }
     #explore_previous_jobs article a{
         padding: 0.5rem;
@@ -720,10 +723,6 @@ body {
         font-weight: 600;
         padding: 1rem;
     }
-    #contact_form form button:hover{
-        background-color: #252525;
-        color: #e6bd43;
-    }
     #contact_information h3{
         align-self: flex-start;
     }
@@ -749,13 +748,160 @@ body {
         width: 15px;
     }
     iframe{
-        width: 125%;
+        width: 100%;
         height: 35rem;
         border: 0;
     }
 
 }
+@media screen and (min-width: 1000px) { /*About Desktop*/
+    #bakgrunnsbilde{
+        margin: 0 auto;
+        padding: 4rem 0;
+        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
+        background-size: cover;
+        background-position: center;
+    }
+    #about_our_company{
+        background-color: #e6e6e6;
+        padding: 3rem 3rem;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 47%;
+    }
+    #about_our_company p{
+        text-align: left;
+    }
+    #about_our_company h1{
+        align-self: baseline;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+    #about_our_company h2{
+        margin-bottom: 0.5rem;
+        align-self: baseline;
+    }
+    #about_our_company a{
+        width: auto;
+        align-self: baseline;
+        background-color: #e6bd43;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+    #some_of_our_clients{
+        background-color: #e6bd43;
+        margin: 0 auto;
+        padding: 5rem 0;
+        text-align: left;
+    }
+    #some_of_our_clients h2{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #some_of_our_clients article{
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        gap: 5%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
 
+
+    #contact_us{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 4rem 0 0 0;
+    }
+    #contact_us h2{
+        margin-bottom: 4rem;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #contact_form{
+        flex-basis: 45%;
+    }
+    #contact_form form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: auto;
+    }
+    #contact_form form input, #contact_us form textarea{
+        padding: 1.5rem;
+        border: none;
+        background-color: white;
+        width: auto;
+        font-size: 1.5rem;
+    }
+    #contact_form label{
+        font-size: 1.5rem;
+    }
+    #contact_form form button{
+        width: min-content;
+        font-size: 2rem;
+        white-space: nowrap;
+        font-weight: 600;
+        padding: 1.5rem;
+        background-color: #e6bd43;
+        border: none;
+        margin-bottom: 4rem;
+    }
+    
+    #contact_form form button:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    
+
+    #contact_information{
+        justify-content: left;
+        margin: 0;
+        flex-basis: 45%;
+    }
+    #contact_information p{
+        text-align: left;
+    }
+    
+    #contact_information ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #contact_information ul li {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    #contact_information ul li i {
+        margin-right: 2rem;
+        font-size: 1.5rem; 
+        width: 15px;
+    }
+    iframe{
+        width: 120%;
+        height: 35rem;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+}
 
 
 
