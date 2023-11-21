@@ -236,8 +236,11 @@ body {
         text-align: center;
         background-size: cover;
         background-position: center; 
-        color: white;
-        backdrop-filter: blur(1px); /*Gjør teksten litt lettere å lese med tanke på bakgrunnen*/
+        color: black;
+        background-color: #ffffff86;
+        width: 100%;
+        margin: 0;
+        padding: 0 10%;
     }
     #main_services a{
         display: block;
@@ -252,11 +255,12 @@ body {
         text-align: left;
     }
     #bakgrunnsMedia{
-        background-image: url("/ressurser/bilder/apple_pic.jpg");   /*https://emailanalytics.com/27-ways-to-increase-employee-productivity-in-the-workplace/*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg");   /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: auto;
         background-position: center;
         background-repeat: no-repeat;
         overflow: hidden;
+        
     }
     #bakgrunnsMedia video{
         display: none;
@@ -335,7 +339,10 @@ body {
         background-size: cover;
         background-position: center; 
         color: black;
-        margin: 7rem 0;
+        padding: 7rem 0;
+        width: 100%;
+        margin: 0;
+        background-color: #ffffff3a;
     }
     #main_services h1{
         margin-top: 0;
@@ -523,7 +530,7 @@ body {
     #portfolio{
         margin: 0 auto 2rem 0;
         padding: auto;
-        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://www.pexels.com/photo/office-business-work-technology-594114/*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: cover;
         background-position: center;
     }
@@ -552,7 +559,12 @@ body {
 
     /*------------------------------------------------------------------------------------*/
     #portfolio h1{
-        margin: 10rem 0;
+        padding: 10rem ;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff86;
+        margin: 0;
     }
 
     #explore_previous_jobs{
@@ -578,12 +590,17 @@ body {
     #portfolio{
         margin: 0 auto 2rem 0;
         padding: auto;
-        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://www.pexels.com/photo/office-business-work-technology-594114/*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: cover;
         background-position: center;
     }
     #portfolio h1{
-        margin: 14rem 0;
+        margin: 0;
+        background-color: #ffffff86;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15rem;
     }
     #explore_previous_jobs{
         margin-bottom: 4rem;
@@ -634,7 +651,7 @@ body {
     #bakgrunnsbilde{
         margin: 0 auto;
         padding: 3rem 0;
-        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://www.pexels.com/photo/office-business-work-technology-594114/*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: cover;
         background-position: center;
     }
@@ -730,7 +747,11 @@ body {
         margin-right: 2rem;
         font-size: 1.5rem; 
     }
-    
+    iframe{
+        width: 125%;
+        height: 35rem;
+        border: 0;
+    }
 
 }
 
