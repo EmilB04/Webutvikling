@@ -3,6 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our portfolio and previous jobs in branding, design, and development.">
+    <meta name="keywords" content="products, portfolio, branding, design, development">
+    <meta name="author" content="Emil Berglund">
+
+    <!-- Metadata for Instagram -->
+    <meta property="og:title" content="Exam in Webutvikling 2023">
+    <meta property="og:description" content="Explore our portfolio and previous jobs in branding, design, and development.">
+    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
+    <meta property="og:url" content="https://example.com/products.html">    <!--Nettsidens faktisk URL-->
+    <meta property="og:type" content="website">
+
+    <!-- Metadata for Facebook -->
+    <meta property="fb:app_id" content="your-facebook-app-id">              <!--Krever en faktisk facebook id-->
+    <meta property="og:title" content="Exam in Webutvikling 2023">
+    <meta property="og:description" content="Explore our portfolio and previous jobs in branding, design, and development.">
+    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
+    <meta property="og:url" content="https://example.com/products.html">    <!--Nettsidens faktisk URL-->
+    <meta property="og:type" content="website">
+
+    <!-- Metadata for LinkedIn -->
+    <meta property="og:title" content="Exam in Webutvikling 2023">
+    <meta property="og:description" content="Explore our portfolio and previous jobs in branding, design, and development.">
+    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
+    <meta property="og:url" content="https://example.com/products.html">    <!--Nettsidens faktisk URL-->
+    <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/brands.css">
@@ -14,19 +39,25 @@
     <title>Produktside</title>
 </head>
 <body>
+
     <div id="grid_container">
+
         <header>
-            <nav id="top">
-                <span>
-                    <a href="index.html">
-                        <img src="ressurser/bilder/logo2.png" alt="Logo">
+            <nav id="top" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <span itemprop="logo">
+                    <a href="index.html" title="Home" itemprop="url">
+                        <img src="ressurser/bilder/logo2.png" alt="Logo" itemprop="logo">
                     </a>
                 </span>
-                <ul class="flex_center">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" id="active_navigation">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact_us" id="contact">Contact</a></li> <!--Sjekk om denne fungerer-->
+                <ul class="flex_center" itemprop="mainEntity" itemscope itemtype="http://schema.org/WebPage">
+                    <li itemprop="about" itemscope itemtype="http://schema.org/WebPage"><a href="index.html" title="Home"
+                            itemprop="url">Home</a></li>
+                    <li itemprop="portfolio" itemscope itemtype="http://schema.org/WebPage"><a href="products.html"
+                            id="active_navigation" title="Portfolio" itemprop="url">Portfolio</a></li>
+                    <li itemprop="about" itemscope itemtype="http://schema.org/WebPage"><a href="about.html" title="About"
+                            itemprop="url">About</a></li>
+                    <li itemprop="contact" itemscope itemtype="http://schema.org/WebPage"><a href="about.html#contact_us"
+                            id="contact" title="Contact" itemprop="url">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,78 +70,78 @@
             <section class="flex_center" id="explore_previous_jobs">
                 <h2>Explore previous jobs</h2>
                 <article>
-                    <a href="#branding">Branding</a>
-                    <a href="#design">Design</a>
-                    <a href="#development">Development</a>
+                    <a href="#branding" title="Branding">Branding</a>
+                    <a href="#design" title="Design">Design</a>
+                    <a href="#development" title="Development">Development</a>
                 </article>
             </section>
 
-            <section class="flex_center" id="branding">
+            <section class="flex_center artikkelkort" id="branding" aria-label="Branding Section">
                 <h2>Branding</h2>
                 <article>
-                    <picture>
+                    <a href="#" title="Project 1">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
                 <article>
-                    <picture>
+                    <a href="#" title="Project 2">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
                 <article>
-                    <picture>
+                    <a href="#" title="Project 3">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
                 <article>
-                    <picture>
+                    <a href="#" title="Project 4">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
             </section>
-            <section class="flex_center" id="design">
+            <section class="flex_center artikkelkort" id="design" aria-label="Design Section">
                 <h2>Design</h2>
                 <article>
-                    <picture>
+                    <a href="#">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
                 <article>
-                    <picture>
+                    <a href="#">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
                 <article>
-                    <picture>
+                    <a href="#">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
             </section>
-            <section class="flex_center" id="development">
+            <section class="flex_center artikkelkort" id="development" aria-label="Development Section">
                 <h2>Development</h2>
                 <article>
-                    <picture>
+                    <a href="#">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
                 <article>
-                    <picture>
+                    <a href="#">
                         <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
-                    </picture>
+                    </a>
                     <h3>Laboris officia eiusmod</h3>
                 </article>
             </section>
         </main>
 
-        <span id="toTop">
+        <span id="toTop" aria-label="Go to Top">
             <a href="#top"><i class="fas fa-arrow-up"></i></a>
         </span>
 
@@ -126,9 +157,9 @@
                 <a href="index.html"><img src="/ressurser/bilder/logo2.png" alt="Logo"></a>
                 <p>Company Copyright 2023</p>
                 <ul>
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </section>
         </footer>

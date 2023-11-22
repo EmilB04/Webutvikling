@@ -12,7 +12,6 @@ footer{grid-area: footer;}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(1em + 1vw);
-    max-width: 2200px !important; 
     width: 100% !important;
     margin: 0 auto; /*Nettsiden skal alltid være sentrert på skjermen, uansett bredde*/
     background-color: #f8f8f8;
@@ -391,6 +390,9 @@ body {
         text-align: center;
         padding: 10rem 10%;
     }
+    #help_visitors h2{
+        margin-bottom: 1rem;
+    }
 
     /*---------------------------------------*/
 
@@ -545,9 +547,6 @@ body {
         padding-bottom: 0.5rem;
         margin-bottom: 2rem;
     }
-    #PRODUCTS picture{
-        max-width: 100%;
-    }
     #PRODUCTS img {
         height: auto;
         max-width: 100%;
@@ -574,6 +573,11 @@ body {
         margin-bottom: 4rem;
     }
 
+    .artikkelkort article {
+        min-width: 200px;
+        max-width: 692px;
+        flex: 1;
+    }
 
     #explore_previous_jobs article{
         display: flex;
@@ -621,14 +625,30 @@ body {
         text-decoration: none;
     }
 
+    .artikkelkort article {
+        min-width: 200px;
+        max-width: 692px;
+        flex: 1;
+        transition: transform 1s;
+    }
+
+    .artikkelkort article:hover {        /*Når musepekeren er på elementet*/
+        transform: scale(1.1);           /*Størrelse*/
+        transition: transform 1s;        /*Hvor lang tid det tar å endre størrelse*/
+    }
+
+
     #branding{
         justify-content: space-between; /*Syntes denne passet bedre til 4 elementer*/
+        gap: 5%;
     }
     #design{
         justify-content: space-around; /*Syntes denne passet bedre til 3 elementer*/
+        gap: 5%;
     }
     #development{
         justify-content: space-evenly; /*Syntes denne passet bedre til 2 elementer*/
+        gap: 5%;
     }
 
     /*---------------- TING SOM BLIR GJENTATT i Products-------------------------------------*/
@@ -638,10 +658,6 @@ body {
         padding-bottom: 0.5rem;
         margin-bottom: 2rem;
         flex-basis: 100%;
-    }
-    #PRODUCTS picture{
-        width: 100%;
-        height: 100%;
     }
     #PRODUCTS img {
         width: 100%;
@@ -901,14 +917,6 @@ body {
 
 
 
-}
-
-
-
-@media screen and (min-width: 2200px) { /*Når skjermen blir max-width*/
-    .flex_center{ /*Fjerner "innhugget" på 20%, og gjør hele nettsiden like bred*/
-        margin: 0;
-    }
 }
 
 
