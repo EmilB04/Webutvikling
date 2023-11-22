@@ -116,15 +116,14 @@ body {
         padding: 1rem;
         font-size: 1rem;
         font-weight: 600;
-        flex-basis: 29%;
         margin-right: 10%;
+        white-space: nowrap;
     }
     #newsletter form input{
         border: none;
         padding: 1rem;
         font-size: 1rem;
         width: 100%;
-        flex-basis: 69%;
         margin-left: 10%;
     }
 
@@ -211,10 +210,8 @@ body {
         padding: 0;
         border-bottom: solid #e6bd43;
     }
-    /*---------------------------------------*/
-    /*----------- MAIN STARTER HER ----------*/
-    /*---------------------------------------*/
-
+    
+    
     main h1{
         font-size: 3.5rem;
     }
@@ -229,6 +226,74 @@ body {
         text-align: center;
         font-weight: 400;
         font-size: 1.5rem;
+    }
+
+
+    #newsletter{
+        background-color: #eeee;
+        padding: 2rem 0 4rem 0;
+        margin: 0;
+    }
+    #newsletter h3{
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+    #newsletter form{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        gap: 2%;
+    }
+    #newsletter form button{
+        background-color: #e6bd43;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        flex-basis: 29%;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+    #newsletter form button:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    #newsletter form input{
+        border: none;
+        padding: 1.2rem;
+        font-size: 1rem;
+        width: 100%;
+        flex-basis: 69%;
+        margin-left: 10%;
+    }
+
+    #logo_footer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #252525 ;
+        padding: 5rem 2rem;
+        margin: 0;
+        color: white;
+    }
+    #logo_footer p{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #logo_footer ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 2rem;
+        padding: 0;
+    }
+    #logo_footer ul li{
+        list-style: none;
+    }
+    #logo_footer i {
+        color: white;
+        font-size: 3rem;
     }
 }
 
@@ -330,10 +395,6 @@ body {
     #our_services p{
         text-align: center;
     }
-
-    /*---------------------------------------*/
-
-
 }
 @media screen and (min-width: 1000px) { /*Index Desktop*/
     #main_services{
@@ -402,16 +463,18 @@ body {
         padding: 2rem;
         margin: 0;
         flex-direction: row;
+        flex-wrap: nowrap;
     }
     #about_us p{
         text-align: left;
     }
     #about_us article{
-        margin-left: 2%;
+        margin-left: 4%;
     }
     #about_us picture{
         width: auto;
         height: auto;
+        padding: 2%;
     }
     #about_us img{
         width: auto;
@@ -463,73 +526,7 @@ body {
         text-align: center;
     }
 
-    /*---------------------------------------*/
-    #newsletter{
-        background-color: #eeee;
-        padding: 2rem 0 4rem 0;
-        margin: 0;
-    }
-    #newsletter h3{
-        flex-basis: 100%;
-        text-align: center;
-        font-size: 3rem;
-    }
-    #newsletter form{
-        display: flex;
-        width: 50%;
-        justify-content: center;
-        gap: 2%;
-    }
-    #newsletter form button{
-        background-color: #e6bd43;
-        border: none;
-        padding: 1rem;
-        font-size: 1rem;
-        font-weight: 600;
-        flex-basis: 29%;
-        margin-right: 10%;
-        cursor: pointer;
-    }
-    #newsletter form button:hover{
-        background-color: #252525;
-        color: #e6bd43;
-    }
-    #newsletter form input{
-        border: none;
-        padding: 1rem;
-        font-size: 1rem;
-        width: 100%;
-        flex-basis: 69%;
-        margin-left: 10%;
-    }
-
-    #logo_footer{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #252525 ;
-        padding: 5rem 2rem;
-        margin: 0;
-        color: white;
-    }
-    #logo_footer p{
-        font-size: 2rem;
-        text-align: center;
-    }
-    #logo_footer ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 2rem;
-        padding: 0;
-    }
-    #logo_footer ul li{
-        list-style: none;
-    }
-    #logo_footer i {
-        color: white;
-        font-size: 3rem;
-    }
+    
 }
 @media screen and (max-width: 1000px) { /*Products Mobil og nettbrett*/
     #portfolio{
@@ -582,15 +579,15 @@ body {
     #explore_previous_jobs article{
         display: flex;
         flex-wrap: wrap;
-        gap: 5%;
+        gap: 2rem;
     }
     #explore_previous_jobs article a{
-        margin-top: 5%;
         padding: 0.5rem;
         border: 2px solid black;
         color: black;
         text-decoration: none;
     }
+    
 
 }
 @media screen and (min-width: 1000px) { /*Products Desktop*/
@@ -623,6 +620,10 @@ body {
         border: 2px solid black;
         color: black;
         text-decoration: none;
+    }
+    #explore_previous_jobs article a:hover{
+        background-color: #252525;
+        color: #e6bd43;
     }
 
     .artikkelkort article {
@@ -807,6 +808,10 @@ body {
         font-size: 1.5rem;
         padding: 1rem;
     }
+    #about_our_company a:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
     
     #some_of_our_clients{
         background-color: #e6bd43;
@@ -922,6 +927,5 @@ body {
 
 
     /*TODO!
-        Alle artikkelkortene på porfoliosiden skal ha en maks bredde på 350px og en min bredde på 200px
-        Sjekk om det går fint at det er to stk "our services" på forskjellige sider
+
     */
