@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(1em + 1vw);
     width: 100% !important;
+    max-width: 1600px !important; /*Les begrunnelse i rapport*/
     margin: 0 auto; /*Nettsiden skal alltid være sentrert på skjermen, uansett bredde*/
     background-color: #f8f8f8;
 }
@@ -266,8 +267,7 @@ body {
         width: 100%;
         flex-basis: 69%;
         margin-left: 10%;
-    }
-
+    }    
     #logo_footer{
         flex-direction: row;
         align-items: center;
@@ -401,6 +401,8 @@ body {
         text-align: center;
         background-size: cover;
         background-position: center; 
+        flex-wrap: nowrap;
+        flex-direction: column;
         color: black;
         padding: 10rem 0;
         width: 100%;
@@ -450,6 +452,8 @@ body {
         justify-content: center;
         text-align: center;
         padding: 10rem 10%;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     #help_visitors h2{
         margin-bottom: 1rem;
@@ -460,7 +464,7 @@ body {
 
     #about_us{
         background-color: #e6bd43;
-        padding: 2rem;
+        padding: 2rem 10%;
         margin: 0;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -504,8 +508,9 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         text-align: center;
+        justify-content: space-evenly;
         margin: 1rem 0;
-        gap: 2rem;
+        gap: 1rem;
         width: 100%;
     }
     #our_services h2{
@@ -515,7 +520,7 @@ body {
     #our_services i{
         display: block;
         color: black;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
         padding: 0;
         margin: 0;
@@ -524,6 +529,9 @@ body {
     }
     #our_services p{
         text-align: center;
+    }
+    #our_services article{
+        width: 350px;
     }
 
     
@@ -812,6 +820,13 @@ body {
         background-color: #252525;
         color: #e6bd43;
     }
+
+    /*Our services er skrevet under index
+    ettersom det er der den ble brukt først
+    
+    Jeg har valgt å bruke id på elementet ettersom det er unikt for hver nettside.
+    */
+
     
     #some_of_our_clients{
         background-color: #e6bd43;
@@ -924,6 +939,12 @@ body {
 
 }
 
+
+@media screen and (min-width: 1600px) { 
+    .maxWidth{
+        padding: 0 10%;
+    }
+}
 
 
     /*TODO!
