@@ -13,8 +13,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(1em + 1vw);
     width: 100% !important;
-    max-width: 1600px !important; /*Les begrunnelse i rapport*/
+    max-width: 1600px !important; /*Les i rapport*/
     margin: 0 auto; /*Nettsiden skal alltid være sentrert på skjermen, uansett bredde*/
+    max-width: 1600px ; /*Les i rapport*/
     background-color: #f8f8f8;
 }
 
@@ -939,12 +940,6 @@ body {
 
 }
 
-
-@media screen and (min-width: 1600px) { 
-    .maxWidth{
-        padding: 0 10%;
-    }
-}
 
 
     /*TODO!
