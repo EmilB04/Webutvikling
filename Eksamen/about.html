@@ -44,17 +44,18 @@
 <body>
     <div id="grid_container">
         <header>
-            <nav id="top">
+            <nav id="top" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <span>
-                    <a href="index.html">
-                        <img src="ressurser/bilder/logo2.png" alt="Logo">
+                    <a href="index.html" title="Home" itemprop="url">
+                        <img src="ressurser/bilder/logo2.png" alt="Logo" itemprop="logo">
                     </a>
                 </span>
                 <ul class="flex_center">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html" id="active_navigation">About</a></li>
-                    <li><a href="about.html#contact_us" id="contact">Contact</a></li> <!--Sjekk om denne fungerer-->
+                    <li itemprop="name"><a href="index.html" title="Home" itemprop="url">Home</a></li>
+                    <li itemprop="name"><a href="products.html" title="Portfolio" itemprop="url">Portfolio</a></li>
+                    <li itemprop="name"><a href="about.html" id="active_navigation" title="About" itemprop="url">About</a></li>
+                    <li itemprop="name"><a href="about.html#contact_us" id="contact" title="Contact" itemprop="url">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
