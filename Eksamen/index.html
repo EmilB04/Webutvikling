@@ -4,30 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <meta name="description" content="Come and take a look. Explore our services, and take a look at our previous work!">
+    <meta name="keywords" content="products, portfolio, branding, design, development">
+    <meta name="author" content="Emil Berglund">
+    
+    <!-- Metadata for Instagram -->
+    <meta property="og:title" content="Explore our services and previous work - 'Website name'">
+    <meta property="og:description" content="Come and take a look. Explore our services, and take a look at our previous work!">
+    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
+    <meta property="og:url" content="https://example.com/index.html"> <!--Nettsidens faktisk URL-->
+    <meta property="og:type" content="website">
+    
+    <!-- Metadata for Facebook -->
+    <meta property="fb:app_id" content="your-facebook-app-id"> <!--Krever en faktisk facebook id-->
+    <meta property="og:title" content="Explore our services and previous work - 'Website name'">
+    <meta property="og:description" content="Come and take a look. Explore our services, and take a look at our previous work!">
+    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
+    <meta property="og:url" content="https://example.com/index.html"> <!--Nettsidens faktisk URL-->
+    <meta property="og:type" content="website">
+    
+    <!-- Metadata for LinkedIn -->
+    <meta property="og:title" content="Explore our services and previous work - 'Website name'">
+    <meta property="og:description" content="Come and take a look. Explore our services, and take a look at our previous work!">
+    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
+    <meta property="og:url" content="https://example.com/index.html"> <!--Nettsidens faktisk URL-->
+    <meta property="og:type" content="website">
+    
+    <!--                        -->
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/brands.css">
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/solid.css">
-
+    
     <link rel="stylesheet" href="ressurser/stilark/normalize.css">
     <link rel="stylesheet" href="ressurser/stilark/stil.css">
     <link rel="icon" href="ressurser/bilder/logo2.png">
-    <title>Hovedside</title>
+    <title>Explore our services and previous work - 'Website name'</title>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <div id="grid_container">
         <header>
-            <nav id="top">
+            <nav id="top" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <span>
-                    <a href="index.html">
-                        <img src="ressurser/bilder/logo2.png" alt="Logo">
+                    <a href="index.html" title="Home" itemprop="url">
+                        <img src="ressurser/bilder/logo2.png" alt="Logo" itemprop="logo">
                     </a>
                 </span>
                 <ul class="flex_center">
-                    <li><a href="index.html" id="active_navigation">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact_us" id="contact">Contact</a></li>   <!--Sjekk om denne fungerer-->
+                    <li itemprop="name"><a href="index.html" title="Home" itemprop="url">Home</a></li>
+                    <li itemprop="name"><a href="products.html" id="active_navigation" title="Portfolio" itemprop="url">Portfolio</a></li>
+                    <li itemprop="name"><a href="about.html" title="About" itemprop="url">About</a></li>
+                    <li itemprop="name"><a href="about.html#contact_us" id="contact" title="Contact" itemprop="url">Contact</a></li>
                 </ul>
             </nav>
         </header>
