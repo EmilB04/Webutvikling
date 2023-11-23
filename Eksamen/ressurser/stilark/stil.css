@@ -13,9 +13,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(1em + 1vw);
     width: 100% !important;
-    max-width: 1600px !important; /*Les i rapport*/
-    margin: 0 auto; /*Nettsiden skal alltid være sentrert på skjermen, uansett bredde*/
-    max-width: 1600px ; /*Les i rapport*/
+    max-width: 1600px !important;       /*Les i rapport*/
+    margin: 0 auto;                     /*Nettsiden skal alltid være sentrert på skjermen, uansett bredde*/
     background-color: #f8f8f8;
 }
 
@@ -36,6 +35,7 @@ body {
     color: black;
     background-color: white;
 }
+/*-----------------------------------------------------------------------------------------------*/
 
 
 @media screen and (max-width: 1000px) { /*Faste verdier på mobil og nettbreett*/
