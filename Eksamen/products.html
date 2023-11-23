@@ -8,7 +8,7 @@
     <meta name="author" content="Emil Berglund">
 
     <!-- Metadata for Instagram -->
-    <meta property="og:title" content="Exam in Webutvikling 2023">
+    <meta property="og:title" content="See and explore our portfolio">
     <meta property="og:description" content="Explore our portfolio and previous jobs in branding, design, and development.">
     <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
     <meta property="og:url" content="https://example.com/products.html">    <!--Nettsidens faktisk URL-->
@@ -16,19 +16,20 @@
 
     <!-- Metadata for Facebook -->
     <meta property="fb:app_id" content="your-facebook-app-id">              <!--Krever en faktisk facebook id-->
-    <meta property="og:title" content="Exam in Webutvikling 2023">
+    <meta property="og:title" content="See and explore our portfolio">
     <meta property="og:description" content="Explore our portfolio and previous jobs in branding, design, and development.">
     <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
     <meta property="og:url" content="https://example.com/products.html">    <!--Nettsidens faktisk URL-->
     <meta property="og:type" content="website">
 
     <!-- Metadata for LinkedIn -->
-    <meta property="og:title" content="Exam in Webutvikling 2023">
+    <meta property="og:title" content="See and explore our portfolio"> 
     <meta property="og:description" content="Explore our portfolio and previous jobs in branding, design, and development.">
     <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
     <meta property="og:url" content="https://example.com/products.html">    <!--Nettsidens faktisk URL-->
     <meta property="og:type" content="website">
 
+    <!--                        -->
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/brands.css">
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/solid.css">
@@ -39,18 +40,16 @@
     <title>Produktside</title>
     
 </head>
-<body>
-
+<body itemscope itemtype="https://schema.org/WebPage">
     <div id="grid_container">
-
         <header>
             <nav id="top" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <span itemscope itemtype="http://schema.org/WebPage">
+                <span>
                     <a href="index.html" title="Home" itemprop="url">
                         <img src="ressurser/bilder/logo2.png" alt="Logo" itemprop="logo">
                     </a>
                 </span>
-                <ul class="flex_center" itemprop="about" itemscope itemtype="http://schema.org/WebPage">
+                <ul class="flex_center">
                     <li itemprop="name"><a href="index.html" title="Home" itemprop="url">Home</a></li>
                     <li itemprop="name"><a href="products.html" id="active_navigation" title="Portfolio" itemprop="url">Portfolio</a></li>
                     <li itemprop="name"><a href="about.html" title="About" itemprop="url">About</a></li>
@@ -60,86 +59,99 @@
         </header>
 
 
-        <main id="PRODUCTS" itemscope itemtype="http://schema.org/ItemList">
+        <main id="PRODUCTS">
             <section class="flex_center" id="portfolio">
                 <h1>Portfolio</h1>
             </section>
 
-            <section class="flex_center" id="explore_previous_jobs" itemscope itemtype="http://schema.org/WebPage">
+            <section class="flex_center" id="explore_previous_jobs" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <h2 itemprop="name">Explore previous jobs</h2>
-                <article itemprop="mainEntity" itemscope itemtype="http://schema.org/CollectionPage">
+                <article>
                     <a href="#branding" title="Branding" itemprop="url"><span itemprop="name">Branding</span></a>
                     <a href="#design" title="Design" itemprop="url"><span itemprop="name">Design</span></a>
                     <a href="#development" title="Development" itemprop="url"><span itemprop="name">Development</span></a>
                 </article>
             </section>
 
-            <section class="flex_center artikkelkort" id="branding" aria-label="Branding Section" itemscope itemtype="http://schema.org/ItemList">
-                <h2 itemprop="name">Branding</h2>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" title="Project 1" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" title="Project 2" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" title="Project 3" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" title="Project 4" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-            </section>
+            <div itemscope itemtype="http://schema.org/ItemList"> 
+                <meta itemprop="name" content="Innholdsseksjoner">
+                <section class="flex_center artikkelkort" id="branding" aria-label="Branding Section">
+                    <h2 itemprop="name">Branding</h2>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="1">
+                        <a href="#" title="Project 1" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="2">
+                        <a href="#" title="Project 2" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="3">
+                        <a href="#" title="Project 3" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="4">
+                        <a href="#" title="Project 4" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                </section>
 
-            <section class="flex_center artikkelkort" id="design" aria-label="Design Section" itemscope itemtype="http://schema.org/ItemList">
-                <h2 itemprop="name">Design</h2>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-            </section>
+                <section class="flex_center artikkelkort" id="design" aria-label="Design Section">
+                    <h2 itemprop="name">Design</h2>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="5">
+                        <a href="#" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="6">
+                        <a href="#" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="7">
+                        <a href="#" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                </section>
 
-            <section class="flex_center artikkelkort" id="development" aria-label="Development Section" itemscope itemtype="http://schema.org/ItemList">
-                <h2 itemprop="name">Development</h2>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-                <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="#" itemprop="url">
-                        <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
-                    </a>
-                    <h3 itemprop="name">Laboris officia eiusmod</h3>
-                </article>
-            </section>
+                <section class="flex_center artikkelkort" id="development" aria-label="Development Section">
+                    <h2 itemprop="name">Development</h2>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="8">
+                        <a href="#" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                    <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <meta itemprop="position" content="9">
+                        <a href="#" itemprop="url">
+                            <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                        </a>
+                        <h3 itemprop="name">Laboris officia eiusmod</h3>
+                    </article>
+                </section>
+            </div>
         </main>
+    
 
         <span id="toTop" aria-label="Go to Top">
             <a href="#top"><i class="fas fa-arrow-up"></i></a>
@@ -174,8 +186,6 @@
                 </ul>
             </section>
         </footer>
-
-
     </div>
 </body>
 </html>
