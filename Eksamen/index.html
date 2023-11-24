@@ -8,27 +8,15 @@
     <meta name="keywords" content="products, portfolio, branding, design, development">
     <meta name="author" content="Emil Berglund">
     
-    <!-- Metadata for Instagram -->
+    <!-- Open Graph Metadata-->
     <meta property="og:title" content="Explore our services and previous work - 'Website name'">
     <meta property="og:description" content="Come and take a look. Explore our services, and take a look at our previous work!">
     <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
     <meta property="og:url" content="https://example.com/index.html"> <!--Nettsidens faktisk URL-->
     <meta property="og:type" content="website">
     
-    <!-- Metadata for Facebook -->
+    <!-- Metadata spesielt for Facebook -->
     <meta property="fb:app_id" content="your-facebook-app-id"> <!--Krever en faktisk facebook id-->
-    <meta property="og:title" content="Explore our services and previous work - 'Website name'">
-    <meta property="og:description" content="Come and take a look. Explore our services, and take a look at our previous work!">
-    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
-    <meta property="og:url" content="https://example.com/index.html"> <!--Nettsidens faktisk URL-->
-    <meta property="og:type" content="website">
-    
-    <!-- Metadata for LinkedIn -->
-    <meta property="og:title" content="Explore our services and previous work - 'Website name'">
-    <meta property="og:description" content="Come and take a look. Explore our services, and take a look at our previous work!">
-    <meta property="og:image" content="/ressurser/bilder/apple_pic.jpg">
-    <meta property="og:url" content="https://example.com/index.html"> <!--Nettsidens faktisk URL-->
-    <meta property="og:type" content="website">
     
     <!--                        -->
     <link rel="stylesheet" href="ressurser/ikoner/ikoner/css/fontawesome.css">
@@ -50,7 +38,8 @@
                     </a>
                 </span>
                 <ul class="flex_center">
-                    <li itemprop="name"><a href="index.html" id="active_navigation" title="Home" itemprop="url">Home</a></li>
+                    <li itemprop="name"><a href="index.html" id="active_navigation" title="Home" itemprop="url">Home</a>
+                    </li>
                     <li itemprop="name"><a href="products.html" title="Portfolio" itemprop="url">Portfolio</a></li>
                     <li itemprop="name"><a href="about.html" title="About" itemprop="url">About</a></li>
                     <li itemprop="name"><a href="about.html#contact_us" id="contact" title="Contact" itemprop="url">Contact</a></li>
@@ -58,78 +47,79 @@
             </nav>
         </header>
 
-        <main>
-            <div id="bakgrunnsMedia"> <!-- Pynt-->
-                <video autoplay muted loop id="background-video"> <!--Video som automatisk spiller uten lyd når brukeren åpner siden-->
+        <main itemscope itemtype="https://schema.org/WebPage">
+            <div id="bakgrunnsMedia">
+                <video autoplay muted loop id="background-video">
                     <source src="/ressurser/video/mountains.mp4" type="video/mp4">
                 </video>
-            <section class="flex_center" id="main_services">
-                <h1>Compelling Headline</h1>
-                <article>
-                    <p>
-                        Minim eiusmod aliquip ullamco irure mollit quis reprehenderit occaecat ad. 
-                        Qui est esse consectetur laborum aute laborum aliqua dolore culpa mollit reprehenderit consequat. 
-                        Mollit ipsum veniam consequat aliqua sint proident anim eiusmod est sunt aliqua voluptate.
-                    </p>
-                    <a href="#our_services">Read more about our services</a>
-                </article>
-            </section>
+                <section class="flex_center" id="main_services" itemprop="about" itemscope
+                    itemtype="https://schema.org/WebPageElement">
+                    <h1 itemprop="headline">Compelling Headline</h1>
+                    <article itemprop="mainContentOfPage">
+                        <p>
+                            Minim eiusmod aliquip ullamco irure mollit quis reprehenderit occaecat ad.
+                            Qui est esse consectetur laborum aute laborum aliqua dolore culpa mollit reprehenderit consequat.
+                            Mollit ipsum veniam consequat aliqua sint proident anim eiusmod est sunt aliqua voluptate.
+                        </p>
+                        <a href="#our_services" itemprop="url">Read more about our services</a>
+                    </article>
+                </section>
             </div>
 
-            <section class="flex_center" id="help_visitors">
-                <h2>
-                    Engaging subheading.
-                </h2>
-                <p>
-                    Laboris commodo ipsum sunt mollit ad eu amet ut excepteur incididunt sint et aliquip. 
-                    Mollit nulla eiusmod exercitation adipisicing laboris eu exercitation eiusmod pariatur amet proident. 
-                    Laboris nulla minim dolore consectetur duis sunt ea. Amet id excepteur eu irure est in esse tempor deserunt in amet consectetur.
+            <section class="flex_center" id="help_visitors" itemprop="about" itemscope itemtype="https://schema.org/AboutPage">
+                <h2 itemprop="headline">Engaging subheading.</h2>
+                <p itemprop="description">
+                    Laboris commodo ipsum sunt mollit ad eu amet ut excepteur incididunt sint et aliquip.
+                    Mollit nulla eiusmod exercitation adipisicing laboris eu exercitation eiusmod pariatur amet proident.
+                    Laboris nulla minim dolore consectetur duis sunt ea. Amet id excepteur eu irure est in esse tempor deserunt in
+                    amet consectetur.
                 </p>
             </section>
-
-            <section class="flex_center" id="about_us">
+            
+            <section class="flex_center" id="about_us" itemscope itemtype="https://schema.org/AboutPage">
                 <picture>
-                    <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde">
+                    <img src="/ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
                 </picture>
-                <article>
-                    <h2>About Our Company</h2>
-                    <p>
-                        Qui ad Lorem elit cupidatat voluptate in culpa do eiusmod. 
-                        Sunt officia do irure aute ex id ex velit reprehenderit ex id quis mollit anim. 
-                        Lorem velit tempor sit nostrud ea sint aliqua anim qui. Consectetur cupidatat eu enim fugiat aliquip ipsum tempor.
+                <article itemprop="mainContentOfPage">
+                    <h2 itemprop="headline">About Our Company</h2>
+                    <p itemprop="description">
+                        Qui ad Lorem elit cupidatat voluptate in culpa do eiusmod.
+                        Sunt officia do irure aute ex id ex velit reprehenderit ex id quis mollit anim.
+                        Lorem velit tempor sit nostrud ea sint aliqua anim qui. Consectetur cupidatat eu enim fugiat aliquip ipsum
+                        tempor.
                         Culpa sunt quis officia irure eu sint magna.
                     </p>
-                    <a href="about.html">Read more about us</a>
+                    <a href="about.html" itemprop="url">Read more about us</a>
                 </article>
             </section>
 
-            <section class="flex_center" id="our_services">
-                <h2>Our Services</h2>
-                <article>
+            <section class="flex_center" id="our_services" >
+                <h2 itemprop="headline">Our Services</h2>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-people-group"></i>
-                    <h3>Branding</h3>
-                    <p>
+                    <h3 itemprop="headline">Branding</h3>
+                    <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
                 </article>
-                <article>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h3>Branding</h3>
-                    <p>
+                    <h3 itemprop="headline">Branding</h3>
+                    <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
                 </article>
-                <article>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-code"></i>
-                    <h3>Branding</h3>
-                    <p>
+                    <h3 itemprop="headline">Branding</h3>
+                    <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
                 </article>
-                <article>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-wifi"></i>
-                    <h3>Branding</h3>
-                    <p>
+                    <h3 itemprop="headline">Branding</h3>
+                    <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
                 </article>
@@ -140,21 +130,36 @@
             <a href="#top"><i class="fas fa-arrow-up"></i></a>
         </span>
 
-        <footer>
+        <footer itemscope itemtype="http://schema.org/WPFooter">
             <section class="flex_center" id="newsletter">
-                <h3>Sign up for our newsletter</h3>
-                <form>
-                    <input type="email" id="email_footer" placeholder="navn@epost.no">
+                <h3 itemprop="name">Sign up for our newsletter</h3>
+                <form itemscope itemtype="http://schema.org/SubscribeAction">
+                    <input type="email" id="email_footer" placeholder="navn@epost.no" itemprop="input">
                     <button>Sign me up!</button>
                 </form>
             </section>
-            <section class="flex_center" id="logo_footer">
-                <a href="index.html"><img src="/ressurser/bilder/logo2.png" alt="Logo"></a>
-                <p>Company Copyright 2023</p>
+            <section class="flex_center" id="logo_footer" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <a href="index.html" itemprop="url"><img src="/ressurser/bilder/logo2.png" alt="Logo" itemprop="logo"></a>
+                <p itemprop="name">&copy; 2023 Company. All rights reserved.</p>
                 <ul>
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/" aria-label="Facebook" itemprop="url">
+                            <i class="fab fa-facebook-square">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" aria-label="Instagram" itemprop="url">
+                            <i class="fab fa-instagram-square">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" itemprop="url">
+                            <i class="fab fa-linkedin">
+                            </i>
+                        </a>
+                    </li>
                 </ul>
             </section>
         </footer>
