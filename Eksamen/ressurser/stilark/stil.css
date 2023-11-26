@@ -324,7 +324,7 @@ body {
         text-align: left;
     }
     #bakgrunnsMedia{
-        background-image: url("ressurser/bilder/apple_pic.jpg");   /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg");   /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: auto;
         background-position: center;
         background-repeat: no-repeat;
@@ -604,7 +604,7 @@ body {
     #portfolio{
         margin: 0 auto 2rem 0;
         padding: auto;
-        background-image: url("ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: cover;
         background-position: center;
     }
@@ -681,7 +681,7 @@ body {
     #bakgrunnsbilde{
         margin: 0 auto;
         padding: 3rem 0;
-        background-image: url("ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: cover;
         background-position: center;
     }
@@ -785,7 +785,7 @@ body {
     #bakgrunnsbilde{
         margin: 0 auto;
         padding: 4rem 0;
-        background-image: url("ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
+        background-image: url("/ressurser/bilder/apple_pic.jpg"); /*https://unsplash.com/photos/macbook-pro-dMUt0X3f59Q*/
         background-size: cover;
         background-position: center;
     }
