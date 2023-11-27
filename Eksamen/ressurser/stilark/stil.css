@@ -630,6 +630,7 @@ body {
         border: 2px solid black;
         color: black;
         text-decoration: none;
+        font-size: 1.5rem;
     }
     #explore_previous_jobs article a:hover{
         background-color: #252525;
@@ -844,10 +845,14 @@ body {
         width: 100%;
         margin-top: 3rem;
         display: flex;
-        gap: 5%;
+        gap: 10%;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
+    }
+    #some_of_our_clients article img{
+        width: 100%;
+        height: auto;
     }
     
 
@@ -922,12 +927,12 @@ body {
         display: flex;
         align-items: center;
         padding: 1rem 0;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     #contact_information ul li i {
         margin-right: 2rem;
-        font-size: 2rem; 
+        font-size: 1.8rem;
         width: 15px;
     }
     iframe{

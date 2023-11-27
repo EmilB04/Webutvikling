@@ -110,32 +110,37 @@
                 </article>
             </section>
             
-            <section class="flex_center" id="contact_us" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <h2>Contact us</h2>
-                <article id="contact_form">
-                    <h3>Send us a message</h3>
+            <section class="flex_center" id="contact_us" itemscope itemtype="https://schema.org/ContactPage">
+                <h2 itemprop="name">Contact us</h2>
+                <article id="contact_form" itemprop="mainEntity" itemscope itemtype="https://schema.org/ContactPoint">
+                    <h3 itemprop="name">Send us a message</h3>
                     <form>
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Ola Nordmann" aria-label="Type in your name here">
-
+                        <input type="text" id="name" placeholder="Ola Nordmann" aria-label="Type in your name here" itemprop="name">
+            
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" placeholder="Branding" aria-label="Choose your subject here">
-
+                        <input type="text" id="subject" placeholder="Branding" aria-label="Choose your subject here" itemprop="category">
+            
                         <label for="message">Message:</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="..." aria-label="Type your message here"></textarea>
-
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder=". . ." aria-label="Type your message here" itemprop="description"></textarea>
+            
                         <button>Send message</button>
                     </form>
                 </article>
-                <article id="contact_information" class="flex_center">
+                <article id="contact_information" class="flex_center" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                     <h3 itemprop="name">Contact information</h3>
-                    <p>
+                    <p itemprop="description">
                         Minim tempor nisi dolor velit ea incididunt.
                         Proident non aliqua in elit excepteur irure.
                         Nisi qui amet excepteur duis elit ad consequat occaecat sunt consectetur.
                     </p>
                     <ul>
-                        <li><i class="fa-solid fa-location-pin"></i><span itemprop="streetAddress">B R A Veien 4</span>, <span itemprop="postalCode">1757</span> <span itemprop="addressLocality">Halden</span></li>
+                        <li>
+                            <i class="fa-solid fa-location-pin"></i>
+                            <span itemprop="streetAddress">B R A Veien 4</span>,&nbsp; <!--Hentet fra CHAT GPT 27.11.23, spurte om et mellomrom uten bruk av css-->
+                            <span itemprop="postalCode">1757</span>&nbsp;              <!--Hentet fra CHAT GPT 27.11.23, spurte om et mellomrom uten bruk av css-->
+                            <span itemprop="addressLocality">Halden</span>
+                        </li>
                         <li><i class="fa-solid fa-phone"></i><span itemprop="telephone">69 60 80 00</span></li>
                         <li><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no" itemprop="email">postmottak@hiof.no</a></li>
                     </ul>
