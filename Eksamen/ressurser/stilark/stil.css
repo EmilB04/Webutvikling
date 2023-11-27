@@ -32,10 +32,6 @@ body {
     border-radius: 4px 4px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-#toTop i:hover{
-    color: black;
-    background-color: white;
-}
 /*-----------------------------------------------------------------------------------------------*/
 
 
@@ -214,6 +210,11 @@ body {
         border-bottom: solid #e6bd43;
     }
     
+
+    #toTop i:hover{
+    color: black;
+    background-color: white;
+    }
     
     main h1{
         font-size: 3.5rem;
