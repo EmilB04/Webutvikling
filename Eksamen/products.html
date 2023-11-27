@@ -1,10 +1,3 @@
-<!--
-    TODO
-
-    Sjekke aria-labels med skjermleser, ev. legge til flere aria-labels
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,10 +39,10 @@
                     </a>
                 </span>
                 <ul class="flex_center">
-                    <li itemprop="name"><a href="index.html" title="Home" itemprop="url">Home</a></li>
-                    <li itemprop="name"><a href="products.html" id="active_navigation" title="Portfolio" itemprop="url">Portfolio</a></li>
-                    <li itemprop="name"><a href="about.html" title="About" itemprop="url">About</a></li>
-                    <li itemprop="name"><a href="about.html#contact_us" id="contact" title="Contact" itemprop="url">Contact</a></li>
+                    <li itemprop="name"><a href="index.html" title="Home" itemprop="url" aria-label="Go to home page">Home</a></li>
+                    <li itemprop="name"><a href="products.html" id="active_navigation" title="Portfolio" itemprop="url" aria-label="Go to portfolio page">Portfolio</a></li>
+                    <li itemprop="name"><a href="about.html" title="About" itemprop="url" aria-label="Go to about-us page">About</a></li>
+                    <li itemprop="name"><a href="about.html#contact_us" id="contact" title="Contact" itemprop="url" aria-label="Go to contact-us section">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -63,9 +56,15 @@
             <section class="flex_center" id="explore_previous_jobs" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <h2 itemprop="name">Explore previous jobs</h2>
                 <article>
-                    <a href="#branding" title="Branding" itemprop="url"><span itemprop="name">Branding</span></a>
-                    <a href="#design" title="Design" itemprop="url"><span itemprop="name">Design</span></a>
-                    <a href="#development" title="Development" itemprop="url"><span itemprop="name">Development</span></a>
+                    <a href="#branding" title="Branding" aria-label="Go to branding section" itemprop="url">
+                        <span itemprop="name">Branding</span>
+                    </a>
+                    <a href="#design" title="Design" aria-label="Go to design section" itemprop="url">
+                        <span itemprop="name">Design</span>
+                    </a>
+                    <a href="#development" title="Development" aria-label="Go to development section" itemprop="url">
+                        <span itemprop="name">Development</span>
+                    </a>
                 </article>
             </section>
 
@@ -76,28 +75,28 @@
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="1">
                         <a href="#" title="Project 1" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 1" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="2">
                         <a href="#" title="Project 2" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 2" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="3">
                         <a href="#" title="Project 3" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 3" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="4">
                         <a href="#" title="Project 4" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 4" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
@@ -108,21 +107,21 @@
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="5">
                         <a href="#" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 5" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="6">
                         <a href="#" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 6" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="7">
                         <a href="#" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 7" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
@@ -133,14 +132,14 @@
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="8">
                         <a href="#" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 8" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
                     <article itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <meta itemprop="position" content="9">
                         <a href="#" itemprop="url">
-                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
+                            <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde 9" itemprop="image">
                         </a>
                         <h3 itemprop="name">Laboris officia eiusmod</h3>
                     </article>
@@ -149,8 +148,11 @@
         </main>
     
 
-        <span id="toTop" aria-label="Go to Top">
-            <a href="#top"><i class="fas fa-arrow-up"></i></a>
+        <span id="toTop" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <meta itemprop="name" content="Go to top">
+            <a href="#top" aria-label="Go to top" itemprop="url">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </span>
 
         <footer itemscope itemtype="http://schema.org/WPFooter">

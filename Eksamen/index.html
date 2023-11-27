@@ -34,39 +34,38 @@
             <nav id="top" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <span>
                     <a href="index.html" title="Home" itemprop="url">
-                        <img src="ressurser/bilder/logo2.png" alt="Logo" itemprop="logo">
+                        <meta itemprop="name" content="Home">
+                        <img src="ressurser/bilder/logo2.png" alt="Logo" itemprop="image">
                     </a>
                 </span>
                 <ul class="flex_center">
-                    <li itemprop="name"><a href="index.html" id="active_navigation" title="Home" itemprop="url">Home</a>
-                    </li>
-                    <li itemprop="name"><a href="products.html" title="Portfolio" itemprop="url">Portfolio</a></li>
-                    <li itemprop="name"><a href="about.html" title="About" itemprop="url">About</a></li>
-                    <li itemprop="name"><a href="about.html#contact_us" id="contact" title="Contact" itemprop="url">Contact</a></li>
+                    <li itemprop="name"><a href="index.html" id="active_navigation" title="Home" itemprop="url" aria-label="Go to home page">Home</a></li>
+                    <li itemprop="name"><a href="products.html" title="Portfolio" itemprop="url" aria-label="Go to portfolio page">Portfolio</a></li>
+                    <li itemprop="name"><a href="about.html" title="About" itemprop="url" aria-label="Go to about-us page">About</a></li>
+                    <li itemprop="name"><a href="about.html#contact_us" id="contact" title="Contact" itemprop="url" aria-label="Go to contact-us section">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main itemscope itemtype="https://schema.org/WebPage">
             <div id="bakgrunnsMedia">
-                <video autoplay muted loop id="background-video">
+                <video autoplay muted loop id="background-video" itemprop="video">
                     <source src="ressurser/video/mountains.mp4" type="video/mp4">
                 </video>
-                <section class="flex_center" id="main_services" itemprop="about" itemscope
-                    itemtype="https://schema.org/WebPageElement">
+                <section class="flex_center" id="main_services" itemprop="about" itemscope itemtype="https://schema.org/WebPageElement">
                     <h1 itemprop="headline">Compelling Headline</h1>
-                    <article itemprop="mainContentOfPage">
-                        <p>
-                            Minim eiusmod aliquip ullamco irure mollit quis reprehenderit occaecat ad.
-                            Qui est esse consectetur laborum aute laborum aliqua dolore culpa mollit reprehenderit consequat.
-                            Mollit ipsum veniam consequat aliqua sint proident anim eiusmod est sunt aliqua voluptate.
+                    <article>
+                        <p itemprop="description">
+                            Minim eiusmod aliquip ullamco irure mollit quis reprehenderit occaecat ad. Qui est esse consectetur
+                            laborum aute laborum aliqua dolore culpa mollit reprehenderit consequat. Mollit ipsum veniam consequat
+                            aliqua sint proident anim eiusmod est sunt aliqua voluptate.
                         </p>
                         <a href="#our_services" itemprop="url">Read more about our services</a>
                     </article>
                 </section>
             </div>
 
-            <section class="flex_center" id="help_visitors" itemprop="about" itemscope itemtype="https://schema.org/AboutPage">
+            <section class="flex_center" id="help_visitors" itemprop="about" itemscope itemtype="https://schema.org/WebPageElement">
                 <h2 itemprop="headline">Engaging subheading.</h2>
                 <p itemprop="description">
                     Laboris commodo ipsum sunt mollit ad eu amet ut excepteur incididunt sint et aliquip.
@@ -76,11 +75,11 @@
                 </p>
             </section>
             
-            <section class="flex_center" id="about_us" itemscope itemtype="https://schema.org/AboutPage">
+            <section class="flex_center" id="about_us" itemprop="about" itemscope itemtype="https://schema.org/WebPageElement">
                 <picture>
                     <img src="ressurser/bilder/400x400.svg" alt="Placeholder bilde" itemprop="image">
                 </picture>
-                <article itemprop="mainContentOfPage">
+                <article>
                     <h2 itemprop="headline">About Our Company</h2>
                     <p itemprop="description">
                         Qui ad Lorem elit cupidatat voluptate in culpa do eiusmod.
@@ -93,32 +92,32 @@
                 </article>
             </section>
 
-            <section class="flex_center" id="our_services" >
-                <h2 itemprop="headline">Our Services</h2>
-                <article itemscope itemtype="https://schema.org/Service">
+            <section class="flex_center" id="our_services" itemscope itemtype="https://schema.org/Service">
+                <h2 itemprop="name">Our Services</h2>
+                <article>
                     <i class="fa-solid fa-people-group"></i>
-                    <h3 itemprop="headline">Branding</h3>
+                    <h3 itemprop="category">Branding</h3>
                     <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
                 </article>
-                <article itemscope itemtype="https://schema.org/Service">
+                <article>
                     <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h3 itemprop="headline">Branding</h3>
+                    <h3 itemprop="category">Branding</h3>
                     <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
                 </article>
-                <article itemscope itemtype="https://schema.org/Service">
+                <article>
                     <i class="fa-solid fa-code"></i>
-                    <h3 itemprop="headline">Branding</h3>
+                    <h3 itemprop="category">Branding</h3>
                     <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
                 </article>
-                <article itemscope itemtype="https://schema.org/Service">
+                <article>
                     <i class="fa-solid fa-wifi"></i>
-                    <h3 itemprop="headline">Branding</h3>
+                    <h3 itemprop="category">Branding</h3>
                     <p itemprop="description">
                         Et duis minim pariatur pariatur minim nisi.
                     </p>
@@ -126,8 +125,11 @@
             </section>
         </main>
 
-        <span id="toTop">
-            <a href="#top"><i class="fas fa-arrow-up"></i></a>
+        <span id="toTop" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <meta itemprop="name" content="Go to top">
+            <a href="#top" aria-label="Go to top" itemprop="url">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </span>
 
         <footer itemscope itemtype="http://schema.org/WPFooter">
