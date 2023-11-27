@@ -275,7 +275,7 @@ body {
         align-items: center;
         justify-content: space-between;
         background-color: #252525 ;
-        padding: 5rem 2rem;
+        padding: 3rem 2rem;
         margin: 0;
         color: white;
     }
@@ -507,13 +507,9 @@ body {
     /*---------------------------------------*/
 
     #our_services{
-        flex-direction: row;
-        flex-wrap: wrap;
         text-align: center;
         justify-content: space-evenly;
         margin: 1rem 0;
-        gap: 1rem;
-        width: 100%;
     }
     #our_services h2{
         margin: 2rem 0;
@@ -652,15 +648,15 @@ body {
 
     #branding{
         justify-content: space-between; /*Syntes denne passet bedre til 4 elementer*/
-        gap: 5%;
+        gap: 2%;
     }
     #design{
         justify-content: space-around; /*Syntes denne passet bedre til 3 elementer*/
-        gap: 5%;
+        gap: 2%;
     }
     #development{
         justify-content: space-evenly; /*Syntes denne passet bedre til 2 elementer*/
-        gap: 5%;
+        gap: 2%;
     }
 
     /*---------------- TING SOM BLIR GJENTATT i Products-------------------------------------*/
@@ -870,7 +866,8 @@ body {
     }
 
     #contact_form{
-        flex-basis: 45%;
+        flex-basis: 40%;
+        margin: 0 0 0 5%;
     }
     #contact_form form{
         display: flex;
@@ -907,8 +904,8 @@ body {
 
     #contact_information{
         justify-content: left;
-        margin: 0;
-        flex-basis: 45%;
+        margin: 0 5% 0 0;
+        flex-basis: 40%;
     }
     #contact_information p{
         text-align: left;
@@ -950,6 +947,10 @@ body {
 @media screen and (min-width: 1600px) {
     .flex_center{
         margin: 0;
+    }
+    #contact_form, #contact_information{
+        margin: 0;
+        flex-basis: 45%;
     }
 }
 
