@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    /*Hentet fra W3Schools*/
 }
 
 header{grid-area: header;}
@@ -171,7 +171,7 @@ body {
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 1rem; /*Lager litt luft for bakgrunnsvideoen*/
+        margin-bottom: 1rem;    /*Lager litt luft for bakgrunnsvideoen*/
     }
     nav span{
         margin: 1rem 0 0 1rem;  /*Stilsetting rundt logo*/
@@ -410,7 +410,7 @@ body {
         padding: 10rem 0;
         width: 100%;
         margin: 0;
-        background-color: #ffffff3a;
+        background-color: #ffffff57;
     }
     #main_services h1{
         margin-top: 0;
@@ -945,7 +945,7 @@ body {
 
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) { /*Etter max-width*/
     .flex_center{
         margin: 0;
     }
